@@ -1,0 +1,91 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+{% for config_entity in config_entities %}
+<li>
+    <div>
+        <span class="glyphicon glyphicon-th-list"></span>
+        {% include "footprint/admin/db_item.html" with db_item=config_entity db_item_type="ce" only %}
+        [<code class="ce-subclass">{{config_entity.subclass_name}}</code>]
+    </div>
+    <nav class="navbar navbar-default">
+    <ul class="nav nav-tabs">
+        <li class="nav" role="presentation"><a href="#ce-{{config_entity.key}}-db_entities" data-toggle="tab">
+            <span class="glyphicon glyphicon-globe"></span>
+            DbEntities
+        </a></li>
+        <li class="nav" role="presentation"><a href="#ce-{{config_entity.key}}-group_hierarchies" data-toggle="tab" ><span class="glyphicon glyphicon-user"></span>Group Hierarchies</a></li>
+        <li class="nav" role="presentation"><a href="#ce-{{config_entity.key}}-behavior" data-toggle="tab" >Behavior</a></li>
+        <li class="nav" role="presentation"><a href="#ce-{{config_entity.key}}-raw" data-toggle="tab">Raw JSON</a></li>
+        <li class="nav" role="presentation"><a href="#ce-{{config_entity.key}}-close" class="close" data-toggle="tab">&times;</a></li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="ce-{{config_entity.key}}-db_entities">
+            <ul>
+                {% for db_entity in config_entity.db_entities %}
+                    <li class="db-entity db-entity-{{db_entity.id}}">
+                        <div>
+                            <span class="glyphicon glyphicon-globe"></span>
+                            {% if db_entity.is_main_config_entity %}
+                                <span class="glyphicon glyphicon-home" ></span>
+                            {% endif %}
+                            {% include "footprint/admin/db_item.html" with db_item=db_entity db_item_type="dbe" only %}
+                            {% if db_entity.cls_name %}
+                                [<code>{{db_entity.cls_module}}.{{db_entity.cls_name}}</code>]
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="ce-{{config_entity.key}}-group_hierarchies">
+            <ul>
+                {% for group_hierarchy in config_entity.group_hierarchies %}
+                    <li>
+                        <div>Group hierarchy:
+                            {% include "footprint/admin/db_item.html" with db_item=group_hierarchy db_item_type="gh" only %}</div>
+                        <div>Group:
+                            {% include "footprint/admin/db_item.html" with db_item=group_hierarchy.group db_item_type="g" only %}</div>
+                        {% if group_hierarchy.group.users %}
+                            <ul>
+                                {% for user in group_hierarchy.group.users %}
+                                    <li><span class="glyphicon glyphicon-user"></span>
+                                        {% include "footprint/admin/db_item.html" with db_item=user db_item_type="user" only %}
+                                        {{user.first_name}} {{user.last_name}} ({{user.username}}) - {{user.email}}</li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <div>(Empty group)</div>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="ce-{{config_entity.key}}-behavior">
+            <pre>{{config_entity.behavior_json}}</pre>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="ce-{{config_entity.key}}-raw">
+            <pre>[{{config_entity.json}}]</pre>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="ce-{{config_entity.key}}-close">
+        </div>
+    </div>
+    </nav>
+    {% if config_entity.children|length %}
+        <ul>
+            {% with config_entities=config_entity.children template_name="footprint/admin/config_entity_tree.html"%}
+                {% include template_name %}
+            {% endwith %}
+        </ul>
+    {% endif %}
+</li>
+{% endfor %}

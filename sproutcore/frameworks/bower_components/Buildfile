@@ -1,0 +1,4 @@
+# This stuff isn't really part of sproutcore, but this lets it get
+# included automatically.
+config :bower_components,
+       :required => []

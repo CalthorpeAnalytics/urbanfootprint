@@ -1,0 +1,87 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+@import "compass/css3";
+
+/* legacy styles */
+.sc-view .sc-file-field-input-view {
+    @include opacity(0);
+    font-size: 480px;
+    position: absolute;
+}
+
+.sc-view .sc-file-field-iframe {
+    border-style: none;
+}
+/* end legacy styles*/
+
+
+$theme.sc-view.sc-image-upload-view {
+    @include border-radius(120px, 120px);
+    @include box-shadow(0px 1px 2px rgba(black, 0.2));
+    background-color: #d7d7d7;
+    background-size: cover;
+    cursor: pointer;
+
+    &.focus {
+        @include box-shadow(0px 0px 5px 2px #72c5db);
+    }
+
+    &:hover {
+        background-color: #e7e7e7;
+
+        &.has-value {
+            .icon {
+                @include opacity(1);
+            }
+        }
+    }
+
+    &.active {
+        background-color: #a7a7a7;
+        .icon {
+            @include slice('../images/add-icon-active.png');
+        }
+    }
+
+    .icon {
+        @include transition(opacity 0.1s ease-in-out);
+        @include slice('../images/add-icon.png');
+        cursor: inherit;
+        width: 34px;
+        height: 35px;
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        margin-left: -17px;
+        margin-top: -17px;
+    }
+
+    &.has-value {
+        .icon {
+            @include opacity(0);
+        }
+    }
+
+    .sc-view.sc-spinner-view-container {
+        @include border-radius(120px, 120px);
+    }
+}
+
+$theme.sc-file-field-input-view {
+          cursor: pointer !important;
+      }
+
+$theme.sc-file-chooser-view {
+          overflow: visible;
+      }

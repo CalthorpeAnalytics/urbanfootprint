@@ -1,0 +1,141 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+.qui-help-button {
+  @include slice('Help Icon.png');
+  background-color: #EEE;
+  border-style: solid;
+  border-color: #DDD;
+}
+
+.qui-options-button {
+  @include slice('Options Icon.png');
+  background-color: #EEE;
+  border-style: solid;
+  border-color: #DDD;
+}
+
+#qui-join-type-indicator {
+  @include slice('Join Type Indicator.png', $repeat: repeat-y);
+}
+
+#qui-relationship-box {
+  border-style: solid;
+  border-color: #DDD;
+}
+
+#qui-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+$theme.sc-view {
+
+  &.qui-box {
+    border-style: solid;
+    border-color: #AAA;
+  }
+
+  &.qui-dashed-border {
+    &.button { /* Override the overly strict Ace style */
+      border-style: dashed;
+      border-color: #9D9D9D;
+    }
+
+    border-style: dashed;
+    border-color: #9D9D9D;
+  }
+
+  &.qui-drop-zone {
+
+    &.ready-for-drop {
+      border-color: #888888;
+
+      .qui-drop-zone-label {
+        color: #888;
+      }
+    }
+  }
+
+  &.qui-layer-icon {
+    @include slice('layer.png');
+  }
+}
+
+$theme.sc-button-view {
+  &.sc-regular-size.qui-text-button { /* Override Ace styles that assume an image background. */
+    .left, .right, .middle {
+      display: none;
+    }
+
+    .sc-regular-size.sc-button-label {
+      line-height: 28px;
+      padding-top: 0px;
+    }
+  }
+}
+
+
+$theme.sc-image-button-view {
+  &.qui-remove-button {
+    @include slice('Close Icon.png');
+
+    &.active {
+      opacity: 0.65; /* or use a different image here. */
+    }
+  }
+}
+
+$theme.sc-label-view {
+
+  &.qui-drop-zone-label {
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &.qui-field-heading {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &.qui-field-label {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  &.qui-item-placeholder {
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &.qui-layer-title {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &.qui-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

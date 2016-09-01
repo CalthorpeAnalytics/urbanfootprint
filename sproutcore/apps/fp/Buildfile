@@ -1,0 +1,32 @@
+#
+# UrbanFootprint v1.5
+# Copyright (C) 2016 Calthorpe Analytics
+#
+# This file is part of UrbanFootprint version 1.5
+#
+# UrbanFootprint is distributed under the terms of the GNU General
+# Public License version 3, as published by the Free Software Foundation. This
+# code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+# Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+
+# This is your Buildfile for your app, Footprint. This  tells SproutCore
+# how to build your app. These settings override those in your project
+# Buildfile, which contains default settings for all apps in your project.
+
+# It is better to add :required targets here than in the global Buildfile.
+config :fp,
+    :required => [
+        :'sc-table',
+        :'sproutcore-upload',
+        :'bower_components',
+        :'footprint',
+        :'data_manager_ui',
+        :'footprint_sacog',
+        :'footprint_sandag',
+        :'footprint_scag_dm',
+        :'query_ui',
+        :'fp'],
+    :title => 'UrbanFootprint',
+    :favicon => '/images/favicon.ico',
+    :css_theme => "ace.footprint"

@@ -1,0 +1,68 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chart sandbox</title>
+</head>
+<style>
+    svg {
+        background-color: black;
+    }
+    body {
+        font: 10px sans-serif;
+        fill: white;
+    }
+    .arc path {
+        stroke: #fff;
+        stroke-width: 0;
+    }
+
+    .light {
+        fill: black;
+    }
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="{{ STATIC_URL }}js/footprint/d3_charts/donutChart.js">
+</script>
+<div id="ResidentialChart"></div>
+<div id="LandUseChart"></div>
+<script>
+    var data_2 = [
+        { "category" :"Mixed-Use", "percentage" :.21},
+        { "category" :"Residential", "percentage":.79}
+    ];
+    var landUseData = null;
+
+
+    var chart1DataManager = d3.edge.dataManager();
+    chart1DataManager.loadJSONData(landUseData);
+
+    var cleanData = chart1DataManager.getCleanedData();
+
+
+    var chart2 = d3.edge.donutChart();
+    var fixture2 = d3.select('#ResidentialChart');
+    fixture2.append('div')
+            .datum(data_2)
+            .call(chart2);
+    var chart1 = d3.edge.donutChart();
+    var fixture1 = d3.select('#LandUseChart');
+    fixture1.append('div')
+            .datum(cleanData)
+            .call(chart1);
+
+</script>
+</body>
+</html>

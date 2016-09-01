@@ -1,0 +1,89 @@
+# Vagrant
+.vagrant
+# Test Kitchen
+.kitchen
+# djang-dotenv
+.env
+
+# emacs :)
+*~
+
+*.py[cod]
+src
+env
+
+# C extensions
+*.so
+
+# Packages
+.egg
+.egg-info
+develop-eggs
+.installed.cfg
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# never check in private keys
+*.pem
+*.key
+*.crt
+
+# Translations
+.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# pycharm related
+.idea
+
+# OSX File stuff
+.DS_Store
+
+# never check-in local_settings or client configuration - it should be a symlink
+footprint/local_settings.py
+footprint/client_config.py
+footprint/main/templates/footprint/index.html
+
+# sproutcore build files
+footprint/main/static/data_manager_ui
+footprint/main/static/footprint*
+footprint/main/static/fp
+footprint/main/static/query_ui
+footprint/main/static/sc-table
+footprint/main/static/sproutcore*
+
+# node.js modules
+node_modules
+websockets/node_modules
+
+# celery process id files generated while running
+celerybeat-schedule
+celerybeat.pid
+celeryev.pid
+.lnk
+
+# Sproutcore
+sproutcore/tmp
+sproutcore/builds
+
+# Sproutcore symlinks for client images
+sproutcore/frameworks/footprint/resources/images/client_login_page_logo.png
+sproutcore/frameworks/footprint/resources/images/client_login_page_logo_lower.png
+
+# New Relic config file
+newrelic.ini
+
+# Bower installs to sproutcore/frameworks/bower_components, but that directory
+# needs Buildfile for sproutcore's build/serve
+sproutcore/frameworks/bower_components/*/*
+!sproutcore/frameworks/bower_components/*

@@ -1,0 +1,62 @@
+
+server {
+    listen 80 default_server;
+    server_name  _;
+
+    gzip on;
+    gzip_min_length 1000;
+    gzip_types text/plain text/css text/javascript text/xml application/json application/x-javascript application/xml+rss;
+
+    # Max upload size
+    client_max_body_size 2G;
+
+    root        /usr/share/nginx/www/;
+
+    access_log  /var/log/nginx/uf.prod.access.log;
+    error_log   /var/log/nginx/uf.prod.error.log;
+
+    location / {
+        proxy_pass          http://127.0.0.1:9001;
+        proxy_set_header    Host       $host;
+        proxy_set_header    X-Real-IP  $remote_addr;
+        proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_connect_timeout 180s;
+        proxy_read_timeout    180s;
+    }
+
+    location /static {
+        autoindex off;
+        alias /srv/calthorpe_static/;
+        expires 30d;
+        # TODO 2015-12-14: Assess these commented-out options.
+        # add_header Pragma public;
+        # add_header Cache-Control "public";
+    }
+
+    location /downloads {
+        internal;
+        alias /srv/calthorpe_media/downloadable/;
+    }
+
+    location /tiles {
+        rewrite /tiles/(.*) /$1 break;
+        proxy_pass          http://127.0.0.1:8484;
+        proxy_redirect      off;
+        proxy_set_header    Host       $host;
+        proxy_set_header    X-Real-IP  $remote_addr;
+
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_connect_timeout 180s;
+
+        proxy_read_timeout 180s;
+    }
+
+    location /socket.io {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+    }
+
+}

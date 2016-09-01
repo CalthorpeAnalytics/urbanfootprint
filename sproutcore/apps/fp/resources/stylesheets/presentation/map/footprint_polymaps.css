@@ -1,0 +1,44 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+.parcels {
+    fill-opacity: .2;
+    stroke-width: 1;
+    stroke: grey;
+    stroke-opacity: .4;
+}
+
+.parcel_geometry:hover{
+    fill-opacity: .5;
+    fill:orange !important;
+}
+
+/** Id of hatch shape defined in SVG defs **/
+.selected{
+    fill: #d4d4d2;
+    stroke:#3cff00 !important;
+    stroke-width: 3;
+    fill-opacity: .05 !important;
+}
+
+/** Hatch lines style **/
+/*.hatch{*/
+    /*fill:none;*/
+    /*stroke:black;*/
+    /*stroke-width:1;*/
+/*}*/
+
+#parcel_base {
+    stroke: red !important;
+    opacity: .6;
+}

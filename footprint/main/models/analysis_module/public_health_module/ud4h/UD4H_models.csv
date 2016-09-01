@@ -1,0 +1,138 @@
+group,model file name,source,age group,inc group,outcome,type,transformation,duan,two-part model calculation,calibration
+1,adult_all_walk_any.csv,CHTS,adult,all,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_all_walk_min.csv,CHTS,adult,all,transportation walking (minutes),linear/log,exp(outcome),1.4563,transportation walking (any * minutes),5.690039
+1,adult_all_bike_any.csv,CHTS,adult,all,transportation biking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_all_bike_min.csv,CHTS,adult,all,transportation biking (minutes),linear/log,exp(outcome),1.3092,transportation biking (any * minutes),1.144021
+1,adult_all_auto_any.csv,CHTS,adult,all,auto transport (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_all_auto_min.csv,CHTS,adult,all,auto transport (minutes),linear/log,exp(outcome),1.3519,auto transport (any * minutes),71.86687
+2,adult_all_rec_pa_any.csv,CHTS,adult,all,recreational PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_all_rec_pa_min.csv,CHTS,adult,all,recreational PA (minutes),linear/log,exp(outcome),1.4346,recreational PA (any * minutes),17.42241
+1,adult_low_walk_any.csv,CHTS,adult,low,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_low_walk_min.csv,CHTS,adult,low,transportation walking (minutes),linear/log,exp(outcome),1.4587,transportation walking (any * minutes),5.690039
+1,adult_low_bike_any.csv,CHTS,adult,low,transportation biking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_low_bike_min.csv,CHTS,adult,low,transportation biking (minutes),linear/log,exp(outcome),1.2712,transportation biking (any * minutes),1.144021
+1,adult_low_auto_any.csv,CHTS,adult,low,auto transport (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_low_auto_min.csv,CHTS,adult,low,auto transport (minutes),linear/log,exp(outcome),1.3238,auto transport (any * minutes),71.86687
+2,adult_low_rec_pa_any.csv,CHTS,adult,low,recreational PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_low_rec_pa_min.csv,CHTS,adult,low,recreational PA (minutes),linear/log,exp(outcome),1.4066,recreational PA (any * minutes),17.42241
+1,adult_med_walk_any.csv,CHTS,adult,med,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_med_walk_min.csv,CHTS,adult,med,transportation walking (minutes),linear/log,exp(outcome),1.402,transportation walking (any * minutes),5.690039
+1,adult_med_bike_any.csv,CHTS,adult,med,transportation biking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_med_bike_min.csv,CHTS,adult,med,transportation biking (minutes),linear/log,exp(outcome),1.3248,transportation biking (any * minutes),1.144021
+1,adult_med_auto_any.csv,CHTS,adult,med,auto transport (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_med_auto_min.csv,CHTS,adult,med,auto transport (minutes),linear/log,exp(outcome),1.3819,auto transport (any * minutes),71.86687
+2,adult_med_rec_pa_any.csv,CHTS,adult,med,recreational PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_med_rec_pa_min.csv,CHTS,adult,med,recreational PA (minutes),linear/log,exp(outcome),1.468,recreational PA (any * minutes),17.42241
+1,adult_high_walk_any.csv,CHTS,adult,high,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_high_walk_min.csv,CHTS,adult,high,transportation walking (minutes),linear/log,exp(outcome),1.529,transportation walking (any * minutes),5.690039
+1,adult_high_bike_any.csv,CHTS,adult,high,transportation biking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_high_bike_min.csv,CHTS,adult,high,transportation biking (minutes),linear/log,exp(outcome),1.3121,transportation biking (any * minutes),1.144021
+1,adult_high_auto_any.csv,CHTS,adult,high,auto transport (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_high_auto_min.csv,CHTS,adult,high,auto transport (minutes),linear/log,exp(outcome),1.3619,auto transport (any * minutes),71.86687
+2,adult_high_rec_pa_any.csv,CHTS,adult,high,recreational PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_high_rec_pa_min.csv,CHTS,adult,high,recreational PA (minutes),linear/log,exp(outcome),1.4382,recreational PA (any * minutes),17.42241
+1,seniors_all_walk_any.csv,CHTS,seniors,all,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,seniors_all_walk_min.csv,CHTS,seniors,all,transportation walking (minutes),linear/log,exp(outcome),1.4643,transportation walking (any * minutes),4.026009
+1,seniors_all_auto_any.csv,CHTS,seniors,all,auto transport (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,seniors_all_auto_min.csv,CHTS,seniors,all,auto transport (minutes),linear/log,exp(outcome),1.4062,auto transport (any * minutes),55.80708
+2,seniors_all_rec_pa_any.csv,CHTS,seniors,all,recreational PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,seniors_all_rec_pa_min.csv,CHTS,seniors,all,recreational PA (minutes),linear/log,exp(outcome),1.541,recreational PA (any * minutes),16.38067
+1,teens_all_walk_any.csv,CHTS,teens,all,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,teens_all_walk_min.csv,CHTS,teens,all,transportation walking (minutes),linear/log,exp(outcome),1.3797,transportation walking (any * minutes),8.570342
+1,teens_all_auto_any.csv,CHTS,teens,all,auto transport (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,teens_all_auto_min.csv,CHTS,teens,all,auto transport (minutes),linear/log,exp(outcome),1.5091,auto transport (any * minutes),45.74965
+2,teens_all_rec_pa_any.csv,CHTS,teens,all,recreational PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,teens_all_rec_pa_min.csv,CHTS,teens,all,recreational PA (minutes),linear/log,exp(outcome),1.3285,recreational PA (any * minutes),30.98128
+1,children_all_walk_any.csv,CHTS,children,all,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,children_all_walk_min.csv,CHTS,children,all,transportation walking (minutes),linear/log,exp(outcome),1.4037,transportation walking (any * minutes),6.090779
+1,children_all_auto_any.csv,CHTS,children,all,auto transport (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,children_all_auto_min.csv,CHTS,children,all,auto transport (minutes),linear/log,exp(outcome),1.5256,auto transport (any * minutes),48.53028
+2,children_all_rec_pa_any.csv,CHTS,children,all,recreational PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,children_all_rec_pa_min.csv,CHTS,children,all,recreational PA (minutes),linear/log,exp(outcome),1.3355,recreational PA (any * minutes),32.1335
+1,adult_all_walk_tr_any.csv,CHIS,adult,all,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_all_walk_tr_min.csv   ,CHIS,adult,all,transportation walking (minutes),linear/log,exp(outcome),1.6435,transportation walking (any * minutes),61.36
+2,adult_all_walk_le_any.csv   ,CHIS,adult,all,leisure walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_all_walk_le_min.csv   ,CHIS,adult,all,leisure walking (minutes),linear/log,exp(outcome),1.4968,leisure walking (any * minutes),81.067
+2,adult_all_mod_pa_any.csv     ,CHIS,adult,all,moderate PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_all_mod_pa_min.csv     ,CHIS,adult,all,moderate PA (minutes),linear/log,exp(outcome),1.6244,moderate PA (any * minutes),117.58
+2,adult_all_vig_pa_any.csv     ,CHIS,adult,all,vigorous PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_all_vig_pa_min.csv     ,CHIS,adult,all,vigorous PA (minutes),linear/log,exp(outcome),1.5246,vigorous PA (any * minutes),68.721
+3,adult_all_BMI.csv       ,CHIS,adult,all,BMI,linear/log,exp(outcome),1.0182,,26.859
+3,adult_all_overweight.csv,CHIS,adult,all,overweight or obese,binary,exp(outcome) / (1 + exp(outcome)),1,,57.65%
+3,adult_all_obese.csv     ,CHIS,adult,all,obese,binary,exp(outcome) / (1 + exp(outcome)),1,,22.92%
+4,adult_all_high_bp.csv   ,CHIS,adult,all,high blood pressure,binary,exp(outcome) / (1 + exp(outcome)),1,,21.22%
+4,adult_all_heart_dis.csv ,CHIS,adult,all,heart disease,binary,exp(outcome) / (1 + exp(outcome)),1,,4.29%
+4,adult_all_dia_type2.csv ,CHIS,adult,all,type 2 diabetes,binary,exp(outcome) / (1 + exp(outcome)),1,,5.09%
+4,adult_all_gh_poor.csv ,CHIS,adult,all,poor general health,binary,exp(outcome) / (1 + exp(outcome)),1,,18.37%
+1,adult_low_walk_tr_any.csv,CHIS,adult,low,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_low_walk_tr_min.csv   ,CHIS,adult,low,transportation walking (minutes),linear/log,exp(outcome),1.6076,transportation walking (any * minutes),
+2,adult_low_walk_le_any.csv   ,CHIS,adult,low,leisure walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_low_walk_le_min.csv   ,CHIS,adult,low,leisure walking (minutes),linear/log,exp(outcome),1.5242,leisure walking (any * minutes),
+2,adult_low_mod_pa_any.csv     ,CHIS,adult,low,moderate PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_low_mod_pa_min.csv     ,CHIS,adult,low,moderate PA (minutes),linear/log,exp(outcome),1.7474,moderate PA (any * minutes),
+2,adult_low_vig_pa_any.csv     ,CHIS,adult,low,vigorous PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_low_vig_pa_min.csv     ,CHIS,adult,low,vigorous PA (minutes),linear/log,exp(outcome),1.5992,vigorous PA (any * minutes),
+3,adult_low_BMI.csv       ,CHIS,adult,low,BMI,linear/log,exp(outcome),1.0222,,
+3,adult_low_overweight.csv,CHIS,adult,low,overweight or obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+3,adult_low_obese.csv     ,CHIS,adult,low,obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_low_high_bp.csv   ,CHIS,adult,low,high blood pressure,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_low_heart_dis.csv ,CHIS,adult,low,heart disease,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_low_dia_type2.csv ,CHIS,adult,low,type 2 diabetes,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_low_gh_poor.csv ,CHIS,adult,low,poor general health,binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_med_walk_tr_any.csv,CHIS,adult,med,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_med_walk_tr_min.csv   ,CHIS,adult,med,transportation walking (minutes),linear/log,exp(outcome),1.7136,transportation walking (any * minutes),
+2,adult_med_walk_le_any.csv   ,CHIS,adult,med,leisure walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_med_walk_le_min.csv   ,CHIS,adult,med,leisure walking (minutes),linear/log,exp(outcome),1.5008,leisure walking (any * minutes),
+2,adult_med_mod_pa_any.csv     ,CHIS,adult,med,moderate PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_med_mod_pa_min.csv     ,CHIS,adult,med,moderate PA (minutes),linear/log,exp(outcome),1.5822,moderate PA (any * minutes),
+2,adult_med_vig_pa_any.csv     ,CHIS,adult,med,vigorous PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_med_vig_pa_min.csv     ,CHIS,adult,med,vigorous PA (minutes),linear/log,exp(outcome),1.5524,vigorous PA (any * minutes),
+3,adult_med_BMI.csv       ,CHIS,adult,med,BMI,linear/log,exp(outcome),1.0174,,
+3,adult_med_overweight.csv,CHIS,adult,med,overweight or obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+3,adult_med_obese.csv     ,CHIS,adult,med,obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_med_high_bp.csv   ,CHIS,adult,med,high blood pressure,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_med_heart_dis.csv ,CHIS,adult,med,heart disease,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_med_dia_type2.csv ,CHIS,adult,med,type 2 diabetes,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_med_gh_poor.csv ,CHIS,adult,med,poor general health,binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_high_walk_tr_any.csv,CHIS,adult,high,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,adult_high_walk_tr_min.csv   ,CHIS,adult,high,transportation walking (minutes),linear/log,exp(outcome),1.6197,transportation walking (any * minutes),
+2,adult_high_walk_le_any.csv   ,CHIS,adult,high,leisure walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_high_walk_le_min.csv   ,CHIS,adult,high,leisure walking (minutes),linear/log,exp(outcome),1.4584,leisure walking (any * minutes),
+2,adult_high_mod_pa_any.csv     ,CHIS,adult,high,moderate PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_high_mod_pa_min.csv     ,CHIS,adult,high,moderate PA (minutes),linear/log,exp(outcome),1.5217,moderate PA (any * minutes),
+2,adult_high_vig_pa_any.csv     ,CHIS,adult,high,vigorous PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,adult_high_vig_pa_min.csv     ,CHIS,adult,high,vigorous PA (minutes),linear/log,exp(outcome),1.4429,vigorous PA (any * minutes),
+3,adult_high_BMI.csv       ,CHIS,adult,high,BMI,linear/log,exp(outcome),1.014,,
+3,adult_high_overweight.csv,CHIS,adult,high,overweight or obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+3,adult_high_obese.csv     ,CHIS,adult,high,obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_high_high_bp.csv   ,CHIS,adult,high,high blood pressure,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_high_heart_dis.csv ,CHIS,adult,high,heart disease,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_high_dia_type2.csv ,CHIS,adult,high,type 2 diabetes,binary,exp(outcome) / (1 + exp(outcome)),1,,
+4,adult_high_gh_poor.csv ,CHIS,adult,high,poor general health,binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,seniors_all_walk_tr_any.csv,CHIS,seniors,all,transportation walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+1,seniors_all_walk_tr_min.csv   ,CHIS,seniors,all,transportation walking (minutes),linear/log,exp(outcome),1.6962,transportation walking (any * minutes),44.574
+2,seniors_all_walk_le_any.csv   ,CHIS,seniors,all,leisure walking (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,seniors_all_walk_le_min.csv   ,CHIS,seniors,all,leisure walking (minutes),linear/log,exp(outcome),1.5158,leisure walking (any * minutes),84.6
+2,seniors_all_mod_pa_any.csv     ,CHIS,seniors,all,moderate PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,seniors_all_mod_pa_min.csv     ,CHIS,seniors,all,moderate PA (minutes),linear/log,exp(outcome),1.706,moderate PA (any * minutes),127.31
+2,seniors_all_vig_pa_any.csv     ,CHIS,seniors,all,vigorous PA (any),binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,seniors_all_vig_pa_min.csv     ,CHIS,seniors,all,vigorous PA (minutes),linear/log,exp(outcome),1.5393,vigorous PA (any * minutes),32.957
+3,seniors_all_BMI.csv       ,CHIS,seniors,all,BMI,linear/log,exp(outcome),1.0149,,26.431
+3,seniors_all_overweight.csv,CHIS,seniors,all,overweight or obese,binary,exp(outcome) / (1 + exp(outcome)),1,,56.40%
+3,seniors_all_obese.csv     ,CHIS,seniors,all,obese,binary,exp(outcome) / (1 + exp(outcome)),1,,19.11%
+4,seniors_all_high_bp.csv   ,CHIS,seniors,all,high blood pressure,binary,exp(outcome) / (1 + exp(outcome)),1,,57.70%
+4,seniors_all_heart_dis.csv ,CHIS,seniors,all,heart disease,binary,exp(outcome) / (1 + exp(outcome)),1,,19.86%
+4,seniors_all_dia_type2.csv ,CHIS,seniors,all,type 2 diabetes,binary,exp(outcome) / (1 + exp(outcome)),1,,16.58%
+4,seniors_all_gh_poor.csv ,CHIS,seniors,all,poor general health,binary,exp(outcome) / (1 + exp(outcome)),1,,23.58%
+1,teens_all_pa60_daysperweek.csv,CHIS,teens,all,days/week >60 minutes PA,poisson,exp(outcome),1,,3.467266
+1,teens_all_walkfrom_any.csv,CHIS,teens,all,likelihood of walking to school,binary,exp(outcome) / (1 + exp(outcome)),1,,49%
+2,teens_all_BMIPCT.csv,CHIS,teens,all,BMI percentile,linear,outcome,1,,
+2,teens_all_overweight.csv,CHIS,teens,all,overweight or obese,binary,exp(outcome) / (1 + exp(outcome)),1,,32.60%
+2,teens_all_obese.csv,CHIS,teens,all,obese,binary,exp(outcome) / (1 + exp(outcome)),1,,16.30%
+3,teens_all_gh_poor.csv,CHIS,teens,all,poor general health,binary,exp(outcome) / (1 + exp(outcome)),1,,8.10%
+1,children_all_pa60_daysperweek.csv,CHIS,children,all,days/week >60 minutes PA,poisson,exp(outcome),1,,4.33493
+1,children_all_walkfrom_any.csv,CHIS,children,all,likelihood of walking to school,binary,exp(outcome) / (1 + exp(outcome)),1,,37.70%
+2,children_all_BMIPCT.csv,CHIS,children,all,BMI percentile,linear,outcome,1,,
+2,children_all_overweight.csv,CHIS,children,all,overweight or obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+2,children_all_obese.csv,CHIS,children,all,obese,binary,exp(outcome) / (1 + exp(outcome)),1,,
+3,children_all_gh_poor.csv,CHIS,children,all,poor general health,binary,exp(outcome) / (1 + exp(outcome)),1,,5.20%

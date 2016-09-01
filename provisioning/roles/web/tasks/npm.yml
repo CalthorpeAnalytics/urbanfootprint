@@ -1,0 +1,38 @@
+---
+
+# TODO:
+#   This PPA has been deprecated and replaced with binaries
+#   provided by nodesource.come so we should update to those
+#   at some point. See:
+#     https://github.com/nodesource/distributions#debian-and-ubuntu-based-distributions
+- name: Setup key for the PPA repo
+  apt_repository:
+    repo: ppa:chris-lea/node.js
+    update_cache: yes
+
+- name: Install nodejs packages
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - nodejs
+
+# TODO:
+#   It's not clear if we even need these. There's
+#   also '/websockets/package.json' that specifies
+#   dependencies which can be installed via:
+#     cd /srv/calthorpe/urbanfootprint/websocks && npm install .
+#   At present I can't get a solid answer on what is
+#   actually used.
+- name: Install npm packages
+  npm:
+    name: "{{item.name}}"
+    version: "{{item.version}}"
+    global: yes
+  ignore_errors: yes
+  with_items:
+    - { name: express,   version: 4.13.4 }
+    - { name: carto,     version: 0.15.3 }
+    - { name: hiredis,   version: 0.4.1}
+    - { name: redis,     version: 2.6.0-1}
+    - { name: socket.io, version: 1.4.5}

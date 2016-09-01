@@ -1,0 +1,10 @@
+### SproutCore Upload
+
+Based off @publickeating's design includes a basic fake ajax uploader for SC.
+
+Includes basic support for uploading images via an image upload control.
+
+## TODO
+
+- Add croper for image upload
+- Include drag and drop support

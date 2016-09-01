@@ -1,0 +1,40 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwhISZqx6od8uQDNtYXUmYA49OD-z2Mb4">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(-34.397, 150.644),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                    mapOptions);
+        }
+    </script>
+</head>
+<body onload="initialize()">
+<div id="map_canvas" style="width:100%; height:100%"></div>
+</body>
+</html>

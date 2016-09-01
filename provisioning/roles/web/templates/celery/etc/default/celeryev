@@ -1,0 +1,29 @@
+# Name of the projects settings module.
+export DJANGO_SETTINGS_MODULE="footprint.settings"
+
+CELERY_BIN="/srv/calthorpe_env/bin/celery"
+CELERY_APP="
+
+# Where the Django project is.
+CELERYD_CHDIR="/srv/calthorpe/urbanfootprint"
+
+CELERYEV_LOG_DIR="/var/log/celery"
+
+
+
+ENV_PYTHON="/srv/calthorpe_env/bin/python"
+
+VIRTUAL_ENV="/srv/calthorpe_env"
+
+# Path to celeryd
+CELERYEV="$ENV_PYTHON /srv/calthorpe/urbanfootprint/manage.py"
+
+# Extra arguments to manage.py
+CELERYEV_OPTS="celeryev"
+
+# Camera class to use (required)
+CELERYEV_CAM="djcelery.snapshot.Camera"
+
+CELERYEV_USER="calthorpe"
+
+CELERYEV_GROUP="www-data"

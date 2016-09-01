@@ -1,0 +1,82 @@
+; For testing a local server
+[program:calthorpe_www]
+command=/srv/calthorpe_env/bin/python /srv/calthorpe/urbanfootprint/manage.py runserver
+directory=/srv/calthorpe/urbanfootprint
+user=www-data
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/supervisor/python-django-dev.log
+stderr_logfile=/var/log/supervisor/python-django-dev.log
+redirect_stderr=true
+environment=PATH="/srv/calthorpe_env/bin:/usr/bin"
+
+; Sproutcore dev server
+[program:sproutcore]
+command=/usr/local/bin/sproutcore serve --allow-from-ips='*.*.*.*'
+directory=/srv/calthorpe/urbanfootprint/sproutcore
+user=calthorpe
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/supervisor/sproutcore-dev.log
+stderr_logfile=/var/log/supervisor/sproutcore-dev.log
+redirect_stderr=true
+; environment=PATH="/srv/calthorpe_env/bin:/usr/bin"
+
+[program:celery_worker]
+environment=PATH="/srv/calthorpe_env/bin:/usr/bin",IS_CELERY="True",DJANGO_SETTINGS_MODULE="footprint.settings_dev"
+command=/srv/calthorpe_env/bin/celery -A footprint worker --concurrency=4 -l debug -n footprint
+directory=/srv/calthorpe/urbanfootprint/
+user=www-data
+stdout_logfile=/var/log/supervisor/celery.log
+stderr_logfile=/var/log/supervisor/celery.log
+redirect_stderr=true
+autostart=true
+autorestart=true
+startsecs=10
+stopwaitsecs=600
+killasgroup=true
+
+[program:celerybeat]
+environment=PATH="/srv/calthorpe_env/bin:/usr/bin",IS_CELERY="True",DJANGO_SETTINGS_MODULE="footprint.settings_dev"
+command=/srv/calthorpe_env/bin/celery beat -A footprint --loglevel=info --pidfile=
+directory=/srv/calthorpe/urbanfootprint/
+user=www-data
+stdout_logfile=/var/log/supervisor/celery.log
+stderr_logfile=/var/log/supervisor/celery.log
+autostart=true
+autorestart=true
+startsecs=10
+
+[program:tilestache]
+environment=PATH="/srv/calthorpe_env/bin:/usr/bin:/srv/calthorpe_env/src/tilestache"
+command=/srv/calthorpe_env/bin/gunicorn "TileStache.Goodies.PGConfigServer:WSGIServer('/srv/calthorpe/urbanfootprint/.env')" -b 127.0.0.1:8484 -w 8 --log-level=INFO --timeout 180
+directory=/srv/calthorpe_env/lib/python2.7/site-packages/
+user=calthorpe
+stdout_logfile=/var/log/supervisor/tilestache.log
+stderr_logfile=/var/log/supervisor/tilestache.log
+autostart=true
+autorestart=true
+startsecs=10
+
+[program:celery_flower]
+environment=PATH="/srv/calthorpe_env/bin:/usr/bin",IS_CELERY=True,DJANGO_SETTINGS_MODULE="footprint.settings_dev"
+command=/srv/calthorpe_env/bin/celery flower --broker=redis://localhost:6379/0
+user=www-data
+numprocs=1
+stdout_logfile=/var/log/supervisor/celery.log
+stderr_logfile=/var/log/supervisor/celery.log
+autostart=true
+autorestart=true
+startsecs=10
+
+[program:node_socketio]
+command=/usr/bin/nodejs /srv/calthorpe/urbanfootprint/websockets/app.js
+directory=/srv/calthorpe/urbanfootprint/websockets
+user=www-data
+stdout_logfile=/var/log/supervisor/nodesocketio.log
+stderr_logfile=/var/log/supervisor/nodesocketio.log
+redirect_stderr=true
+autostart=true
+autorestart=true
+startsecs=10
+stopwaitsecs=600

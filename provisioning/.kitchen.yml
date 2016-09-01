@@ -1,0 +1,31 @@
+# To get this working on a Mac, set $DOCKER_HOST to
+# a Docker instance, then:
+#   brew cask install chefdk
+#   /opt/chefdk/embedded/bin/gem install kitchen-ansible kitchen-docker
+# Then run "kitchen test" from this directory.
+---
+driver:
+  name: docker
+  use_sudo: false
+
+provisioner:
+  require_chef_omnibus: false
+  name: ansible_playbook
+  playbook: servers-web.yml
+  requirements_path: galaxy-roles.yml
+  hosts: localhost
+  require_ansible_repo: true
+  ansible_verbose: true
+
+platforms:
+  # Ubuntu 14.04 / Trusty / Phusion
+  - name: ubuntu-trusty-phusion
+    driver_config:
+      image: calthorpeanalytics/phusion-baseimage:trusty
+
+# Docs @ https://github.com/neillturner/kitchen-ansible/blob/master/provisioner_options.md
+suites:
+  - name: UF
+    attributes:
+      extra_vars:
+        # example_key: example_value

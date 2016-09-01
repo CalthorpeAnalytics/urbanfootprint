@@ -1,0 +1,42 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+.legend-view {
+}
+
+
+.chart-view .axis text {
+    font: 10px sans-serif;
+}
+
+.chart-view .legend {
+    float: left;
+    background-color: #fff;
+    width: 300px;
+    height: 6000px;
+    border: 1px solid #bbb;
+    margin: 1px 1px 1px 1px;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 14px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightyellow;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+}

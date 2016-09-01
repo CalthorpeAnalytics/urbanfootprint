@@ -1,0 +1,10 @@
+# TODO: WHY IS THIS HERE?
+postgresql_admin_user: postgres
+
+users:
+  web:
+    username: calthorpe
+    uid:  209
+    groupname: calthorpe
+    gid:  209
+    password: $6$BSklkdAkT8Wsw.2$5bCkKYj170NHTHL.HasuCASxZMn1Tt/Hxmf3gWWQnbtJR6p6CEmj9ek1nyP9srKRa/CrMhqCYodAc5ZtFSKP8.

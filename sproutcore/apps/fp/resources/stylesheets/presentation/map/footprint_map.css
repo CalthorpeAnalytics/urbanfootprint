@@ -1,0 +1,121 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+.pallete {
+    position: relative;
+    max-width: 100px;
+    float: right;
+    z-index: 100;
+    outline: black solid;
+}
+
+.builtformbutton {
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+}
+.selected{
+    fill: #00FF00 !important;
+    opacity: 1 !important;
+}
+.parcels {
+    fill-opacity: .7;
+    stroke-width: .5;
+    stroke: grey;
+    stroke-opacity: .4;
+}
+
+.parcel_geometry:hover{
+    fill-opacity: .5;
+    fill:orange !important;
+}
+
+#parcel_base {
+    opacity: .8;
+}
+
+.paint-tool .extent {
+    stroke: #000;
+    stroke-width: 1.5px;
+    fill: #000;
+    fill-opacity: 0.3;
+}
+
+#layerswitcher {
+    background-color: black;
+    margin-right: 0;
+    padding: 1.5em;
+    color: white;
+    float: right;
+    position: absolute;
+    z-index: 100;
+}
+#identify-popup {
+    z-index: 50;
+    margin-left: 40%;
+    margin-top: 20%;
+    max-width: 300px;
+    max-height: 300px;
+    position: absolute;
+    background: #000000;
+    opacity: .9;
+    border: solid thin black;
+}
+#identify-popup p {
+    font-size: 12px;
+    text-align: right;
+    color:  grey;
+    margin:  10px;
+}
+
+#identify-popup h5 {
+    font-size: 15px;
+    color:  #fff;
+    margin:  20px;
+}
+.tool-selector {
+    position: absolute;
+    background: #000;
+    opacity: .9;
+    color:  #fff;
+    padding-right: .5em;
+    padding-left: .5em;
+    z-index: 50;
+}
+
+#map-interface {
+    position: absolute;
+    margin-top: -1;
+    margin-left: -1;
+}
+
+.footprint-map-rezoom-to-extent-button {
+    padding-left: 2px;
+    padding-right: 2px;
+    .sc-button-label.sc-regular-size {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* FAKE CSS FOR BUILT FORMS */
+
+.ptid-1 { fill: #1EB068; }
+.ptid-2 { fill: #EBE07A; }
+.ptid-3 { fill: #E61414; }
+.ptid-4 { fill: #8764A6; }
+.ptid-5 { fill: #E6CCFF; }
+.ptid-11 { fill: #9551ae; }
+
+.ptid-null { fill: #f8fcff;
+            opacity: .1;}

@@ -1,0 +1,4 @@
+---
+# file: site.yml
+- include: servers-web.yml
+- include: servers-db.yml

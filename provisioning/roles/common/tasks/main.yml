@@ -1,0 +1,14 @@
+---
+
+# Run "apt-get update" if the last ran was more than 6 hours ago
+- apt: update_cache=yes cache_valid_time=21600
+
+- name: Extra packages
+  apt: name={{ item }} state=present
+  with_items:
+    - ack-grep
+    - ca-certificates
+    - htop
+    - multitail
+    - ntp
+    - tree

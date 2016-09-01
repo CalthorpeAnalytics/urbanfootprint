@@ -1,0 +1,20 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+{# A simple item with a name, key, and id #}
+<span class="item-{{db_item_type}}-name">{{db_item.name}}</span>
+{% if db_item.id %}
+[<code class="item-{{db_item_type}}-id">{{db_item.id}}</code>]
+{% endif %}
+{% if db_item.key %}
+[<code class="item-{{db_item_type}}-key">{{db_item.key}}</code>]
+{% endif %}

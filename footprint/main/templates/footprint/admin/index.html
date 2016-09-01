@@ -1,0 +1,40 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+{% extends "footprint/admin/admin.html" %}
+
+
+{% block body %}
+<h1> UrbanFootprint site administration</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>
+                System structure
+            </h2>
+            <ul>
+                <li><a href="/footprint/ufadmin/config_entity">Config Entities</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>
+                Users
+            </h2>
+            <ul>
+                <li><a href="/footprint/users">User Manager</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

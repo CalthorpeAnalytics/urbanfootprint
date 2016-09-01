@@ -1,0 +1,115 @@
+---
+
+# Run "apt-get update" if the last ran was more than 6 hours ago
+- apt:
+    update_cache: yes
+    cache_valid_time: 21600
+
+- include: user.yml
+
+- name: Install webserver packages
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - build-essential
+    - curl
+    - git
+    - graphviz
+    - graphviz-dev
+    - libevent-dev
+    - libfreetype6-dev
+    - libpq-dev
+    - monit
+    - redis-server
+    - supervisor
+
+- name: Install python packages
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - python-pip
+    - python-virtualenv
+    - python-dev
+    - virtualenvwrapper
+
+- name: Install "spatial" packages
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - python-gdal
+    - libproj-dev
+    - gdal-bin
+    - libgdal1-dev
+
+- include: postgresql-client.yml
+- include: nginx.yml
+- include: npm.yml
+- include: geo.yml
+- include: mapnik.yml
+- include: sproutcore.yml
+
+- name: Manually create the initial virtualenv
+  command: virtualenv /srv/calthorpe_env
+  args:
+    creates: /srv/calthorpe_env
+
+- name: make mapnik availalble in the virtualenv
+  file:
+    src:   /usr/lib/pymodules/python2.7/mapnik
+    dest:  /srv/calthorpe_env/lib/python2.7/site-packages/mapnik
+    owner: "{{users.web.uid}}"
+    group: "{{users.web.gid}}"
+    state: link
+    force: yes
+
+- name: Put supervisor.conf in place
+  file:
+    src:   /srv/calthorpe/urbanfootprint/conf/etc/supervisor/conf.d/calthorpe.supervisor.prod
+    dest:  /etc/supervisor/conf.d/calthorpe.conf
+    owner: "{{users.web.uid}}"
+    group: "{{users.web.gid}}"
+    state: link
+    force: yes
+
+- name: Create required directories
+  file:
+    path: "{{item}}"
+    owner: "{{users.web.uid}}"
+    group: "{{users.web.gid}}"
+    state: directory
+  with_items:
+    - /srv/calthorpe_media/cartocss
+    - /srv/calthorpe_media/uploads
+    - /srv/calthorpe_static
+    - /srv/datadump
+
+# HACK -- fix file permissions
+- name: Set /srv/calthorpe_env file perms recursively
+  file:
+    path: /srv/calthorpe_env
+    owner: "{{users.web.uid}}"
+    group: "{{users.web.gid}}"
+    state: directory
+    recurse: yes
+
+# HACK -- fix file permissions
+- name: Set /srv/calthorpe_media file perms recursively
+  file:
+    path: /srv/calthorpe_media
+    owner: "{{users.web.uid}}"
+    group: "{{users.web.gid}}"
+    state: directory
+
+# This fails without this directory:
+#   fab -f footprint/installer localhost deploy
+- name:
+  file:
+    path: /srv/calthorpe/urbanfootprint/footprint/main/static
+    owner: "{{users.web.uid}}"
+    group: "{{users.web.gid}}"
+    state: directory
+
+- include: newrelic.yml

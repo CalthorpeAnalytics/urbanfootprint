@@ -1,0 +1,32 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+  This defines the global $theme variable for use inside your CSS.
+  The $theme variable holds the CSS class names for your theme.
+
+  You can then theme your app by using CSS like this:
+
+      $theme.button {
+        color: blue;
+        @include slices('white-button.png', $left: 3, $right: 3);
+      }
+
+  Any _theme.css file is prepended to all files inside its directory,
+  and any subdirectories that don't define their own _theme.css file.
+
+  This allows you to give different directories different values for
+  $theme if you wish.
+*/
+$theme: '.ace.footprint';
+@import "compass/css3";

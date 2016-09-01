@@ -1,0 +1,75 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+{% extends "footprint/admin/admin.html" %}
+
+{% block style %}
+    <style>
+     li.db-entity.hover {
+         background-color: rgba(200, 200, 200, .5);
+     }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <script type="text/javascript" >
+     /**
+      * Given a node with a class like 'db-entity-4' and a
+      * prefix like 'db-entity-', extract the
+      * '4' and return it. Specifically exclude any non-integer
+      * ids such as '' or 'None'.
+      */
+     function getIdFromNode(node, prefix) {
+         var classes = Array.prototype.slice.apply(node.classList);
+         var idClass = classes.find(function(className) {
+             return className.startsWith(prefix);
+         });
+         if (!idClass) {
+             return;
+         }
+         var id = parseInt(idClass.slice(prefix.length), 10);
+         if (!id || isNaN(id)) {
+             return;
+         }
+
+         return id;
+     }
+     $(function() {
+
+         // When the user hovers over any db entity, show hover effect on all other places
+         // on the page with the exact same db entity.
+         $('li.db-entity').hover(
+             function() {
+                 // mouseenter
+                 var dbId = getIdFromNode(this, 'db-entity-');
+                 if (dbId) {
+                     $('.db-entity-' + dbId).addClass('hover');
+                 }
+             },
+             function() {
+                 // mouseexit
+                 var dbId = getIdFromNode(this, 'db-entity-');
+                 if (dbId) {
+                     $('.db-entity-' + dbId).removeClass('hover');
+                 }
+             });
+         });
+    </script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" >
+                {#{trees|escapejs}#}
+                {% include "footprint/admin/config_entity_tree.html" with config_entities=trees only %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

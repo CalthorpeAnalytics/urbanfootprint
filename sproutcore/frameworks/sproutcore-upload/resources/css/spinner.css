@@ -1,0 +1,85 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+@import "compass/css3";
+
+$theme.sc-view.sc-spinner-view {
+    &.spin {
+        width: 42px;
+        height: 42px;
+    }
+
+    &.spin-1 {
+        @include slice("../images/spinner/spinner_1.png");
+    }
+
+    &.spin-2 {
+        @include slice("../images/spinner/spinner_2.png");
+    }
+
+    &.spin-3 {
+        @include slice("../images/spinner/spinner_3.png");
+    }
+
+    &.spin-4 {
+        @include slice("../images/spinner/spinner_4.png");
+    }
+
+    &.spin-5 {
+        @include slice("../images/spinner/spinner_5.png");
+    }
+
+    &.spin-6 {
+        @include slice("../images/spinner/spinner_6.png");
+    }
+
+    &.spin-7 {
+        @include slice("../images/spinner/spinner_7.png");
+    }
+
+    &.spin-8 {
+        @include slice("../images/spinner/spinner_8.png");
+    }
+
+    &.spin-9 {
+        @include slice("../images/spinner/spinner_9.png");
+    }
+
+    &.spin-10 {
+        @include slice("../images/spinner/spinner_10.png");
+    }
+
+    &.spin-11 {
+        @include slice("../images/spinner/spinner_11.png");
+    }
+
+    &.spin-12 {
+        @include slice("../images/spinner/spinner_12.png");
+    }
+}
+
+$theme.sc-view.sc-spinner-view-container {
+
+          &.spin-circle {
+              background-size: cover;
+              border-radius: 80px !important;
+          }
+
+          &.dark {
+              background-color: rgba(black, 0.6);
+          }
+
+          &.rounded {
+              @include border-radius(10px);
+          }
+      }

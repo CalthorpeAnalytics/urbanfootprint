@@ -1,0 +1,4 @@
+
+- src: https://github.com/UrbanFootprint/ansible-role-postgresql
+  version: v1.4.0-patch1
+  name: postgresql

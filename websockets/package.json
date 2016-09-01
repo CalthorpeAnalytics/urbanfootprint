@@ -1,0 +1,15 @@
+{   
+    "name" : "urbanfootprint_websockets",
+    "version" : "0.1.1",
+    "description" : "Calthorpe realtime server",
+    "author": "Ragi Burhum <ragi@burhumllc.com>",
+    "dependencies": {
+        "express": ">=2.5.9",
+        "hiredis" : "*",
+        "redis" : ">= 0.7.2",
+        "socket.io" : ">= 1.1.0"
+
+    },
+
+    "engine" : "node >= v0.8.6"
+}

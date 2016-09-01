@@ -1,0 +1,19 @@
+# USAGE:
+#   docker-compose build
+#   docker-compose run --rm app ./test.py
+
+database:
+  image: mdillon/postgis:9.3
+  ports:
+    - 5432
+redis:
+  image: redis
+  ports:
+    - 6379
+app:
+  build: .
+  volumes:
+   - .:/srv/calthorpe/urbanfootprint
+  links:
+    - database
+    - redis

@@ -1,0 +1,108 @@
+server {
+        listen 80;
+        server_name     localhost;
+
+	# Max upload size
+	client_max_body_size 2G;
+
+        access_log      /var/log/nginx/uf_dev.log;
+
+        error_log      /var/log/nginx/uf_errors_dev.log;
+
+        # websockets connection from celery (?)
+        location /websockets {
+                proxy_pass http://127.0.0.1:8081;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $host:$server_port;
+        }
+
+        # websockets connection from the browser (?)
+        location /socket.io {
+                proxy_pass          http://127.0.0.1:8081;
+                proxy_set_header    Host       $host:$server_port;
+
+                proxy_set_header    X-Real-IP  $remote_addr;
+
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_connect_timeout 180s;
+
+                proxy_read_timeout 180s;
+        }
+
+        # sproutcore server
+        location / {
+
+                proxy_pass          http://127.0.0.1:4020;
+                proxy_set_header    Host       $host:$server_port;
+
+                proxy_set_header    X-Real-IP  $remote_addr;
+
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_connect_timeout 180s;
+
+                proxy_read_timeout 180s;
+        }
+
+        # tilestache
+        location /tiles {
+            rewrite /tiles/(.*) /$1 break;
+            proxy_pass          http://127.0.0.1:8484;
+            proxy_redirect      off;
+            proxy_set_header    Host       $host:$server_port;
+            proxy_set_header    X-Real-IP  $remote_addr;
+
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_connect_timeout 180s;
+
+            proxy_read_timeout 180s;
+        }
+
+        # Static serving
+        location /downloads {
+            internal;
+            alias /srv/calthorpe_media/downloadable/;
+        }
+
+        # Django app
+        location /footprint {
+
+                proxy_pass          http://127.0.0.1:8000;
+                proxy_set_header    Host       $host:$server_port;
+
+                proxy_set_header    X-Real-IP  $remote_addr;
+
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_connect_timeout 180s;
+
+                proxy_read_timeout 180s;
+        }
+
+        # Django admin
+        location /admin {
+
+                proxy_pass          http://127.0.0.1:8000;
+                proxy_set_header    Host       $host:$server_port;
+
+                proxy_set_header    X-Real-IP  $remote_addr;
+
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_connect_timeout 180s;
+
+                proxy_read_timeout 180s;
+        }
+
+        # Static files for django admin
+        location ~ ^/static/(grappelli|admin).*$ {
+                proxy_pass          http://127.0.0.1:8000;
+                proxy_set_header    Host       $host:$server_port;
+
+                proxy_set_header    X-Real-IP  $remote_addr;
+
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_connect_timeout 180s;
+
+                proxy_read_timeout 180s;
+        }
+}

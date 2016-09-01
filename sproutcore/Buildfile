@@ -1,0 +1,57 @@
+#
+# UrbanFootprint v1.5
+# Copyright (C) 2016 Calthorpe Analytics
+#
+# This file is part of UrbanFootprint version 1.5
+#
+# UrbanFootprint is distributed under the terms of the GNU General
+# Public License version 3, as published by the Free Software Foundation. This
+# code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+# Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+
+# This is your Buildfile for your app, Footprint. This  tells SproutCore
+# how to build your app. These settings override those in your project
+# Buildfile, which contains default settings for all apps in your project.
+
+require 'rbconfig'
+
+def os
+  (
+    host_os = RbConfig::CONFIG['host_os']
+    case host_os
+    when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
+      :windows
+    when /darwin|mac os/
+      :macosx
+    when /linux/
+      :linux
+    when /solaris|bsd/
+      :unix
+    else
+      raise Error::WebDriverError, "unknown os: #{host_os.inspect}"
+    end
+  )
+end
+
+# ==========================================================================
+# Project:   UrbanFootprint
+# ==========================================================================
+
+# This is your Buildfile, which sets build settings for your project.
+# For example, this tells SproutCore's build tools that EVERYTHING
+# requires the SproutCore framework.
+config :all
+
+# To use os x sproutcore, see README-developers.md
+
+# In addition to this Buildfile, which gives settings for your entire project,
+# each of your apps has its own Buildfile with settings specific to that app.
+
+# When running the debug server we need to proxy cross domain requests to the server
+config :all,
+    :required => [:sproutcore],
+    :build_prefix => '/tmp/sc/build',
+    :staging_prefix => '/tmp/sc/staging',
+    :cache_prefix => '/tmp/sc/cache',
+    :debug_prefix => '/tmp/sc/debug'

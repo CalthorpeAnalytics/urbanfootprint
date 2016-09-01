@@ -1,0 +1,132 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+#dmui-relationship-box {
+  border-style: solid;
+  border-color: #DDD;
+}
+
+#dmui-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+$theme.sc-view {
+
+  &.dmui-box {
+    border-style: solid;
+    border-color: #AAA;
+  }
+
+  &.dmui-dashed-border {
+    &.button { /* Override the overly strict Ace style */
+      border-style: dashed;
+      border-color: #9D9D9D;
+    }
+
+    border-style: dashed;
+    border-color: #9D9D9D;
+  }
+
+  &.dmui-drop-zone {
+
+    &.ready-for-drop {
+      border-color: #888888;
+
+      .dmui-drop-zone-label {
+        color: #888;
+      }
+    }
+  }
+
+}
+
+$theme.sc-button-view {
+  &.sc-regular-size.dmui-text-button { /* Override Ace styles that assume an image background. */
+    .left, .right, .middle {
+      display: none;
+    }
+
+    .sc-regular-size.sc-button-label {
+      line-height: 28px;
+      padding-top: 0px;
+    }
+  }
+}
+
+
+$theme.sc-image-button-view {
+  &.dmui-remove-button {
+    @include slice('Close Icon.png');
+
+    &.active {
+      opacity: 0.65; /* or use a different image here. */
+    }
+  }
+}
+
+$theme.sc-label-view {
+
+  &.dmui-drop-zone-label {
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &.dmui-field-heading {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &.dmui-field-label {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  &.dmui-item-placeholder {
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &.dmui-layer-title {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &.dmui-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+#dmui-panel .small-label {
+  font-size: 10px;
+}
+
+#dmui-panel .center-text {
+  text-align: center;
+}
+
+#dmui-panel .right-text {
+  text-align: right;
+}

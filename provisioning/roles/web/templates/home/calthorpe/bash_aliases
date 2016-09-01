@@ -1,0 +1,5 @@
+###########################################################
+# WARNING: THIS FILE IS MANAGED BY ANSIBLE
+###########################################################
+
+alias uf='cd /srv/calthorpe/urbanfootprint && source /srv/calthorpe_env/bin/activate'

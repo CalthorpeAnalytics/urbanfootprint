@@ -1,0 +1,37 @@
+---
+
+- name: create directory to store downloaded resources
+  file:
+    path:  /opt/uf-provisioning/
+    state: directory
+    mode:  0755
+
+- name: download external resources
+  get_url:
+    url:  https://s3-us-west-2.amazonaws.com/uf-provisioning/{{item.src}}
+    dest: /opt/uf-provisioning/{{item.src}}
+    mode: 0640
+    sha256sum: "{{item.sha256sum}}"
+  with_items:
+    - { src: FileGDB_API_1_3-64.tar.gz, sha256sum: 1ce57249035eaa4aba9ac1ac9494adffe92ebac8bd3bedff345ac7760e604f0d }    
+    - { src: uf-gdal_1.10.1_amd64.deb,  sha256sum: e48ba95d1fa7414e0b68276d7b791a2251576bfed8f85a5c95b003cbc97f4f43 }
+    - { src: uf-geos_3.4.2_amd64.deb,   sha256sum: eb118a090f46d918c8b57ef75f3ab1f833009ce5e179922725b6abf0a75e0c8c }
+    - { src: uf-proj_4.8.0_amd64.deb,   sha256sum: 82a8b14de0c494d1e29fb8450cd320a3bae016c339ccb8924c09227086f8210a }
+
+# FileGDB is just a tarball so just untar and make the shared
+# objects available to compile against.
+- name: install FILEGDB API based on current ESRI defaults
+  shell: "tar -xzf FileGDB_API_1_3-64.tar.gz && mv FileGDB_API /usr/local/FileGDB_API && ln -sf /usr/local/FileGDB_API/lib/* /usr/local/lib/ && ldconfig"
+  args:
+    chdir: /opt/uf-provisioning
+    creates: /usr/local/FileGDB_API
+
+# Seems there's an Ansible bug for installing local .deb 
+# files using "with_items" so we just list the out here.
+# https://github.com/ansible/ansible/issues/7863
+- apt:
+    deb: /opt/uf-provisioning/uf-gdal_1.10.1_amd64.deb
+- apt:
+    deb: /opt/uf-provisioning/uf-geos_3.4.2_amd64.deb
+- apt:
+    deb: /opt/uf-provisioning/uf-proj_4.8.0_amd64.deb

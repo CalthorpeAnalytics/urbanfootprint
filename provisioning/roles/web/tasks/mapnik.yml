@@ -1,0 +1,17 @@
+---
+- name: Setup key for the PPA repo
+  apt_repository:
+    repo: ppa:mapnik/nightly-2.3
+    update_cache: yes
+
+- name: Install mapnik
+  apt:
+    name: "{{item}}"
+  with_items:
+    - libmapnik
+    - libmapnik-dev
+    - mapnik-utils
+    - python-mapnik
+    - mapnik-input-plugin-postgis
+    - mapnik-input-plugin-ogr
+    - mapnik-input-plugin-gdal

@@ -1,0 +1,49 @@
+---
+
+# Nginx PPA repo provides newer versions of stable
+# nginx packages than what is provided by Ubuntu repos.
+- name: Add nginx PPA repo
+  apt_repository:
+    repo: ppa:nginx/stable
+    update_cache: yes
+
+- name: Install latest "stable" nginx package
+  apt:
+    name: "nginx"
+    state: present
+
+- name: Create nginx ssl directory
+  file:
+    path: /etc/nginx/ssl
+    owner: root
+    group: root
+    mode:  0700
+    state: directory
+
+- name: Generate a unique dhparam file for improved SSL security
+  shell: "openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048"
+  args:
+    creates: /etc/nginx/ssl/dhparam.pem
+
+- name: Remove default nginx site
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+
+# TODO: USE AN 'environment' VARIABLE TO SYMLINK 'dev' or 'prod' APPROPRIATELY
+- name: Create calthorpe nginx site
+  file:
+    src:   /srv/calthorpe/urbanfootprint/conf/etc/nginx/sites-available/calthorpe.nginx.prod
+    dest:  /etc/nginx/sites-enabled/calthorpe.nginx
+    owner: "{{users.web.uid}}"
+    group: "{{users.web.gid}}"
+    state: link
+    force: true
+  notify:
+  - restart nginx
+
+- name: ensure nginx is running (and enable it at boot)
+  service:
+    name: nginx
+    state: started
+    enabled: yes

@@ -1,0 +1,4 @@
+config :all do |c|
+    c[:required] = [:'sproutcore']
+end
+

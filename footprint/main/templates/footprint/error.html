@@ -1,0 +1,26 @@
+<!--
+UrbanFootprint v1.5
+Copyright (C) 2016 Calthorpe Analytics
+
+This file is part of UrbanFootprint version 1.5
+
+UrbanFootprint is distributed under the terms of the GNU General
+Public License version 3, as published by the Free Software Foundation. This
+code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+
+{% extends "footprint/footprint_base.html" %}
+
+{% block maincontent %}
+<!-- Start Error Red -->
+<div class="error-page">
+	<img src="{{STATIC_URL}}img/icons/error/error-red-big.png" width="91" height="91" alt="icon" />
+    <h2 class="red">Oops !</h2>
+    <p>{{msg}}</p>
+    <!--<div class="padding30"><a href="/footprint" class="button">Go Back</a></div>-->
+</div>
+<!-- End Error Red -->
+
+{% endblock maincontent%}

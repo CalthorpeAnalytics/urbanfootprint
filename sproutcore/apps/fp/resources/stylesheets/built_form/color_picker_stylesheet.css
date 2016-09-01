@@ -1,0 +1,91 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+@import "compass/css3";
+@import "compass/css3/user-interface";
+
+
+$theme.sc-view.style-preview {
+  @include border-radius(10px);
+  @include box-shadow(rgba(0,0,0,0.5) 0px 0px 5px inset);
+}
+
+$theme.sc-view.color-sub-preview {
+  @include border-radius(10px);
+  @include box-shadow(rgba(0,0,0,0.5) 0px 1px 3px);
+  border: 2px solid #f0f0f0;
+  border-top-color: #ffffff;
+  border-bottom-color: #d1d1d1;
+
+  &.active {
+    @include box-shadow(none);
+    opacity: 0.8;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+$theme.sc-label-view.slider-title {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: right;
+}
+
+$theme.sc-label-view.layer-slider-title {
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: right;
+}
+
+$theme.sc-label-view.slider-value {
+  line-height: 24px;
+  text-align: right;
+}
+
+$theme.sc-text-field-view.color-text {
+  font-size: 16px;
+  input {
+    text-align: center;
+  }
+  &.has-alpha {
+      font-size: 12px;
+  }
+}
+
+$theme.sc-text-field-view.layer-color-text {
+  font-size: 14px;
+  input {
+    text-align: center;
+  }
+  &.has-alpha {
+      font-size: 12px;
+  }
+}
+
+$theme.footprint-editable-building-type-attributes-du-label{
+    font-size: 10px;
+}
+
+$theme.footprint-editable-building-type-attributes-emp-label{
+    font-size: 10px;
+}
+
+$theme.footprint-editable-building-type-attributes-use-pct-label{
+    font-size: 10px;
+}

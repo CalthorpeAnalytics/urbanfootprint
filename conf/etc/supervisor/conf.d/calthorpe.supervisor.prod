@@ -1,0 +1,78 @@
+[program:calthorpe_www]
+command=/srv/calthorpe_env/bin/newrelic-admin run-program /srv/calthorpe_env/bin/python /srv/calthorpe/urbanfootprint/manage.py run_gunicorn -w 12 -b 127.0.0.1:9001 -t 180 --max-requests 250
+directory=/srv/calthorpe/urbanfootprint
+user=www-data
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/supervisor/gunicorn.log
+stderr_logfile=/var/log/supervisor/gunicorn-error.log
+redirect_stderr=true
+environment=NEW_RELIC_CONFIG_FILE="/etc/newrelic/newrelic_webserver.ini",PATH="/srv/calthorpe_env/bin:/usr/bin",DJANGO_SETTINGS_MODULE="footprint.settings_prod"
+
+[program:celery_worker]
+environment=NEW_RELIC_CONFIG_FILE="/etc/newrelic/newrelic_celery.ini",PATH="/srv/calthorpe_env/bin:/usr/bin",DJANGO_SETTINGS_MODULE="footprint.settings_prod"
+command=/srv/calthorpe_env/bin/newrelic-admin run-program /srv/calthorpe_env/bin/celery -A footprint worker -l warn -n footprint_worker
+directory=/srv/calthorpe/urbanfootprint/
+user=www-data
+stdout_logfile=/var/log/supervisor/celery.log
+stderr_logfile=/var/log/supervisor/celery-error.log
+redirect_stderr=true
+autostart=true
+autorestart=true
+startsecs=10
+stopwaitsecs=600
+killasgroup=true
+
+[program:tilestache]
+environment=NEW_RELIC_CONFIG_FILE="/etc/newrelic/newrelic_tilestache.ini",PATH="/srv/calthorpe_env/bin:/usr/bin"
+command=/srv/calthorpe_env/bin/newrelic-admin run-program /srv/calthorpe_env/bin/gunicorn "TileStache.Goodies.PGConfigServer:WSGIServer('/srv/calthorpe/urbanfootprint/.env')" -b 127.0.0.1:8484 -w 12 --log-level=INFO --timeout 180
+directory=/srv/calthorpe_env/lib/python2.7/site-packages/
+user=www-data
+stdout_logfile=/var/log/supervisor/tilestache.log
+stderr_logfile=/var/log/supervisor/tilestache-error.log
+redirect_stderr=true
+autostart=true
+autorestart=true
+startsecs=10
+
+[program:celerybeat]
+environment=PATH="/srv/calthorpe_env/bin",DJANGO_SETTINGS_MODULE="footprint.settings_prod"
+command=/srv/calthorpe_env/bin/celery beat -A footprint --loglevel=info
+directory=/srv/calthorpe/urbanfootprint/
+user=calthorpe
+numprocs=1
+stdout_logfile=/var/log/supervisor/celery.log
+stderr_logfile=/var/log/supervisor/celery-error.log
+autostart=true
+autorestart=true
+startsecs=10
+
+[program:celery_flower]
+environment=PATH="/srv/calthorpe_env/bin",DJANGO_SETTINGS_MODULE="footprint.settings_prod"
+command=/srv/calthorpe_env/bin/celery flower --broker=redis://localhost:6379/0
+user=www-data
+numprocs=1
+stdout_logfile=/var/log/supervisor/celery.log
+stderr_logfile=/var/log/supervisor/celery-error.log
+autostart=true
+autorestart=true
+startsecs=10
+
+[program:node_socketio]
+environment=NEW_RELIC_CONFIG_FILE="/etc/newrelic/newrelic_socketio.ini",PATH="/srv/calthorpe_env/bin:/usr/bin"
+command=/usr/bin/nodejs /srv/calthorpe/urbanfootprint/websockets/app.js
+directory=/srv/calthorpe/urbanfootprint/websockets
+user=www-data
+stderr_logfile=/var/log/supervisor/socketio.log
+stdout_logfile=/var/log/supervisor/socketio-error.log
+redirect_stderr=true
+autostart=true
+autorestart=true
+startsecs=10
+stopwaitsecs=600
+
+[eventlistener:memmon]
+command=/srv/calthorpe_env/bin/memmon -c -p calthorpe_www=13GB
+events=TICK_60
+stdout_logfile=/var/log/supervisor/memmon.log
+stderr_logfile=/var/log/supervisor/memmon.log

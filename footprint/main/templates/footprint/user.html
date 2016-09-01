@@ -1,0 +1,159 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+{% extends "footprint/user_management.html" %}
+
+{% block assets %}
+<script>
+
+var CONFIG_ENTITY_CHOICES = JSON.parse('{{ config_entity_choices|escapejs }}');
+
+function updateGroupOptions(selectedRoleId) {
+
+    $('.config-entity-select').each( function(index, element) {
+
+        var thisId = $(this)[0].id,
+            originalConfigEntityName = $('#' + thisId + ' option:selected').text(),
+            roleConfigEntityChoices = CONFIG_ENTITY_CHOICES[selectedRoleId];
+
+        $(this).empty();
+
+        if (roleConfigEntityChoices) {
+            for (var i=0; i<roleConfigEntityChoices.length; i++) {
+
+                var configEntityChoice = roleConfigEntityChoices[i],
+                    option = $("<option></option>").attr("value", configEntityChoice[0]).text(configEntityChoice[1]);
+
+                if (originalConfigEntityName == configEntityChoice[1]) {
+                    option.attr('selected', true);
+                }
+
+                $(this).append(option);
+            }
+        }
+    });
+}
+
+$(document).ready(function(){
+
+    var initialRoleId = document.forms['user_profile_form']['role'].value;
+    updateGroupOptions(initialRoleId);
+
+    $("#id_role").change(function(e) {
+        updateGroupOptions(e.target.value);
+    });
+
+});
+
+</script>
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid page-content">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+
+            <form id="user_profile_form" method="POST">
+                <h3 class="user-profile-title">User Profile</h3>
+
+                {% csrf_token %}
+
+                {{ group_formset.management_form }}
+
+                {{ form.non_field_errors }}
+
+                {% if user_id %}
+                    <input type="hidden" name="user_id" value="{{ user_id }}">
+                {% endif %}
+
+                <div class="user-table">
+                    <table>
+                        <tr>
+                            <td><label for="{{ form.group.id_for_label }}">Role:</label></td>
+                            <td>{{ form.role }}
+                            {{ form.role.errors }}</td>
+                        </tr>
+
+                        {% for group_form in group_formset %}
+                            <tr>
+                                <td><label for="{{ group_form.config_entity.id_for_label }}">Project:</label></td>
+                                <td>{{ group_form.config_entity }}
+                                {{ group_form.config_entity.errors }}</td>
+                            </tr>
+                        {% endfor %}
+
+                        <tr>
+                            <td><label for="{{ form.email.id_for_label }}">Email:</label></td>
+                            <td>{{ form.email }}
+                            {{ form.email.errors }}</td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="{{ form.first_name.id_for_label }}">First Name:</label></td>
+                            <td>{{ form.first_name }}
+                            {{ form.first_name.errors }}</td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="{{ form.last_name.id_for_label }}">Last Name:</label></td>
+                            <td>{{ form.last_name }}
+                            {{ form.last_name.errors }}</td>
+                        </tr>
+
+                        {% if admin_user.id != user_id %}
+                            <tr>
+                                <td><label for="{{ form.is_active.id_for_label }}">Active:</label></td>
+                                <td>{{ form.is_active }}
+                                {{ form.is_active.errors }}</td>
+                            </tr>
+                        {% endif %}
+
+                        {% if not user_id %}
+                            <tr>
+                                <td><label for="{{ form.raw_password.id_for_label }}">Password:</label></td>
+                                <td><input type="password" name="raw_password" class="form-control">
+                                {{ form.raw_password.errors }}</td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="{{ form.confirm_password.id_for_label }}">Confirm Password:</label></td>
+                                <td><input type="password" name="confirm_password" class="form-control">
+                                {{ form.confirm_password.errors }}</td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td><label for="{{ form.raw_new_password.id_for_label }}">New Password:</label></td>
+                                <td><input type="password" name="raw_new_password" placeholder="(optional)" class="form-control">
+                                {{ form.raw_new_password.errors }}</td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="{{ form.confirm_new_password.id_for_label }}">Confirm New Password:</label></td>
+                                <td><input type="password" name="confirm_new_password" class="form-control">
+                                {{ form.confirm_new_password.errors }}</td>
+                            </tr>
+                        {% endif %}
+
+                    </table>
+
+                    <div class="row save-cancel-user">
+                        <a href="/footprint/users/" class="btn btn-danger" role="button">Cancel</a>
+                        <button class="btn btn-primary" type="submit" >Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

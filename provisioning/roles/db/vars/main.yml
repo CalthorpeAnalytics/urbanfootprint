@@ -1,0 +1,26 @@
+---
+# Postgres basic settings
+postgresql_version: 9.5
+postgresql_encoding: 'UTF-8'
+postgresql_locale: 'en_US.UTF-8'
+postgresql_admin_user: postgres
+
+postgresql_default_auth_method: "trust"
+
+postgresql_ext_install_contrib: yes
+
+postgresql_ext_install_postgis: yes
+postgresql_ext_postgis_version: "2.2" # be careful: check whether the postgresql/postgis versions work together
+
+postgresql_databases:
+  - name: urbanfootprint
+    gis: yes
+    dblink: yes
+
+postgresql_users:
+  - name: calthorpe
+    pass: calthorpe
+    encrypted: no  # denotes if the password is already encrypted
+  - name: tilestache
+    pass: tilestache
+    encrypted: no  # denotes if the password is already encrypted

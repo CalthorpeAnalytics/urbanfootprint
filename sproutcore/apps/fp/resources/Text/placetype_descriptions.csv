@@ -1,0 +1,69 @@
+pt__campus_university,"College/University areas tend to be internally walkable, though they can be located in either a walkable or auto-oriented context. Buildings can range from 1 to 20+ stories, depending on the design of the campus. Parking may be plentiful or restricted; housing may be provided on-site in large amounts, or students may commute from homes in other locations."
+
+pt__city_commercial,"The Central Business Districts of most cities contain areas exemplary of City Commercial, with many mid- and high-rise office towers and government buildings. Typical structures are between 4 and 40 stories tall, with ground-floor retail space, and offices on the floors above. Parking is usually structured, though many workers arrive by transit, foot, or bicycle."
+
+pt__city_mixed_use,"City Mixed Use areas are transit-oriented, walkable, and contain a variety of uses and building types. Typical buildings are between 3 and 30 stories tall, with ground-floor retail space, and offices and/or residences on the floors above. Parking is usually structured below or above ground."
+
+pt__city_residential,"An intensely residential-focused type, City Residential is dominated by mid- and high-rise residential towers, with some ground-floor retail space. Parking is usually structured, below or above ground. Residents are well served by transit, and can walk or bicycle for many of their transportation needs."
+
+pt__high_intensity_activity_center,"High Intensity Activity Centers include a mix of moderate to intense densities of retail, office, and residential uses. They are often anchored by major regional retail centers or office parks, and while they can contain a robust mix of uses, they are most often located within an auto-oriented and non-walkable street and land use pattern. Parking can be structured and/or provided on surface lots."
+
+pt__industrial_focus,"Industrial Focus areas are warehouses and industrial employment areas. Typical structures are 1-2 stories tall, surrounded by surface parking lots and truck loading bays."
+
+pt__industrialofficeres_mixed_high,"Industrial/Office/Residential Mixed High is characterized by a wide-ranging, intensely developed mix of uses located in close proximity and set in an automobile-oriented context. Building heights can range from 1 to 15+ stories, and uses can include but are not limited to industrial, warehouses, offices, residential, and retail."
+
+pt__industrialofficeres_mixed_low,"Industrial/Office/Residential Mixed Low is characterized by a wide-ranging, less-intensely developed mix of uses located in close proximity and set in an automobile-oriented context. Building heights can range from 1 to 3 stories, and uses can include but are not limited to industrial, warehouses, offices, residential, and retail."
+
+pt__institutional,"Institutional areas include a variety of land uses, including hospitals, government facilities, prisons and other institutional uses. The design and orientation of these areas varies based on the type of use and location."
+
+pt__large_lot_residential_area,"Large Lot Residential Areas contain detached single-family homes set on large lots, typically within an auto-oriented street pattern. Residents are likely to drive for most trips. Typical houses are 1-2 stories tall."
+
+pt__low_density_employment_park,"Low-Density Employment Parks include suburban low-intensity non-retail business areas. Typical uses include warehousing, offices, industrial, construction yards, transportation fleet services, and freight depots. Typical structures are 1-2 stories tall, surrounded by surface parking lots and truck loading bays."
+
+pt__low_intensity_retail_centered_nhood,"Typically set in an auto-oriented development pattern, the Low Intensity Retail-Centered Neighborhood includes a commercial strip that fronts on to an arterial, with single-family or other housing types located in adjacent and surrounding areas Typical buildings are between 1 and 2 stories, generally served by surface parking."
+
+pt__mid_intensity_activity_center,"Mid Intensity Activity Centers include a mix of moderate densities of retail, office, and residential uses. Despite their mix of uses, they are most often oriented within an auto-oriented and non-walkable street and land use pattern. Parking is typically provided on surface lots."
+
+pt__mixed_office_and_rd,"Representing intense suburban office/industrial/research areas, Mixed Office and R&D is characterized by a mix of employment buildings. Typical structures are 1-6 stories tall, surrounded by surface parking and some structured parking where appropriate."
+
+pt__neighborhood_low,"Containing a mix of single-family homes on small lots interspersed with some medium and larger lot homes, Neighborhood Low is a traditional neighborhood area designed to support walking and bicycling. Typical buildings are 2-3 stories tall, and located within walking distance of a mixed-use neighborhood center."
+
+pt__neighborhood_residential,"Neighborhood Residential areas are traditional neighborhoods characterized by single-family homes on small lots, interspersed with occasional retail spaces. Typical buildings are between 2 and 3 stories tall, with small yards and an active focus on the public realm, set in a context designed to support transit service, walking, and bicycling."
+
+pt__office_focus,"Representing the most intensely auto-oriented single-use office areas, Office Focus is characterized by mid- and high-rise office towers. Typical buildings are between 2 and 6 stories tall. Parking can be either structured or provided on surface lots. Workers tend to arrive by auto, though densities are high enough to support suburban transit service."
+
+pt__officeindustrial,"Office/Industrial areas are moderate-density suburban office and industrial areas. Typical structures are 1-5 stories tall, surrounded by surface parking lots and truck loading bays."
+
+pt__parks_open_space,"Parks & Open Space areas include larger trunk open spaces, community and regional parks, and other large, undeveloped areas."
+
+pt__residential_subdivision,"Residential Subdivision areas contain a mix of mostly single-family homes on medium and large lots, typically set within an auto-oriented street pattern. Residents are likely to drive for most trips. Typical houses are 1-2 stories tall."
+
+pt__retail_strip_mall_big_box,"Retail: Strip Mall / Big Box areas are typically characterized by single-story retail buildings and surface parking lots. The location and design of these areas generally favors automobile access over other transport modes."
+
+pt__rural_employment,"Rural Employment areas contain a variety of land uses, including working farms, ranches, agriculturally-supportive land uses, solar installations, oil fields, and gravel pits. While the rural context is automobile-oriented, and thus residents and employees are likely to drive for most trips, the low-intensity of land uses tends to keep traffic volumes low. Typical buildings are 1-2 stories tall."
+
+pt__rural_ranchettes,"Rural Ranchettes are homes on very large lots. They could include active agricultural uses, and are typically located at the edges of urban areas. Within this rural context, residents are likely to drive for most trips. Typical houses are 1-2 stories tall."
+
+pt__rural_residential,"Homes in a Rural Residential area tend to be set on lots with average sizes of 1-2 acres. Within this rural context, residents are likely to drive for most trips. Typical houses are 1-2 stories tall."
+
+pt__suburban_mixed_residential,"Suburban Mixed Residential areas contain a mix of apartments, condos, town homes, and single-family homes, generally set within an auto-oriented street pattern. Residents are likely to drive for most trips. Typical buildings are 1-3 stories."
+
+pt__suburban_multifamily,"Predominantly containing apartments, condos, and town homes, Suburban Multifamily represents developments that may have internal walking paths but are set in an automobile-oriented context. While densities can be high enough to support bus transit, residents are likely to drive for most trips. Typical buildings are 2-5 stories tall, surrounded by surface parking lots."
+
+pt__town_commercial,"Equivalent to the center of a traditional town, or a more employment-focused transit-oriented development, Town Commercial contains a mix of buildings set in a walkable context. Typical structures are between 2 and 8 stories tall, with ground-floor retail, and offices, services, and some residential uses on upper floors."
+
+pt__town_mixed_use,"Town Mixed Use areas are walkable mixed-use neighborhoods, such as the mixed-use core of a small city or transit oriented development, with a variety of uses and building types. Typical buildings are between 3 and 8 stories tall, with ground-floor retail space, and offices and/or residences on the floors above. Parking is usually structured, above or below ground."
+
+pt__town_residential,"Containing a mix of townhomes, condominiums and apartments (but generally very few, if any, single family homes), Town Residential is characterized by dense residential neighborhoods interspersed with occasional retail areas. Typical buildings are 2-5 stories tall, with limited off-street parking. Residents tend to use transit, walking and bicycling for many of their transportation needs."
+
+pt__urban_commercial,"Urban Commercial areas are typically found within major Central Business Districts. They are exemplified by mid- and high-rise office towers. Typical buildings are between 20 and 40+ stories tall, with ground-floor retail space, and offices on the floors above. Parking is usually structured below or above ground; workers tend to arrive by transit, foot or bicycle in large numbers."
+
+pt__urban_mixed_use,"Urban Mixed Use districts are exemplified by a variety of intense uses and building types. Typical buildings are between 3 and 40+ stories tall, with ground-floor retail space, and offices and/or residences on the floors above. Parking is usually structured below or above ground. Workers, residents, and visitors are well served by transit, and can walk or bicycle for many of their transportation needs."
+
+pt__urban_residential,"The most intense residential-focused type, Urban Residential areas are typically found within or adjacent to major downtowns. They include high- and mid-rise residential towers, with some ground-floor retail space, and parking usually structured below or above ground. Residents are well served by transit, and can walk or bicycle for many of their transportation needs."
+
+pt__village_commercial,"Equivalent to the center of a small town or district, or a lower-intensity employment-focused transit-oriented development, Village Commercial contains a mix of buildings set in a walkable context. Typical structures are between 2 and 6 stories tall, with some ground-floor retail, and offices, services, and some residential on upper floors."
+
+pt__village_mixed_use,"Village Mixed Use areas are the walkable mixed-use cores of traditional neighborhoods. They are often oriented around a transit station. Typical buildings are between 2 and 6 stories tall, with ground-floor retail space, and offices and/or residences on the floors above. Parking is typically structured, tucked under, or placed behind buildings so that it does not detract from the pedestrian environment."
+
+pt__village_residential,"Containing a mix of single-family homes on small lots and townhomes, Village Residential is characterized by traditional neighborhoods, designed to be supportive of transit service, walking and bicycling. Typical buildings are 2-3 stories tall, with small yards and an active focus on the public realm."

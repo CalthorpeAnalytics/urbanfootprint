@@ -1,0 +1,307 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+
+/*
+.sc-button {
+    @include box-shadow(inset 0 1px 0 rgba(255,255,255,0.5));
+}
+*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+
+
+/* Fix for Chrome bug on accelerated panes */
+.sc-pane {
+  -webkit-transform: none;
+}
+
+$theme.sc-text-field-view {
+  font-size: 14px;
+  .hint {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .padding {
+    left: 14px;
+  }
+}
+
+$theme.toolbar {
+  .checkbox {
+    .button {
+      left: 13px;
+      top: 50%;
+      margin-top: -8px;
+    }
+
+    .label {
+      left: 47px;
+      line-height: 36px;
+    }
+  }
+}
+
+.sc-list-insertion-point {
+    overflow: visible;
+    background-color: #C9D3DF;
+    z-index: 1000;
+}
+
+.sc-list-insertion-point > .anchor {
+    position: absolute ;
+    width: 8px;
+    top: -3px;
+    left: -4px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #C9D3DF;
+}
+
+.loading-image img {
+}
+
+.client-logo-image img {
+}
+
+$theme.overlay-view {
+    background-color: #D1DAE4;
+    opacity: 0.6;
+}
+
+$theme.overlay-view-low-transparency {
+    background-color: #D1DAE4;
+    opacity: 0.9;
+}
+/* Divider view and line. */
+$theme.sc-split-divider-view {
+
+  & > .line {
+    background-color: #B0C4DE;
+  }
+  &.sc-layout-vertical > .line {
+    height: 5px;
+    top: 50%;
+    margin-top: -3px;
+  }
+  &.sc-layout-horizontal > .line {
+    width: 5px;
+    left: 50%;
+    margin-left: -3px;
+  }
+}
+$theme.clear-icon {
+    height: 24px;
+    width: 24px;
+    @include slice('../images/clear.png');
+}
+$theme.add-value-icon {
+    height: 10px;
+    width: 20px;
+    @include slice('../images/angle_up10.png');
+
+    &.active {
+      @include slice('../images/angle_up10_select.png');
+    }
+}
+$theme.subtract-value-icon {
+    height: 10px;
+    width: 20px;
+    @include slice('../images/angle_down10.png');
+
+    &.active {
+      @include slice('../images/angle_down10_select.png');
+    }
+}
+
+$theme.close-panel-icon {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    @include slice('../images/close_icon.png');
+
+    &:hover {
+        background-color: rgba(0,0,0,.1);
+    }
+    &.active {
+        background-color: rgba(0,0,0,.2);
+    }
+}
+
+$theme.hamburger-icon {
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+    @include slice('../images/hamburger24.png');
+
+    &:hover {
+        background-color: rgba(0,0,0,.1);
+    }
+
+    &.active {
+        background-color: rgba(0,0,0,.2);
+    }
+}
+
+/* The header label */
+$theme.footprint-user-label {
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+$theme.footprint-user-menu {
+    @include slice('../images/profile24.png');
+}
+
+$theme.remove-icon {
+    height: 11px;
+    width: 10px;
+    opacity: 0.7;
+    @include slice('../images/remove_icon10.png');
+}
+
+$theme.plus-icon {
+    height: 11px;
+    width: 12px;
+    opacity: 0.7;
+    @include slice('../images/plus_icon12.png');
+}
+
+$theme.delete-icon {
+    height: 24px;
+    width: 24px;
+    @include slice('../images/delete.png');
+    &.sc-small-size {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+$theme.new-record {
+    font-style: italic;
+    color: green;
+}
+$theme.dirty-record {
+    font-style:italic;
+    color: green;
+}
+
+$theme.source-list.collection {
+    .source-list.sc-collection-item {
+        &.new-record {
+            font-style: italic;
+            color: green;
+            &.sel {
+                font-style: italic;
+                color: greenyellow;
+            }
+        }
+        &.dirty-record {
+            font-style: italic;
+            color: green;
+            &.sel {
+                font-style: italic;
+                color: greenyellow;
+            }
+        }
+        /*
+        This is only used for unconfigured DbEntities
+        */
+        &.provisional-record {
+            font-style: italic;
+            color: green;
+            &.sel {
+                font-style: italic;
+                color: greenyellow;
+            }
+        }
+    }
+}
+
+
+$theme.error-progress-overlay-view {
+
+    .content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        /* width set in rendering */
+        @include slice("../images/error_progress_view_content.png", $left: 1, $right: 1);
+    }
+}
+
+$theme.footprint-map-overlay-section {
+  opacity: 0.90;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.1);
+  $theme.sc-label-view.footprint-header {
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+  }
+}
+
+/* The overlay message that floats over the map */
+$theme.footprint-map-overlay {
+    font-size: 32px;
+    background-color: rgba(127, 127, 127, .5);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+$theme.footprint-map-overlay-editor {
+    /*SC.ScrollView is white by default but we want original background color
+    to show through (ie Entitlement Editor View) */
+    background-color: inherit;
+ }
+
+$theme.footprint.footprint-top-overlay-section {
+  background-color: rgba(0, 20, 50, 0.35);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+$theme.footprint-out-of-sync-label-view {
+  color: maroon;
+}
+
+/*
+
+$theme.footprint.sctable-column-header-view .col-name {
+    font-size: 11px;
+}
+$theme.footprint.sctable-row-view {
+    $theme.text {
+        font-size: 11px;
+    }
+    &.sel {
+        background:#E9A7FF;
+    }
+}
+.feature-highlight {
+    &.on {
+        stroke:#E9A7FF;
+        stroke-width:5;
+    }
+    &.off {
+        visibility: hidden;
+    }
+}
+*/

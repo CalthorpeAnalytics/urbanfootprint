@@ -1,0 +1,22 @@
+---
+
+- name: create directory for newrelic config files
+  file:
+    path:  /etc/newrelic
+    state: directory
+    owner: "root"
+    group: "root"
+    mode:  0755
+
+- name: create newrelic config files for each service
+  template:
+    src:   etc/newrelic/{{item}}.j2
+    dest:  /etc/newrelic/{{item}}
+    owner: "root"
+    group: "root"
+    mode:  0644
+  with_items:
+    - newrelic_celery.ini
+    - newrelic_socketio.ini
+    - newrelic_tilestache.ini
+    - newrelic_webserver.ini

@@ -1,0 +1,891 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+    <!--modified from https://groups.google.com/forum/#!msg/d3-js/gzSkw5skLXo/SKjMLwEeIsUJ-->
+    //d3.select(self.frameElement).style("height", "1000px");
+    //d3.select(self.frameElement).style("width", "1000px");
+    <title>barStack</title>
+    <style>
+        .axis text {
+            font: 10px sans-serif;
+        }
+        .axis path, .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript" >
+
+    function barStack(d) {
+        var l = d[0].length
+        while (l--) {
+            var posBase = 0, negBase = 0;
+            d.forEach(function(d) {
+                d=d[l]
+                d.size = Math.abs(d.y)
+                if (d.y<0)  {
+                    d.y0 = negBase
+                    negBase-=d.size
+                } else
+                {
+                    d.y0 = posBase = posBase + d.size
+                }
+            })
+        }
+        d.extent= d3.extent(d3.merge(d3.merge(d.map(function(e) { return e.map(function(f) { return [f.y0,f.y0-f.size]})}))))
+        return d
+    }
+    function barGroup(d) {
+        var l = d[0].length
+        while (l--) {
+
+            d.forEach(function(d) {
+                d=d[l]
+                d.size = Math.abs(d.y);
+                d.y0 = Math.max(0, d.y);
+            })
+        }
+        d.extent = d3.extent(d3.merge(d3.merge(d.map(function(e) { return e.map(function(f) { return [f.y0,f.y0-f.size]})}))))
+
+        return d;
+    }
+
+
+    /* Here is an example */
+
+    var data = [[{x:1,y:3},{x:2,y:6},{x:3,y:-3}],
+        [{x:1,y:4},{x:2,y:-2},{x:3,y:-9}],
+        [{x:1,y:10},{x:2,y:-3},{x:3,y:4}]]
+
+
+    var  h=500
+            ,w=500
+            ,margin=10
+            ,color = d3.scale.category10()
+
+            ,x = d3.scale.ordinal()
+                    .domain(d3.range(data.length))
+                    .rangeRoundBands([0,w], .1)
+
+    //for grouped
+    xGroup = d3.scale.ordinal()
+            .domain(d3.range(data.length))
+            .rangeBands([0, x.rangeBand()]);
+
+    y = d3.scale.linear()
+            .domain([returnDomain().min, returnDomain().max])
+            .range([h, 0])
+            .nice()
+
+            ,xAxis = d3.svg.axis().scale(x).orient("bottom").tickSize(6, 0)
+            ,yAxis = d3.svg.axis().scale(y).orient("left")
+
+
+
+
+    svg = d3.select("body")
+            .append("svg")
+            .attr("height",h)
+            .attr("width",w)
+
+    svg.selectAll(".series").data(data)
+            .enter().append("g").classed("series",true).style("fill", function(d,i) { return color(i)})
+            .selectAll("rect").data(Object)
+            .enter().append("rect")
+
+    svg.append("g").attr("class","axis x")
+    svg.append("g").attr("class","axis y")
+
+
+    var layout = 0,dur=0
+    redraw()
+    dur = 1500
+
+
+    function redraw() {
+        if (layout=!layout) {
+            barStack(data)
+            y.domain(data.extent)
+            /* Readjust the range to width and height */
+            x.rangeRoundBands([margin,w-margin], .1)
+            y.range([h-margin,0+margin])
+
+            /* Reposition and redraw axis */
+            svg.select(".x.axis")
+                    .transition().duration(dur)
+                    .attr("transform","translate (0 "+y(0)+")")
+                    .call(xAxis.orient("bottom"))
+            svg.select(".y.axis")
+                    .transition().duration(dur)
+                    .attr("transform","translate ("+x(0)+" 0)")
+                    .call(yAxis.orient("left"))
+                    /* Reposition the elements */
+            /*
+                    svg.selectAll(".series rect")
+                            .transition().duration(dur)
+                            .attr("x",function(d,i) { return x(d.x)})
+                            .attr("y",function(d) { return y(d.y0)})
+                            .attr("height",function(d) { return y(0)-y(d.size)})
+                            .attr("width",x.rangeBand())
+        */
+            svg.selectAll(".series")
+                    .attr("transform", function (d, i) { return  "translate(0)" ; });
+
+            svg.selectAll("rect")
+                    .transition().duration(dur)
+                    .attr("x",function(d,i) { return x(i); })
+                    .attr("y",function(d,i) { return y(d.y0) ;})
+                    .attr("width", function(d,i) { return x.rangeBand(); })
+                    .attr("height",function(d,i) { return (y(0)-y(d.size)); })
+
+        } else {
+
+            barGroup(data),
+                    svg.selectAll(".series")
+                            .attr("transform", function (d, i) { return "translate(" + xGroup(i) + ")"  ; })
+
+            //rects
+            svg.selectAll("rect")
+
+                    .transition().duration(dur)
+                    //.attr("x", function(d, i, j) {
+                       // return x(d.x) + x.rangeBand() / xGroup.length * j; })
+                    .attr("x",function(d,i) { return x(i) ; })
+                    .attr("y",function(d,i) { return y(d.y0);})
+                    .attr("width", function(d,i) { return xGroup.rangeBand(); })
+                    .attr("height",function(d,i) { return (y(0)-y(d.size)); })
+        }
+
+        d3.select("body").append("button")
+                .attr("type","button")
+                .text("Change Layout")
+                .style("position","absolute")
+                .style("left","5px")
+                .style("top","5px")
+                .on("click",redraw)
+    }
+    function returnDomain () {
+
+        var domain = {};
+
+        domain.min = Math.min(d3.min(d3.extent(data)),0);
+        domain.max = Math.max(d3.max(d3.extent(data)),0);
+
+        return domain;
+    }
+
+
+</script>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <title>Stacked and Grouped Bar with Animation</title>
+    <!--modified from http://bl.ocks.org/3943967-->
+<!--
+    <style>
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: auto;
+            position: relative;
+            width: 960px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: -2px;
+            margin: .3em 0 .1em 40px;
+        }
+        h2 {
+            text-align: right;
+            margin: 0 30px 0 0;
+        }
+        text {
+            font: 20px sans-serif;
+        }
+
+        .yaxis path,
+        .yaxis line {
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+        .xaxis path,
+        .xaxis line {
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+
+        form {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        legend {
+            background-color: #fff;
+            width: 300px;
+            height: 60px;
+            border: 1px solid #bbb;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Stacked to Grouped Bar Chart</h1>
+
+<form>
+</form>
+<div>
+    <h2>Legend</h2> <br>
+</div>
+<div id="option">
+    <input name="updateButton"
+           type="button"
+           value="Update"
+           onclick="updateData()" />
+</div>
+<script src="http://d3js.org/d3.v3.js"></script>
+
+<script>
+d3.select(self.frameElement).style("height", "1000px");
+d3.select(self.frameElement).style("width", "1000px");
+
+var sampledata = [
+    [
+        { "markervalue": 10,"employmenttype":"retail", "scenarioname":"Base", "x": 0, "y": 9},
+        { "markervalue": 10,"employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 29},
+        { "markervalue": 10,"employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 30},
+        { "markervalue": 10,"employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 35},
+        { "markervalue": 10,"employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 10}
+    ],
+    [
+        { "markervalue": 10,"employmenttype": "retail","dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": 25},
+        { "markervalue": 10,"employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 30},
+        { "markervalue": 10,"employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 40},
+        { "markervalue": 10,"employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 12},
+        { "markervalue": 10,"employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 12}
+    ],
+    [
+        { "markervalue": 10,"employmenttype": "retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": 30},
+        { "markervalue": 10,"employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 12},
+        { "markervalue": 10,"employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 28},
+        { "markervalue": 10,"employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 16},
+        { "markervalue": 10,"employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 16}
+    ],
+    [
+        { "markervalue": 10,"employmenttype": "retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": 25},
+        { "markervalue": 10,"employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 39},
+        { "markervalue": 10,"employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 30},
+        { "markervalue": 10,"employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 25},
+        { "markervalue": 10,"employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 16}
+    ],
+    [
+        { "markervalue": 10,"employmenttype": "retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": 6},
+        { "markervalue": 10,"employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 29},
+        { "markervalue": 10,"employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 30},
+        { "markervalue": 10,"employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 30},
+        { "markervalue": 10,"employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 40}
+    ]
+];
+
+var scenarionames = sampledata[1].map(function(d){return d.scenarioname}),//returns array of scenarioname values
+        numberofscenarios = scenarionames.length, //number of scenarios
+        dwellingunittypelabels = sampledata[0].map(function(d){return d.dwellingunittype}),//returns array of dwellingunittype values
+        employmentypelabels = sampledata[0].map(function(d){return d.employmenttype});//returns array of employmenttype values
+
+
+var     stack = d3.layout.stack(),
+        layers = stack(sampledata),//creates stack layers from data
+        yGroupMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y; }); }),//calculates max for grouped graph
+        yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });//calculates max for stacked graph
+
+
+//sets margins
+var margin = {top: 40, right: 10, bottom: 20, left: 40},
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+//sets x-scale to draw bars
+var x = d3.scale.ordinal()
+        .domain(d3.range(numberofscenarios))
+        .rangeRoundBands([30, width],.08);//sets bands for labels and ratio of groups to space between
+
+//sets x-scale for labeled axis
+var xlabels = d3.scale.ordinal()
+        .domain(scenarionames)
+        .rangeRoundBands([0, width], .08);
+
+//sets y-scale for stacked graph
+var y = d3.scale.linear()
+        .domain([0, yStackMax])
+        .range([height, 0]);
+
+//sets y-scale for grouped graph
+var yGroupedScale = d3.scale.linear()
+        .domain([0, yGroupMax])
+        .range([height, 0]);
+
+var yPercentScale = d3.scale.linear()
+        .domain([0,1])
+        .range([height, 0]);
+
+//sets color scale
+var color = d3.scale.linear()
+        .domain([0, layers.length - 1])
+        .range([ "grey","yellow"]);
+
+//sets x-Axis
+var xAxis = d3.svg.axis()
+        .scale(xlabels)
+        .tickSize(0)
+        .tickPadding(6)
+        .orient("bottom");
+
+//sets y-axis for stacked graph
+/*
+var yAxisPercent = d3.svg.axis()
+.scale(yPercentScale)
+.tickSize(5)
+.tickPadding(0)
+.orient("left")
+.tickFormat(d3.format("%"));
+*/
+
+yStackedAxis = d3.svg.axis()
+        .scale(y)
+        .tickSize(5)
+        .tickPadding(0)
+        .orient("left");
+
+
+//sets y-axis for grouped graph
+var yGroupedAxis = d3.svg.axis()
+        .scale(yGroupedScale)
+        .tickSize(5)
+        .tickPadding(0)
+        .orient("left");
+
+
+
+//draws box to draw graph in
+var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+//assigns color to layers
+var layer = svg.selectAll(".layer")
+        .data(layers)
+        .enter().append("g")
+        .attr("class", ".layer")
+        .style("fill", function(d, i) { return color(i); });
+// .style("stroke","white")
+// .style("stroke-width", "3");
+
+//draws rectangles
+var rect = layer.selectAll("rect")
+        .data(function(d) { return d; })
+        .enter().append("rect")
+        .attr("x", function(d) { return x(d.x); })
+        .attr("y", height)
+        .attr("width", x.rangeBand())
+        .attr("height", 0);
+
+//adds label on hover
+// know I should add tooltip a-la https://gist.github.com/biovisualize/1016860
+rect.append("title")
+        .attr("x", function(d) { return x(d.x); })
+        .attr("y", height)
+        .text(function(d) {return d.y;});
+
+//opening transition, draws stacked bars up from ground
+rect.transition()
+        .delay(function(d, i) { return i * 10; })//staggers drawing
+        .attr("y", function(d) { return y(d.y0 + d.y); })
+        .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); });
+
+//draw x-Axis
+svg.append("g")
+        .attr("class", "xaxis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+//draw Stacked y-Axis
+svg.append("g")
+        .attr("class", "yaxis")
+        .attr("transform", "translate("+ margin.left +",0)")
+        .call(yStackedAxis)
+
+    //re-draw Grouped y-Axis
+        .transition()
+        .delay(2000).duration(1000)
+        .call(yGroupedAxis);
+//adding control total guide
+var controlMarker = layer.selectAll("line")
+        .data(function(d) {return d;})
+        .enter().append("line")
+        .attr("x1", function(d) { return x(d.x); })
+        .attr("x2", function(d) { return x(d.x) + x.rangeBand(); })
+        .attr("y1", 100)
+    //.attr("y1", 100)
+        .attr("y2", 100)
+        .style("stroke","black")
+        .style("stroke-width", "3");
+
+
+//sets legend margins
+var legendmargin = {top: 40, right: 10, bottom: 20, left: 40},
+        legendwidth = 960 -30,
+        legendheight = 200 - legendmargin.top - legendmargin.bottom;
+
+//draws legend box
+var legendsvg = d3.select("div").append("svg")
+        .attr("width", legendwidth)
+        .attr("height", legendheight)
+        .append("g");
+
+//sets data for legends
+var legend = legendsvg.selectAll("legend")
+        .data(employmentypelabels.slice()) //copies scenarionames array in reverse order
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d,i) { return "translate(0," + i * 20 + ")"; });//20 pixel between boxes 'i' is iterator
+
+//draws colored boxes
+legend.append("rect")//ads rectangles to legend svg.
+        .data(layers)
+        .attr("x", legendwidth - 20) //18 pixel boxes (2 pixels between)
+        .attr("width", 20)
+        .attr("height", 20)
+        .style("fill", function(d, i) { return color(i); })//fills with corresponding color
+        .style("stroke","white")
+        .style("stroke-width", "3");
+
+//adds legend labels
+//legend.append("text")
+text = legend.append("text")
+        .attr("x", legendwidth - 24) // adds text 24 pixels away from end of svg
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "end") //right adjust
+        .text(function(d) { return d; }); //fills text with name from scenarionames array
+
+var button = d3.selectAll("form")
+        .append("label")
+        .append("input")
+        .attr("type", "radio")
+        .attr("name","mode")
+        .attr("value", "grouped")
+        .text("grouped");
+
+var button2 = d3.selectAll("form").append("label")
+        .append("input")
+        .attr("type", "radio")
+        .attr("name","mode")
+        .attr("value", "stacked")
+        .text("stacked");
+//button response
+d3.selectAll("input").on("change", change);//input changes on change event
+
+var timeout = setTimeout(function() {
+    d3.select("input[value=\"stacked\"]").property("checked", true).each(change);
+}, 2000);
+
+function change() {
+    clearTimeout(timeout);
+    if (this.value === "grouped") transitionGrouped();//if grouped is checked transition to grouped
+    else transitionStacked();//otherwise
+}
+function transitionGrouped() {
+    y.domain([0, yGroupMax]);//sets to grouped domain (rather than stacked)
+
+    rect.transition()//bartransition
+            .duration(500)
+            .delay(function(d, i) { return i * 10; })
+            .attr("x", function(d, i, j) {
+                return x(d.x) + x.rangeBand() / layers.length * j; })
+            .attr("width", x.rangeBand() / layers.length)
+            .transition()
+            .attr("y", function(d) { return y(d.y); })
+            .attr("height", function(d) { return height - y(d.y); })
+            .style("stroke","white")
+            .style("stroke-width", "3");
+
+    svg.select(".yaxis")//y-axis transition
+            .transition()
+            .duration(500)
+            .call(yGroupedAxis);
+}
+function transitionStacked() {
+    y.domain([0, yStackMax]);
+
+    rect.transition()
+            .duration(500)
+            .delay(function(d, i) { return i * 10; })
+            .attr("y", function(d) { return y(d.y0 + d.y); })
+            .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
+            .transition()
+            .attr("x", function(d) { return x(d.x); })
+            .attr("width", x.rangeBand());
+
+    svg.select(".yaxis")
+            .transition()
+            .duration(500)
+            .call(yStackedAxis);
+}
+function updateData() {
+
+    d3.json("{{ STATIC_URL }}csv/sampledata1.json",
+            function(sampledata1){
+                scenarionames = sampledata1[1].map(function(d){return d.scenarioname;});//returns array of scenarioname values
+                numberofscenarios = scenarionames.length; //number of scenarios
+
+                stack = d3.layout.stack();
+                layers = stack(sampledata1);//creates stack layers from data
+                yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; });
+                });//calculates max for stacked graph
+
+                console.log(scenarionames);
+
+                x = d3.scale.ordinal()
+                        .domain(d3.range(numberofscenarios))
+                        .rangeRoundBands([30, width],.08);//sets bands for labels and ratio of groups to space between
+
+                xlabels = d3.scale.ordinal()
+                        .domain(scenarionames)
+                        .rangeRoundBands([0, width], .08);
+
+                xAxis = d3.svg.axis()
+                        .scale(xlabels)
+                        .tickSize(0)
+                        .tickPadding(6)
+                        .orient("bottom");
+
+                svg.select(".xaxis")
+                        .transition()
+                        .call(xAxis);
+
+                layer = svg.selectAll(".layer")
+                        .data(layers)
+                        .enter().append("g")
+                        .style("fill", function(d, i) { return color(i); });
+
+                rect = layer.selectAll("rect")
+                        .data(function(d) { return d; })
+                        .enter().append("rect")
+                        .attr("x", function(d) { return x(d.x); })
+                        .attr("y", height)
+                        .attr("width", x.rangeBand());
+
+//adds label on hover
+// know I should add tooltip a-la https://gist.github.com/biovisualize/1016860
+                y.domain([0, yStackMax]);
+
+                rect.transition()
+                        .attr("width", x.rangeBand())
+                        .attr("x", function(d) { return x(d.x); })
+                        .attr("y",function(d) { return y(d.y0 + d.y); })
+                        .attr("height",function(d) { return y(d.y0) - y(d.y0 + d.y); });
+
+                rect.append("title")
+                        .attr("x", function(d) { return x(d.x); })
+                        .attr("y", height)
+                        .text(function(d) {return d.y;});
+
+
+                svg.select(".yaxis")
+                        .transition()
+                        .duration(500)
+                        .call(yStackedAxis);
+
+
+                controlMarker = layer.selectAll("line")
+                        .data(function(d) {return d;})
+                        .enter().append("line")
+                        .attr("x1", function(d) { return x(d.x); })
+                        .attr("x2", function(d) { return x(d.x) + x.rangeBand(); })
+                        .attr("y1", 100)
+                    //.attr("y1", 100)
+                        .attr("y2", 100)
+                        .style("stroke","black")
+                        .style("stroke-width", "3");
+
+            });
+}
+
+</script>
+</body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+    <title>barStack</title>
+    <style>
+        .axis text {
+            font: 10px sans-serif;
+        }
+        .axis path, .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript" >
+
+function barStack(d) {
+    var l = d[0].length
+    while (l--) {
+        var posBase = 0, negBase = 0;
+        d.forEach(function(d) {
+            d=d[l]
+            d.size = Math.abs(d.y)
+            if (d.y<0)  {
+                d.y0 = negBase
+                negBase-=d.size
+            } else
+            {
+                d.y0 = posBase = posBase + d.size
+            }
+        })
+    }
+    d.extent= d3.extent(d3.merge(d3.merge(d.map(function(e) { return e.map(function(f) { return [f.y0,f.y0-f.size]})}))))
+    return d
+}
+
+
+/* Here is an example */
+var data = [
+    [
+        { "employmenttype": "retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": -15},
+        { "employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 30},
+        { "employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 30},
+        { "employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": -10},
+        { "employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 30}
+    ],
+    [
+        { "employmenttype": "retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": 29},
+        { "employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 29},
+        { "employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 29},
+        { "employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 29},
+        { "employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 29}
+    ],
+    [
+        { "employmenttype": "retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": -10},
+        { "employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 29},
+        { "employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 29},
+        { "employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 29},
+        { "employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 29}
+    ],
+    [
+        { "employmenttype": "retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y":9 },
+        { "employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 9},
+        { "employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 9},
+        { "employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 9},
+        { "employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 9}
+    ]
+]
+/*
+var data = [[{x:1,y:3},{x:2,y:6},{x:3,y:-3}],
+[{x:1,y:4},{x:2,y:-2},{x:3,y:-9}],
+[{x:1,y:10},{x:2,y:-3},{x:3,y:4}]]
+
+{ "markervalue": 10,"employmenttype":"retail", "dwellingunittype": "single-family","scenarioname":"Base", "x": 0, "y": -5},
+{ "markervalue": 10,"employmenttype": "office","dwellingunittype": "attached single-family","scenarioname":"Scenario 1", "x": 1, "y": 29},
+{ "markervalue": 10,"employmenttype": "industrial","dwellingunittype": "detached single-family","scenarioname":"Scenario 2","x": 2, "y": 30},
+{ "markervalue": 10,"employmenttype": "public","dwellingunittype": "multifamily","scenarioname":"Scenario 3","x": 3, "y": 35},
+{ "markervalue": 10,"employmenttype": "civic","dwellingunittype": "yurt","scenarioname":"Scenario 4","x": 4, "y": 10}
+],
+
+*/
+
+var scenarionames = data[1].map(function(d){return d.scenarioname}),//returns array of scenarioname values
+        numberofscenarios = scenarionames.length, //number of scenarios
+        dwellingunittypelabels = data[0].map(function(d){return d.dwellingunittype}),//returns array of dwellingunittype values
+        employmentypelabels = data[0].map(function(d){return d.employmenttype});//returns array of employmenttype values
+
+
+var     stack = d3.layout.stack(),
+        layers = stack(data),//creates stack layers from data
+        yGroupMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y; }); }),//calculates max for grouped graph
+        yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });//calculates max for stacked graph
+
+
+var margin = {top: 40, right: 10, bottom: 20, left: 40},
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+color = d3.scale.category10()
+
+        ,x = d3.scale.ordinal()
+        .domain(d3.range(numberofscenarios))
+        .rangeRoundBands([30, width], .08)
+
+        ,y = d3.scale.linear()
+        .domain([0, yStackMax])
+        .range([height, 0])
+
+var xlabels = d3.scale.ordinal()
+                .domain(scenarionames)
+                .rangeRoundBands([0, width], .08)
+
+        ,xAxis = d3.svg.axis()
+                .scale(xlabels)
+                .tickSize(0)
+                .tickPadding(6)
+                .orient("bottom")
+
+        ,yAxis = d3.svg.axis()
+                .scale(y)
+                .tickSize(5)
+                .tickPadding(0)
+                .orient("left")
+
+barStack(layers)
+y.domain(layers.extent)
+
+
+svg = d3.select("body")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var layer = svg.selectAll(".layer")
+        .data(layers)
+        .enter()
+        .append("g")
+        .attr("class", ".layer")
+        .style("fill", function(d,i) { return color(i)});
+
+var rect = layer.selectAll("rect")
+        .data(function(d) { return d; })
+        .enter().append("rect")
+        .attr("x", function(d) { return x(d.x); })
+        .attr("y", height)
+        .attr("width", x.rangeBand())
+        .attr("height", 0);
+
+rect.append("title")
+        .attr("x", function(d) { return x(d.x); })
+        .attr("y", height)
+        .text(function(d) {return d.y;});
+
+var controlMarker = layer.selectAll("line")
+        .data(function(d) {return d;})
+        .enter().append("line")
+        .attr("x1", function(d) { return x(d.x); })
+        .attr("x2", function(d) { return x(d.x) + x.rangeBand(); })
+        .attr("y1", 100)
+    //.attr("y1", 100)
+        .attr("y2", 100)
+        .style("stroke","black")
+        .style("stroke-width", "3");
+
+//y.domain([0, yStackMax]);
+
+svg.append("g").attr("class","axis x")
+svg.append("g").attr("class","axis y")
+
+
+var layout = 0,dur=0
+redraw()
+dur = 1500
+
+
+function redraw()
+
+{
+    if (layout=!layout) {
+        // /* Readjust the range to witdh and height
+        x.rangeRoundBands([30, width], .1)
+        y.range([height, 0])
+
+        ///* Reposition and redraw axis
+        svg.select(".x.axis")
+                .attr("transform","translate (0 "+y(0)+")")
+                .call(xAxis.orient("bottom"))
+        svg.select(".y.axis")
+                .attr("transform","translate ("+x(0)+" 0)")
+                .call(yAxis.orient("left"))
+
+        ///* Reposition the elements
+        svg.selectAll("rect")
+                .attr("x",function(d,i) { return x(d.x)})
+                .attr("y",function(d) { return y(d.y0)})
+                .attr("height",function(d) { return y(0)-y(d.size)})
+                .attr("width",x.rangeBand())
+
+    }
+}
+
+/*
+//else
+{
+/* Readjust the range to witdh and height
+x.rangeRoundBands([h-margin,0+margin], .1)
+y.range([margin,w-margin])
+
+/* Reposition and redraw axis
+svg.select(".x.axis")
+.transition().duration(dur)
+.attr("transform","translate ("+y(0)+" 0)")
+.call(xAxis.orient("left"))
+svg.select(".y.axis")
+.transition().duration(dur)
+.attr("transform","translate (0 "+x(0)+")")
+.call(yAxis.orient("bottom"))
+
+/* Reposition the elements
+svg.selectAll(".series rect")
+.transition().duration(dur)
+.attr("y",function(d,i) { return x(d.x)})
+.attr("x",function(d) { return y(d.y0-d.size)})
+.attr("width",function(d) { return y(d.size)-y(0)})
+.attr("height",x.rangeBand())
+
+}
+*/
+/*
+d3.select("body").append("button")
+.attr("type","button")
+.text("Change Layout")
+.style("position","absolute")
+.style("left","5px")
+.style("top","5px")
+.on("click",redraw)
+}
+*/
+</script>
+<div onLoad="createTableau('scenarioname')">
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+</div>
+</body>
+-->

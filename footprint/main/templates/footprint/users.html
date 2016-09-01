@@ -1,0 +1,96 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+{% extends "footprint/user_management.html" %}
+
+{% block assets %}
+
+<script>
+
+$(function() {
+    $(".clickable-row").click(function(e) {
+        if ($(this).data("href") !== undefined) {
+            window.document.location = $(this).data("href");
+        }
+    });
+
+    $("#config-dropdown").change(function(e) {
+        if (e.target.value) {
+            location.href = "#" + e.target.value;
+        }
+    });
+
+});
+
+</script>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid page-content">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+            {% if not users %}
+                <h3 class="no-users-message">There are no users available to manage.</h3>
+            {% else %}
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <select class="form-control" id="config-dropdown">
+                            <option value="">Jump to...</option>
+
+                            {% for key, value in config_keys|sort_items %}
+
+                                <option value="{{ value }}">{{ key }}</option>
+
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            {% endif %}
+
+            <table class="user-table">
+
+                {% for user_group, user_data in users.items %}
+
+                    <tr id="{{ config_keys|get_item:user_group }}"><td colspan="5" class="config-entity-name">{{ user_group }}</td></tr>
+
+                    <tr class="users-table">
+                        <th class="users-table-data">Name</th>
+                        <th class="users-table-data">Role</th>
+                        <th class="users-table-data">Active</th>
+                        <th class="users-table-data">Created</th>
+                    </tr>
+
+                    {% for user in user_data %}
+                        <tr class="users-table clickable-row" data-href="/footprint/user/{{ user.user.id }}/">
+                            <td class="users-table-data">{{ user.user|user_display_string }}</td>
+                            <td class="users-table-data">{{ user.role }}</td>
+                            {% if user.user.is_active %}
+                                <td class="users-table-data"><span class="glyphicon glyphicon-check" aria-hidden="true"></span></td>
+                            {% else %}
+                                <td class="users-table-data"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span></td>
+                            {% endif %}
+                            <td class="users-table-data">{{ user.user.date_joined }}</td>
+                        </tr>
+                    {% endfor %}
+                    <tr><td col-span="5">&nbsp;</td></tr>
+
+                {% endfor %}
+
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

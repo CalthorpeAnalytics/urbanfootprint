@@ -1,0 +1,727 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+$theme.footprint.sc-view.sc-label-view.footprint-numberrangeitemview-item {
+    background-color: #FFFFFF;
+}
+
+$theme.footprint.footprint-editable-model-string-view {
+    text-align: left;
+}
+
+$theme.footprint.footprint-label-select-view {
+    .footprint-editable-model-string-view {
+        text-align: right;
+    }
+}
+
+$theme.footprint-editable-model-string-view {
+    &.is-editable {
+        background-color: #f0f8ff;
+        border-color: #c3c3c3;
+        border-width: 2px;
+    }
+}
+
+$theme.footprint.sc-view.sc-pane.sc-panel.sc-palette.footprint-info-pane.opaque.footprint-feature-info-view.panel {
+    background-color: #e1e4e1;
+    border-color: #708090;
+    border-width: 5px;
+}
+
+$theme.footprint-logo-section-view {
+    background-color: #D0D0D0;
+    border-color: #D8D8D8;
+    border-width: 2px;
+}
+
+$theme.footprint-legend-item-layer-label-no-toggle-view {
+    left: 10px;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+$theme.footprint-legend-item-layer-label-toggle-view {
+    left: 25px;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+$theme.footprint-legend-item-attribute-label-no-toggle-view {
+    left: 15px;
+    font-size: 9px;
+    top: 2px;
+}
+$theme.footprint-legend-item-attribute-label-toggle-view {
+    left: 25px;
+    font-size: 9px;
+    top: 2px;
+}
+$theme.footprint-legend-item-style-label-view {
+        left: 30px;
+        line-height: 18px;
+        font-size: 10px;
+}
+$theme.footprint-legend-medium-color {
+        top: 2px; bottom: 2px; left: 5px; width: 20px;
+        @include border-radius(4px);
+}
+
+$theme.footprint-right-logo-title-view {
+    font-size: 16;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+$theme.footprint-left-city-title-view {
+    font-size: 14;
+    font-weight: 700;
+}
+
+$theme.footprint-left-city-content-view {
+    font-size: 14;
+    font-weight: 400;
+}
+
+
+$theme.footprint-sidebar-view {
+     background-color: #F0F0F0;
+}
+
+$theme.footprint-copyright-view {
+    background-color: #F0F0F0;
+    border-top-color: #B8B8B8;
+    border-top-width: 2px;
+}
+
+$theme.footprint-partner-view, $theme.footprint-partner-label-view {
+     font-size: 10px;
+     background-color: #F0F0F0;
+     border-top-color: #B8B8B8;
+     border-top-width: 2px;
+}
+
+$theme.footprint-feature-edit-view {
+    background-color: #C0C0C0;
+}
+
+$theme.footprint-layer-group-view, $theme.footprint-scenario-group, $theme.footprint-built-form-group-view {
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: #E8E8E8;
+    border-top-width: 1px;
+    border-color: #A0A0A0;
+    border-bottom-width: 1px;
+    $theme.footprint-layer-group-label-view {
+        left: 34px;
+    }
+    $theme.footprint-built-form-group-label-view {
+        left: 25px;
+        line-height: 18px;
+    }
+}
+$theme.footprint-built-form-item {
+    $theme.footprint-built-form-item-label-view {
+        left: 25px;
+        line-height: 20px;
+    }
+    $theme.footprint-medium-color {
+        top: 2px; bottom: 2px; left: 5px; width: 16px;
+        @include border-radius(4px);
+    }
+}
+
+$theme.footprint-legend-item {
+    $theme.footprint-legend-item-label-view {
+        left: 50px;
+        line-height: 24px;
+        font-size: 12px;
+    }
+    $theme.footprint-legend-medium-color {
+        top: 2px; bottom: 2px; left: 5px; width: 35px;
+        @include border-radius(4px);
+    }
+}
+
+$theme.footprint-style-medium-color {
+    margin-top: 2px; margin-bottom: 2px; margin-left: 5px; width: 25px;
+    @include border-radius(4px);
+}
+
+$theme.footprint-style-value-context {
+    $theme.footprint-style-value-context-label {
+        left: 25px;
+        line-height: 20px;
+    }
+    $theme.footprint-style-value-context-color {
+        top: 2px; bottom: 2px; left: 5px; width: 16px;
+    }
+}
+$theme.footprint-style {
+    $theme.footprint-style-label-view {
+        left: 25px;
+        line-height: 20px;
+    }
+    $theme.footprint-style-color {
+        top: 2px; bottom: 2px; left: 5px; width: 16px;
+    }
+}
+
+
+$theme.results-chart-example-container {
+    border-right-color: #707070;
+}
+
+$theme.chart-view{
+    background-color: #f2f1ef;
+}
+
+$theme.results-chart-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+$theme.result-toggle-view {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+$theme.footprint.sc-view.footprint-model-management-view {
+   background-color: #f2f1ef;
+}
+
+$theme.footprint-dwelling-unit-summary-view{
+    color: darkgreen;
+    font-size: 24px;
+}
+
+$theme.footprint-employment-summary-view{
+    color: darkgreen;
+    font-size: 24px;
+}
+
+
+$theme.footprint-single-family-small-title-view, $theme.footprint-attached-title-view, $theme.footprint-single-family-large-title-view, $theme.footprint-multifamily-title-view, $theme.footprint-retail-title-view, $theme.footprint-office-title-view, $theme.footprint-public-title-view, $theme.footprint-industrial-title-view{
+    font-size: 11px;
+}
+
+
+$theme.result-legend-view{
+    font-size: 9px;
+
+}
+
+$theme.footprint-add-building-pane {
+    .panel-background {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    border-width: 3px;
+    border-color: #505050;
+    border-radius: 10px
+}
+
+$theme.footprint-add-built-form-container-view {
+    border-radius: 10px
+}
+
+$theme.footprint-summary-field-view{
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+
+$theme.footprint-editable-input-view{
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+$theme.footprint-source-content-info-title-view{
+    .footprint-editable-model-string-view{
+        font-style:italic;
+    }
+}
+
+$theme.footprint-editable-building-use-types-view{
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+$theme.footprint-built-form-percent-list-scroll-view{
+    border-width: 1px;
+    border-top: 1px;
+    border-left:0px;
+    border-color: #B0B0B0 ;
+}
+
+$theme.slider-item-title{
+    font-size: 9px;
+}
+
+$theme.slider-item-symbol-label{
+    font-size: 10px;
+}
+
+$theme.slider-item-value-label{
+    font-size: 11px;
+    background-color: whitesmoke;
+}
+
+$theme.footprint-checkbox-item-title{
+    font-size: 9px;
+}
+
+$theme.footprint-layer-info-create-from-layer-selection-view {
+    $theme.footprint-checkbox-item-title{
+        font-size: 11px;
+    }
+}
+
+$theme.footprint-editable-field-content-view{
+    &.is-editable {
+        background-color: #f0f8ff;
+        border-width: 1px;
+        border-color: #B8B8B8;
+    }
+}
+
+$theme.footprint-scenario-info-view, $theme.footprint-layer-info-view {
+    border-width: 2px;
+    border-color: #505050;
+
+    $theme.footprint-info-title-view {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    $theme.form-info-overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        $theme.sc-label-view {
+            color: white;
+            text-align: center;
+        }
+    }
+
+}
+
+$theme.footprint-analytic-module-title-view{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+$theme.footprint-module-results-view{
+    background-color: #f2f1ef;
+}
+
+$theme.footprint-top-labeled-result-view{
+    font-weight: bold;
+}
+
+$theme.footprint-top-labeled-result-value-view{
+    background-color: whitesmoke;
+    border-width: 1px;
+    font-size: 11px;
+    border-color: #C0C0C0;
+}
+
+$theme.footprint-top-labeled-result-title-view{
+    background-color: #C0C0C0;
+}
+$theme.footprint-top-labeled-result-title-space-view{
+    font-weight: bold;
+    background-color: #C0C0C0;
+    font-size: 9px;
+}
+
+$theme.footprint-top-labeled-result-subtitle-space-view{
+    font-weight: bold;
+    font-size: 9px;
+}
+
+$theme.footprint-editable-content-11px-view{
+    &.is-editable {
+        border-radius: 1px;
+        background-color: #f0f8ff;
+        border-width: 1px;
+        border-color: #C0C0C0;
+        font-size: 11px;
+    }
+}
+
+$theme.footprint-editable-content-view{
+    &.is-editable {
+        border-radius: 1px;
+        background-color: #f0f8ff;
+        border-width: 1px;
+        border-color: #C0C0C0;
+
+    }
+}
+
+$theme.footprint-uneditable-content-view{
+    border-radius: 1px;
+    background-color:#e8e8e8;
+    border-width: 1px;
+    border-color: #C0C0C0;
+
+}
+
+$theme.footprint-editable-title-view{
+    font-size: 9px;
+}
+
+$theme.footprint-bold-title-view{
+    font-weight: bold;
+    font-size: 11px;
+}
+
+ $theme.footprint-bold-built-form-summary-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000066;
+}
+
+$theme.footprint-bold-title-white-view{
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+
+}
+
+$theme.footprint-updating-overlay-view {
+    background-color: #E8BB47;
+    border-radius: 7px;
+}
+
+
+$theme.footprint-bold-view {
+    font-weight: bold;
+    font-size: 11px;
+    font-size: .53vw;
+    &.theme-title-white-lightseagreen {
+         color: white;
+         background-color: green;
+         border-radius: 7px;
+         border-width: 1px;
+         border-color: #d0dae3;
+     }
+
+     &.theme-title-black-darkorange {
+         color: black;
+         background-color: darkorange;
+         border-radius: 7px;
+         border-width: 1px;
+         border-color: white;
+     }
+
+     &.theme-title-black-yellow {
+         color: black;
+         background-color: #FFCC00;
+         border-radius: 7px;
+         border-width: 1px;
+         border-color: white;
+     }
+
+     &.theme-title-black-orangebrown {
+         color: black;
+         background-color: #D17519;
+         border-radius: 7px;
+         border-width: 1px;
+         border-color: white;
+     }
+     &.theme-title-white-umber {
+         color: white;
+         background-color: #D14719;
+         border-radius: 7px;
+         border-width: 1px;
+         border-color: #d0dae3;
+     }
+    &.theme-title-white-darkpurple {
+        color: white;
+        background-color: #660066;
+        border-radius: 7px;
+        border-width: 1px;
+        border-color: #d0dae3;
+    }
+    &.theme-title-white-red {
+        color: white;
+        background-color: #FF4D4D;
+        border-radius: 7px;
+        border-width: 1px;
+        border-color: white;
+    }
+    &.theme-title-white-rose {
+        color: white;
+        background-color: #CC3399;
+        border-radius: 7px;
+        border-width: 1px;
+        border-color: white;
+    }
+    &.theme-title-white-blue {
+        color: white;
+        background-color: #3333CC;
+        border-radius: 7px;
+        border-width: 1px;
+        border-color: white;
+    }
+    &.theme-title-black-lightpurple {
+        color: black;
+        background-color: #CC99FF;
+        border-radius: 7px;
+        border-width: 1px;
+        border-color: white;
+    }
+    &.theme-title-black-greyblue {
+        color: black;
+        background-color: #d0dae3;
+        border-radius: 7px;
+    }
+    &.theme-title-black-transparent {
+        color: black;
+        background-color: transparent;
+        border-radius: 7px;
+    }
+    &.theme-title-white {
+         color: white;
+    }
+}
+
+$theme.footprint-bottom-labelled-content-view{
+    &.is-negative {
+        background-color: #FF3333;
+    }
+    border-radius: 1px;
+    background-color: #f0f8ff;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+$theme.footprint-noneditable-bottom-labelled-content-view {
+
+    &.is-negative {
+        background-color: #FF3333;
+    }
+
+    border-radius: 1px;
+    background-color: #E0E0E0;
+    border-width: 1px;
+    border-color: #C0C0C0;
+
+}
+
+$theme.footprint-noneditable-result--content-view {
+    border-radius: 1px;
+    background-color: #E0E0E0;
+    border-width: 1px;
+    border-color: #C0C0C0;
+ }
+
+
+$theme.footprint-use-percent-title-view{
+    font-size: 11px;
+}
+$theme.footprint-building-footprint-view{
+    border-radius: 1px;
+    background-color: #EFEFF1;
+    border-bottom-width: 5px;
+    border-color: #72587F;
+}
+
+$theme.footprint-parking-sqft-view{
+    border-radius: 1px;
+    background-color: #EFEFF1;
+    border-bottom-width: 5px;
+    border-color: #B0B0B0;
+}
+
+$theme.footprint-other-hardscape-view{
+    border-radius: 1px;
+    background-color: #EFEFF1;
+    border-bottom-width: 5px;
+    border-color: #FFCC66;
+}
+
+$theme.footprint-non-irrigated-softscape-view{
+    border-radius: 1px;
+    background-color: #EFEFF1;
+    border-bottom-width: 5px;
+    border-color: #336633;
+}
+
+$theme.footprint-irrigated-softscape-view{
+    border-radius: 1px;
+    background-color: #EFEFF1;
+    border-bottom-width: 5px;
+    border-bottom-color: #33CC66;
+}
+
+$theme.footprint-editing-session-view {
+    border-radius: 5px;
+    background-color: #FF4500;
+    border-width: 2px;
+    border-color: #8B0000;
+    opacity: 0.75;
+    font-weight: bold;
+}
+
+$theme.footprint-11font-title-view{
+    font-size: 11px;
+}
+
+$theme.footprint-10font-title-view{
+    font-size: 10px;
+}
+
+$theme.footprint-editable-9font-title-view{
+    font-size: 9px;
+}
+
+$theme.footprint-editable-10font-bold-title-view{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+ $theme.footprint-editable-12font-bold-title-view{
+    font-size: 12px;
+    font-weight: bold;
+}
+$theme.footprint-label-select-item-view{
+    background-color:#f0f8ff
+}
+
+$theme.footprint-editable-use-percent-field-view{
+    border-bottom-color: grey;
+    border-width: 1px;
+}
+
+$theme.footprint-tool-segmented-button-view {
+    .ace.sc-regular-size.sc-segment-view img.icon {
+        height: 22px;
+        width: 22px;
+        top: 1px;
+    }
+    sc-button-label {
+        font-size: 12px;
+        line-height: 24px;
+        margin-left: 4px;
+        margin-right: 0px;
+    }
+}
+
+$theme.footprint-segmented-button-view {
+    .ace.sc-regular-size.sc-segment-view img.icon {
+        height: 18px;
+        width: 18px;
+        top: 2px;
+        margin-left: -5.5px;
+        margin-right: 0px;
+    }
+}
+
+$theme.footprint-active-built-form-medium{
+    border-radius: 2px;
+}
+
+
+$theme.footprint-active-built-form-name-view{
+    font-weight: bold;
+}
+
+
+$theme.footprint-tool-button-view {
+    .ace.sc-regular-size.button .sc-button-label {
+        left: -2px;
+    }
+}
+
+$theme.footprint-mulitiple-records-view {
+    border-radius: 4px;
+    border-color: lightgrey;
+    opacity: 0.75;
+    font-weight: bold;
+    background-color: white;
+
+}
+
+$theme.footprint-scenario-item {
+    border-color: #8b8b8b;
+    border-width: 1px;
+    font-weight: bold;
+    background-color: #d0d0d0;
+ }
+
+$theme.footprint-updating-overlay-status-view {
+    border-radius: 7px;
+    background-color: white;
+}
+
+$theme.footprint-built-form-summary-attributes-view {
+    border-radius: 7px;
+    background-color: darkgray;
+ }
+
+$theme.footprint-scenario-edit-result-view {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+ }
+
+ $theme.footprint-analysis-module-running-view {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+$theme.footprint-selected-style-layer-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: darkslategray;
+}
+
+$theme.footprint-active-style-title {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+$theme.footprint-style-attribute-list-example-view {
+    border-bottom-color: lightblue;
+    border-bottom-width: 1px;
+    background-color: #f0f8ff;
+}
+
+   /*$theme.collection {*/
+    /*.sc-list-item-view label {*/
+      /*top: 50%;*/
+      /*margin-top: -9px;*/
+      /*font-size:34px;*/
+    /*}*/
+ /*}*/
+
+$theme.theme-button.theme-button-gray {
+    background-color: black;
+ }
+
+
+$theme.footprint-chart-metadata-title-view {
+    font-size: 16;
+    font-weight: 700;
+    line-height: 24px;
+}

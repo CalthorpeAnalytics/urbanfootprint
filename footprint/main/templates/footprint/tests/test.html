@@ -1,0 +1,31 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QUnit Example</title>
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/qunit.css">
+<script type="text/javascript" src="{{STATIC_URL}}js/d3.v3.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/qunit.js"></script>
+<!-- include spec files here... -->
+<script type="text/javascript" src="{{STATIC_URL}}tests/spec.js"></script>
+<!-- include source files here... -->
+<script src="{{ STATIC_URL }}js/footprint/d3_charts/donutChart.js"></script>
+</body>
+</html>

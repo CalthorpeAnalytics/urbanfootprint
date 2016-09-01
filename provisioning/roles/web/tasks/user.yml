@@ -1,0 +1,64 @@
+---
+
+- name: Create web group
+  group:
+    name:  "{{users.web.groupname}}"
+    gid:   "{{users.web.gid}}"
+    state: present
+
+- name: Create web user
+  user:
+    name:     "{{users.web.username}}"
+    uid:      "{{users.web.uid}}"
+    shell:    /bin/bash
+    group:    calthorpe
+    groups:   "sudo,www-data"
+    append:   false
+    password: "{{users.web.password}}"
+
+- name: Set owner for web user home directory
+  file:
+    path:  /home/{{users.web.username}}
+    owner: "{{users.web.username}}"
+    group: "{{users.web.groupname}}"
+    mode:  0755
+    state: directory
+
+- name: Put .profile in place for web user
+  template:
+    src:   home/{{users.web.username}}/profile
+    dest:  /home/{{users.web.username}}/.profile
+    owner: "{{users.web.username}}"
+    group: "{{users.web.groupname}}"
+    mode:  0644
+
+- name: Put .bashrc in place for web user
+  template:
+    src:   home/{{users.web.username}}/bashrc
+    dest:  /home/{{users.web.username}}/.bashrc
+    owner: "{{users.web.username}}"
+    group: "{{users.web.groupname}}"
+    mode:  0644
+
+- name: Put bash aliases in place for web user
+  template:
+    src:   home/{{users.web.username}}/bash_aliases
+    dest:  /home/{{users.web.username}}/.bash_aliases
+    owner: "{{users.web.username}}"
+    group: "{{users.web.groupname}}"
+    mode:  0644
+
+- name: Create .ssh directory for web users
+  file:
+    path:  /home/{{users.web.username}}/.ssh
+    owner: "{{users.web.username}}"
+    mode:  0700
+    group: "{{users.web.groupname}}"
+    state: directory
+
+- name: Grant web group passwordless sudo
+  lineinfile:
+    dest:   /etc/sudoers
+    state:  present
+    regexp: '^%wheel'
+    line:   '%calthorpe ALL=(ALL) NOPASSWD: ALL'

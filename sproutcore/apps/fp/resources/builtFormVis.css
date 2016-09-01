@@ -1,0 +1,81 @@
+/*
+ * UrbanFootprint v1.5
+ * Copyright (C) 2016 Calthorpe Analytics
+ *
+ * This file is part of UrbanFootprint version 1.5
+ *
+ * UrbanFootprint is distributed under the terms of the GNU General
+ * Public License version 3, as published by the Free Software Foundation. This
+ * code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+ */
+
+$theme.footprint-background-pane {
+    opacity: 0.7;
+}
+$theme.footprint-visualize-pane-content {
+    opacity: 1;
+}
+
+$theme.sc-label-view.footprint-visualize-pane-header {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease;
+}
+$theme.footprint-visualize-pane-content {
+
+    background-color: black;
+    color: white;
+    fill: white;
+}
+$theme.sectionTitle {
+    color: #75A1D0;
+    text-transform : uppercase;
+    font-weight : bold;
+}
+$theme.descriptionBlock {
+    border-top-right-radius: 10px;
+    background-color: black;
+    padding: 15px;
+}
+$theme.rightOfBarChart {
+    border-top-left-radius: 10px;
+    background-color: black;
+}
+$theme.devCharsTable td {
+    padding-left: 6px;
+}
+$theme.devCharsTable th {
+    color: #75A1D0;
+    text-transform: uppercase;
+}
+$theme.barChart {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+$theme.donutCharts.arc path {
+    stroke: #fff;
+    stroke-width: 0;
+}
+$theme.footprint-visualize-pane-footer {
+    transition: background-color 0.5s ease;
+}
+$theme.examplesList {
+
+    background-color: #2C3035;
+}
+/****/
+ /*the class "light" is applied to colorful regions*/
+ /*on a d3 svg that are light enough (based on a calculation) to have*/
+ /*black text layered on top. The default fill for text on d3 is set to*/
+ /*white*/
+ /***/
+
+$theme.has-light-background {
+    color: black;
+    fill: black;
+}

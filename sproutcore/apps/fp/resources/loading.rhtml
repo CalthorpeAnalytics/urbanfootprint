@@ -1,0 +1,23 @@
+<% content_for :loading do %>
+<% # Any HTML in this file will be visible on screen while your page loads
+   # its application JavaScript.  SproutCore applications are optimized for
+   # caching and startup very fast, so your users will often only see this
+   # content for a brief moment on their first app load, if at all.
+%>
+<!-- Global requied by leaflet to make vector layers output to image during export -->
+<script>L_PREFER_CANVAS=true;</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
+<div id="sc2842" class="sc-view sc-pane sc-main ace footprint2" style="bottom: 0px; right: 0px; left: 0px; top: 0px; min-width: 200px; min-height: 200px; ">
+    <div id="sc2843" class="sc-view sc-image-view loading-image ace footprint image" style="margin-left: -250px; margin-top: -250px; left: 50%; top: 50%; height: 500px; width: 500px; ">
+
+    </div>
+
+</div>
+
+</div>
+
+<% end %>
+
+<!--<img src="/static/fp/en/0.1/source/resources/loading.png" style="position: absolute; left: 0px; top: 0px; width: 500px; height: 500px;">-->

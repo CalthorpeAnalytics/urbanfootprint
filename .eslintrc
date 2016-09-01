@@ -1,0 +1,40 @@
+{
+    "rules": {
+        "indent": [2, 4],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "brace-style": [1, "1tbs"],
+        "no-trailing-spaces": 2,
+        "no-unused-vars": [2, {"args": "none"}],
+        "comma-dangle": [1, "always-multiline"],
+        "no-console": 1,
+    },
+    "globals": {
+        "$",
+        "F",
+        "Footprint",
+        "L",
+        "NO",
+        "SC",
+        "YES",
+        "d3",
+        "sc_require",
+        "sc_static",
+        "sc_super",
+        "io"
+    },
+    "env": {
+        "browser": true
+    },
+    "extends": "eslint:recommended"
+}

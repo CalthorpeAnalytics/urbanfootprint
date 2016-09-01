@@ -1,0 +1,142 @@
+<!--
+    UrbanFootprint v1.5
+    Copyright (C) 2016 Calthorpe Analytics
+
+    This file is part of UrbanFootprint version 1.5
+
+    UrbanFootprint is distributed under the terms of the GNU General
+    Public License version 3, as published by the Free Software Foundation. This
+    code is distributed WITHOUT ANY WARRANTY, without implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+    Public License v3 for more details; see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <meta charset="UTF-8">
+    <title>Test Geospatial Conversion</title>
+    <style>
+        #map {
+            height: 800px;
+            width: 1000px;
+        }
+        td, th {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        th {
+            background: lightblue;
+            border-color: white;
+        }
+        td {
+            border-color: lightblue;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .map-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar-container {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .table-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-button {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+            background-color: white;
+            width: 110px;
+            height: 30px;
+            text-align: center;
+            line-height: 1.9;
+            vertical-align: middle;
+            text-decoration: none;
+            color: #989898;
+            margin: 5px;
+        }
+        .file-name {
+            margin: 5px;
+            color: #989898;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="sidebar-container">
+            <div class="file-name">
+                File Name: {{ file_name }}
+            </div>
+            <a href="/footprint/upload_test/" id="back-to-upload" class="nav-button">Back to Upload</a>
+            {% if previous_offset >= 0 %}
+                <a href="/footprint/upload_results/?offset={{ previous_offset }}&table_name={{ table_name }}&file_name={{ file_name }}" id="previousButton" class="nav-button">Previous 1000</a>
+            {% endif %}
+            <a id="nextButton" href="/footprint/upload_results/?offset={{ next_offset }}&table_name={{ table_name }}&file_name={{ file_name }}" hidden="true" class="nav-button">Next 1000</a>
+            <button class="nav-button" id="center-and-zoom">Zoom and Center</button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table>
+                <tr>
+                    {% for column_name in column_names %}
+                    <th>
+                        {{ column_name }}
+                    </th>
+                    {% endfor %}
+                </tr>
+                {%  for row in columns %}
+                <tr>
+                    {% for value in row %}
+                    <td>
+                        {{ value }}
+                    </td>
+                    {%  endfor %}
+                </tr>
+                {% endfor %}
+        </table>
+    </div>
+
+    <script>
+
+        var map = L.map('map').setView([34.052235, -118.243683], 10);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets-basic',
+            // TODO: use our own access token once UF-489 is done
+            accessToken: 'pk.eyJ1IjoiZWxldmFuIiwiYSI6IlhRVnB0c2sifQ.gRJdcHpLtd9xTGQ860IYug'
+        }).addTo(map);
+
+
+        var geojsonFeatureCollection = {{ geojson|safe }};
+
+        var geojsonLeaflet = L.geoJson(geojsonFeatureCollection).addTo(map);
+
+        // zoom map to fit all geojson
+        map.fitBounds(geojsonLeaflet.getBounds());
+
+        // unhide the nextButton if there are 1000 items which probably means there are more
+        if (geojsonFeatureCollection.features.length === 1000) {
+            var nextButton = document.getElementById('nextButton');
+            nextButton.removeAttribute('hidden')
+        }
+
+        var centerAndZoom = document.getElementById('center-and-zoom');
+        centerAndZoom.onclick = function() {map.fitBounds(geojsonLeaflet.getBounds())};
+
+    </script>
+</body>
+</html>

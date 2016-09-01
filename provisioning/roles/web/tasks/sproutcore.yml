@@ -1,0 +1,29 @@
+---
+# Let's get a recent version of ruby...
+
+# Get rid of trusty's crusty 1.9 ruby
+- apt:
+    name: ruby1.9.1
+    state: absent
+
+# Add brightbox-hosted repo and install ruby 2.2
+- apt_repository:
+    repo: ppa:brightbox/ruby-ng
+    update_cache: yes
+
+- apt:
+    name: ruby2.2
+    state: present
+
+- apt:
+    name: ruby2.2-dev
+    state: present
+
+# We are going to install system gems for now since
+# all we need is sproutcore (i.e. NOT use bundler)
+# TODO: WHAT VERSION OF SPROUTCORE DO WE WANT??
+- gem:
+    name: sproutcore
+    version: 1.11.0
+    state: present
+    user_install: no
