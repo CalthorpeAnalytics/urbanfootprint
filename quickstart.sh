@@ -31,6 +31,7 @@ gunzip -f urbanfootprint-sacog-web-db.sql.gz
 # import sample web database
 psql -U postgres -c "DROP DATABASE IF EXISTS urbanfootprint;"
 psql -U postgres -c "CREATE DATABASE urbanfootprint;"
+psql -U postgres -c "GRANT ALL ON DATABASE urbanfootprint TO calthorpe;"
 psql -U postgres urbanfootprint < urbanfootprint-sacog-web-db.sql
 
 # finish installation and deployment process
