@@ -7,7 +7,7 @@ VAGRANT_COMMAND = ARGV[0]
 
 # Allow user to override amount of memory allocated
 # to VM via environment variable.
-VM_MEMORY = ENV['UF_VM_MEMORY']  || 3072
+VM_MEMORY = ENV['UF_VM_MEMORY']  || 4096
 VM_CPUS   = ENV['UF_VM_CPUS']    || 2
 VM_PROXY  = ENV['VAGRANT_PROXY'] || false
 
@@ -15,7 +15,8 @@ Vagrant.configure(2) do |config|
   ############################################################################
   # GLOBAL SETTINGS
   ############################################################################
-  config.vm.box     = "ubuntu/trusty64"
+  config.vm.box     = "urbanfootprint"
+  config.vm.box_url = "https://s3-us-west-2.amazonaws.com/uf-provisioning/urbanfootprint-2016-09-02.box"
 
   config.vm.network "forwarded_port", guest: 80, host: 3333
   config.vm.network "forwarded_port", guest: 5432, host: 5555
@@ -23,9 +24,6 @@ Vagrant.configure(2) do |config|
   if VAGRANT_COMMAND == "ssh"
     config.ssh.username = "calthorpe"
   end
-
-  config.ssh.forward_agent = true
-  config.ssh.forward_x11 = true
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = VM_MEMORY
@@ -36,38 +34,13 @@ Vagrant.configure(2) do |config|
   ############################################################################
 
   ############################################################################
-  # VIRTUALBOX ON WINDOWS
+  # VIRTUALBOX
   ############################################################################
   config.vm.define "urbanfootprint" do |subvm|
     subvm.vm.hostname = "urbanfootprint"
 
-    # TODO:
-    #   Ansible provisioning is called from within VM due to error with
-    #   ansible and vagrant on windows hosts:
-    #     https://github.com/mitchellh/vagrant/issues/6793
-    #   This should be fixed with the release of vagrant 1.8.2
-    subvm.vm.provision "shell", inline:
-      "apt-get install software-properties-common;
-       apt-add-repository ppa:ansible/ansible-1.9;
-       apt-get update;
-       apt-get install -y ansible git;
-
-       mkdir -p /srv/calthorpe
-       cd /srv/calthorpe
-       git clone https://github.com/CalthorpeAnalytics/urbanfootprint.git urbanfootprint
-       git clone https://github.com/CalthorpeAnalytics/urbanfootprint-configuration.git urbanfootprint-configuration
-       cd /srv/calthorpe/urbanfootprint
-       git submodule init
-       git submodule update
-
-       cd /srv/calthorpe/urbanfootprint/provisioning;
-       ansible-galaxy install -f -r galaxy-roles.yml;
-       ansible-playbook -v -i 'localhost', -c local site.yml
-
-       chown -R calthorpe:calthorpe /srv/calthorpe"
-
-    # After ansible has run, copy the vagrant user's list of authorized_keys to
-    # the calthorpe user so  we can easily ssh in as calthorpe user for pycharm.
+    # Copy the vagrant user's list of authorized_keys to the calthorpe
+    # user so  we can easily ssh in as calthorpe user.
     config.vm.provision "shell", inline:
       "mkdir -p /home/calthorpe/.ssh && \
        cp /home/vagrant/.ssh/authorized_keys /home/calthorpe/.ssh/authorized_keys && \

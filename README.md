@@ -13,11 +13,38 @@ UrbanFootprint is developed by [Calthorpe Analytics](http://calthorpeanalytics.c
 
 # UrbanFootprint Installation
 
-Interested in installing UrbanFootprint on your own computer? Detailed installation instructions
-are available for Mac OS X and MS Windows:
+Interested in installing UrbanFootprint on your own computer?
 
-* Mac OS X -- [README-developers.md](README-developers.md)
-* MS Windows -- [README-developers-windows.md](README-developers-windows.md)
+The fastest way to get up and running with a local UrbanFootprint installation is by using a pre-built
+virtual machine.
+
+---
+
+# UF Quickstart - Use a Pre-built VM
+
+### Quickstart Prerequisites for Mac OS X and MS Windows:
+
+* [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) -- VirtualBox allows us to create a Linux Virtual Machine
+* [Download and install Vagrant](https://www.vagrantup.com/downloads.html) -- A command line tool for interacting with VirtualBox and building the UF virtual machine
+* [Download and install Git-bash _(Windows only)_](https://git-scm.com/download/win) -- A quick way to get a bash prompt on Windows
+
+### Use Vagrant to bring up an UrbanFootprint VM
+
+On Windows, open up "Git Bash" which should now be available in your Start Menu. On Mac, open up the Terminal app. You should now have a command line prompt. In the terminal, run:
+
+    curl https://raw.githubusercontent.com/CalthorpeAnalytics/urbanfootprint/master/get-uf.sh | bash
+
+A local UrbanFootprint instance is now accessible via  [http://localhost:3333/footprint/](http://localhost:3333/footprint/) in your browser. The default username is "admin@urbanfootprint.net" and the default password is "admin@uf".
+
+**If you're following the "Quickstart" path you can stop here and [start using UF in your browser!](http://localhost:3333/footprint/)**
+
+---
+
+# UF Development Environment Installation
+
+If you're looking to do active code development on the UrbanFootprint code base, then you'll need to
+install a development environment. Detailed installation instructions are available for Mac OS X
+and MS Windows in [README-developers.md](README-developers.md)
 
 # UrbanFootprint Client Configuration
 

@@ -11,13 +11,13 @@ in the virtual machine and these files are not "visible" to Windows directly.
 
 * [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) -- VirtualBox allows us to create a Linux Virtual Machine on your Windows computer
 * [Download and install Vagrant](https://www.vagrantup.com/downloads.html) -- A command line tool for interacting with VirtualBox and building the UF virtual machine
-* [Download and install Babun](http://babun.github.io/) -- a Linux-like command prompt for Windows
+* [Download and install Git-bash for Windows](https://git-scm.com/download/win) -- A quick way to get a bash prompt on Windows
 
 ## First-time VM configuration
 
 The "host" computer is the machine running VirtualBox. The "guest" machine is the virtual machine running within VirtualBox.
 
-After installing [Babun](http://babun.github.io/) you should find a "Babun" icon on your dekstop. Double-click that icon and you
+After installing [Git-Bash](https://git-scm.com/download/win) you should find a "Git Bash" icon in your Start Menu. Open "Git Bash" and you
 should see a command prompt for the **host** computer:
 
     wget -O Vagrantfile https://raw.githubusercontent.com/CalthorpeAnalytics/urbanfootprint/master/Vagrantfile-windows
@@ -30,7 +30,7 @@ This version imports a pre-built database to get you up and running quickly. It 
 mode which is suitable for test-driving the application, but not for doing active software development. We recommend
 you start with this approach.
 
-After you have run `vagrant ssh` and have a command prompt in the Linux VM, run the following commands on the **guest** Linux VM:
+After you have run `vagrant ssh` and have a command prompt inside the **guest** VM that includes `/srv/calthorpe/urbanfootprint` run the following commands:
 
     ./quickstart.sh
 

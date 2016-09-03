@@ -1,8 +1,6 @@
 # UrbanFootprint Local Installation
 
-These are the recommended steps for installing and running a local UrbanFootprint development environment on a computer running Mac OS X or Linux.
-
-**If you're running MS Windows, please refer to [README-developers-windows.md](README-developers-windows.md)**
+These are the recommended steps for installing and running a local UrbanFootprint development environment on a computer running Mac OS X or MS Windows.
 
 ## Prerequisites
 
@@ -11,11 +9,21 @@ These are the recommended steps for installing and running a local UrbanFootprin
 * [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) -- VirtualBox allows us to create a Linux Virtual Machine
 * [Download and install Vagrant](https://www.vagrantup.com/downloads.html) -- A command line tool for interacting with VirtualBox and building the UF virtual machine
 
+### Windows Prerequisites - Install all in Windows
+
+* [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) -- VirtualBox allows us to create a Linux Virtual Machine on your Windows computer
+* [Download and install Vagrant](https://www.vagrantup.com/downloads.html) -- A command line tool for interacting with VirtualBox and building the UF virtual machine
+* [Download and install Git-bash for Windows](https://git-scm.com/download/win) -- A quick way to get a bash prompt on Windows
+
 *NOTE: In order to use VirtualBox v5.1.x (on Windows or Mac) you must to install Vagrant 1.8.5+. For older versions of Vagrant make sure to install [VirtualBox version 5.0.x](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0), which is available from the [VirtualBox Old Builds](https://www.virtualbox.org/wiki/Download_Old_Builds).*
 
-## First-time VM configuration
+## Developer VM Configuration
 
-The "host" computer is the machine running VirtualBox. The "guest" machine is the virtual machine running within VirtualBox.
+This version installs and configures a full developer environment. It runs all services in "development" mode,
+which is slower and more resource intensive than "production" mode. We recommend running in this mode once you
+are ready to dive into Python and JavaScript development for UrbanFootprint.
+
+For reference, the "host" computer is the machine running VirtualBox (your Mac or Windows computer). The "guest" machine is the virtual machine running within VirtualBox.
 
 Run the following commands on the **host** computer:
 
@@ -28,31 +36,6 @@ Run the following commands on the **host** computer:
     vagrant ssh
 
 You will now be ssh'd into the guest VM and should have a Linux command prompt in the `/srv/calthorpe/urbanfootprint` directory.
-
-## Quickstart
-
-This version imports a pre-built database to get you up and running quickly. It runs all services in "production"
-mode which is suitable for test-driving the application, but not for doing active software development. We recommend
-you start with this approach.
-
-After you have run `vagrant ssh` and have a command prompt in the Linux VM, run the following commands on the **guest** Linux VM:
-
-    ./quickstart.sh
-
-When that has completed you can open [http://localhost:3333/footprint/](http://localhost:3333/footprint/) in your browser. The default
-username is "admin@urbanfootprint.net" and the default password is "admin@uf".
-
-**If you're following the "Quickstart" path you can stop here and [start using UF in your browser!](http://localhost:3333/footprint/)**
-
---------
-
-## (Advanced) Developer VM Configuration
-
-This version installs and configures a full developer environment. It runs all services in "development" mode,
-which are slower and more resource intensive than "production" mode. We recommend running in this mode once you
-are ready to dive into Python and JavaScript development for UrbanFootprint.
-
-NOTE: After every VM reboot (via a vagrant reload or otherwise) *YOU MUST* run `fab -f footprint/installer localhost restart_dev`
 
     cp .env.sample .env
     wget https://s3-us-west-2.amazonaws.com/uf-provisioning/urbanfootprint-sacog-source-db.sql.gz
@@ -72,6 +55,8 @@ NOTE: After every VM reboot (via a vagrant reload or otherwise) *YOU MUST* run `
 All developer services are managed by supervisor. The easiest way to make sure everything is up and running is this:
 
     fab -f footprint/installer localhost restart_dev
+    
+NOTE: After every VM reboot (via a vagrant reload or otherwise) *YOU MUST* run `fab -f footprint/installer localhost restart_dev`    
 
 If you want to see what commands are being run by supervisor, look in `conf/etc/supervisor/conf.d/calthorpe.supervisor.dev`
 
@@ -79,9 +64,9 @@ If you want to see what commands are being run by supervisor, look in `conf/etc/
 
 [http://localhost:3333/fp/](http://localhost:3333/fp/)
 
-## OPTIONAL: Run Nginx + Sproutcore on your Mac
+## OPTIONAL (Mac Only): Run Nginx + Sproutcore on the Host Machine
 
-The sproutcore server is faster when served up from your local mac, but the django server must be run on the VM.
+The sproutcore server is faster when served up from your local Mac, but the Django server must be run on the VM.
 
 #### Install and configure rbenv on your Mac
 

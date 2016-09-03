@@ -7,7 +7,7 @@ VAGRANT_COMMAND = ARGV[0]
 
 # Allow user to override amount of memory allocated
 # to VM via environment variable.
-VM_MEMORY = ENV['UF_VM_MEMORY']  || 3072
+VM_MEMORY = ENV['UF_VM_MEMORY']  || 4096
 VM_CPUS   = ENV['UF_VM_CPUS']    || 2
 VM_PROXY  = ENV['VAGRANT_PROXY'] || false
 
@@ -38,7 +38,7 @@ Vagrant.configure(2) do |config|
   ############################################################################
 
   ############################################################################
-  # VIRTUALBOX ON WINDOWS
+  # VIRTUALBOX
   ############################################################################
   config.vm.define "urbanfootprint" do |subvm|
     subvm.vm.hostname = "urbanfootprint"
