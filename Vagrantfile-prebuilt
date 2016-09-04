@@ -11,11 +11,13 @@ VM_MEMORY = ENV['UF_VM_MEMORY']  || 4096
 VM_CPUS   = ENV['UF_VM_CPUS']    || 2
 VM_PROXY  = ENV['VAGRANT_PROXY'] || false
 
+VM_BOX_NAME = "urbanfootprint-prebuilt-2016-09-04"
+
 Vagrant.configure(2) do |config|
   ############################################################################
   # GLOBAL SETTINGS
   ############################################################################
-  config.vm.box     = "urbanfootprint"
+  config.vm.box     = VM_BOX_NAME
   config.vm.box_url = "https://s3-us-west-2.amazonaws.com/uf-provisioning/urbanfootprint-2016-09-04.box"
 
   config.vm.network "forwarded_port", guest: 80, host: 3333
@@ -36,7 +38,7 @@ Vagrant.configure(2) do |config|
   ############################################################################
   # VIRTUALBOX
   ############################################################################
-  config.vm.define "urbanfootprint" do |subvm|
+  config.vm.define VM_BOX_NAME do |subvm|
     subvm.vm.hostname = "urbanfootprint"
 
     # Copy the vagrant user's list of authorized_keys to the calthorpe
