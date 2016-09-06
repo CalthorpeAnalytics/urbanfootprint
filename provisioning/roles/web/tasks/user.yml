@@ -60,5 +60,5 @@
   lineinfile:
     dest:   /etc/sudoers
     state:  present
-    regexp: '^%wheel'
-    line:   '%calthorpe ALL=(ALL) NOPASSWD: ALL'
+    regexp: '^%calthorpe'
+    line:   '%calthorpe ALL=(ALL) NOPASSWD:ALL'
