@@ -15,12 +15,16 @@ UrbanFootprint is developed by [Calthorpe Analytics](http://calthorpeanalytics.c
 
 Interested in installing UrbanFootprint on your own computer?
 
-The fastest way to get up and running with a local UrbanFootprint installation is by using a pre-built
-virtual machine.
-
 ---
 
-# UF Quickstart - Use a Pre-built VM
+# UF Quickstart Cloud
+
+To run a version of UrbanFootprint on your own server (such as an AWS EC2 instance), follow the instructions in **[README-cloud.md](README-cloud.md)**.
+
+# UF Quickstart Local - Use a Pre-built VM
+
+The fastest way to get up and running with a local UrbanFootprint installation is by using a pre-built
+virtual machine.
 
 ### Quickstart Prerequisites for Mac OS X and MS Windows:
 
@@ -44,7 +48,7 @@ A local UrbanFootprint instance is now accessible via  [http://localhost:3333/fo
 
 If you're looking to do active code development on the UrbanFootprint code base, then you'll need to
 install a development environment. Detailed installation instructions are available for Mac OS X
-and MS Windows in [README-developers.md](README-developers.md)
+and MS Windows in **[README-developers.md](README-developers.md)**
 
 # UrbanFootprint Client Configuration
 
