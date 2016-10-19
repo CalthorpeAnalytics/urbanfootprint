@@ -33,6 +33,21 @@ Expect this script to take 15-20 minutes to complete. You'll know it's done when
 	********************************************************************
 	********************************************************************
 
+## Running in Production Mode or Development Mode
+
+By default the "quickstart" UF installation will be in Production Mode. This mode intended for using UF via the web interface, but is not suitable for active Python or JavaSscript code development. For active development you should use Development Mode, which can be switched to via:
+
+    sudo su - calthorpe # become the calthorpe user
+    fab -f footprint/installer localhost switch_to_dev
+    
+**You will then access your UF instance at the following URL:** [http://YOUR-IP-HERE/fp/](http://YOUR-IP-HERE/fp/)
+    
+In development mode you will see a Sproutcore application page with a menu of available options. Select the "fp" option and 
+    
+To reverse this run:
+
+    sudo su - calthorpe # become the calthorpe user
+    fab -f footprint/installer localhost switch_to_prod
 
 # Using UF
 
