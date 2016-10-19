@@ -446,7 +446,7 @@ def switch_to_prod(reverse=False):
     sudo('supervisorctl stop all')
     sudo('sleep 15')
     # Double down on making sure we don't end up with duplicate python processes
-    sudo('pkill -9 /srv/calthorpe/urbanfootprint/manage.py')
+    sudo('pkill -f -9 /srv/calthorpe/urbanfootprint/manage.py || true')
     sudo('service supervisor restart')
     sudo('service nginx restart')
 
