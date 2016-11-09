@@ -71,7 +71,7 @@ Footprint.WaterModuleManagementView = SC.View.extend({
             layout: {height: 40, top: 90, left: 10, right: 10},
             resultBinding: SC.Binding.oneWay('.parentView*content.query.firstObject'),
             columnName: 'residential_water_use__sum',
-            title: 'Annual Residenital Water Use (gal)'
+            title: 'Annual Residential Water Use (gal)'
         }),
 
         totalCommercialWaterResultView: Footprint.TopLabeledResultView.extend({

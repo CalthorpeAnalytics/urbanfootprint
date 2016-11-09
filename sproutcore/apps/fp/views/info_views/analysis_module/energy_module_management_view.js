@@ -93,9 +93,9 @@ Footprint.EnergyModuleManagementView = SC.View.extend({
         energyPerHHResultView: Footprint.TwoValueLabeledResultView.extend({
             layout: {height: 45, top: 220, left: 10, right: 10},
             resultBinding: SC.Binding.oneWay('.parentView*content.query.firstObject'),
-            column1Name: 'residenital_per_hh_gas_use__sum',
-            column2Name: 'residenital_per_hh_electricity_use__sum',
-            title: 'Residenital Energy Use per Dwelling Unit',
+            column1Name: 'residential_per_hh_gas_use__sum',
+            column2Name: 'residential_per_hh_electricity_use__sum',
+            title: 'Residential Energy Use per Dwelling Unit',
             subTitle1: 'Gas (thm / du)',
             subTitle2: 'Electricity (Kwh / DU)'
         }),
