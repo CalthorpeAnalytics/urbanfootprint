@@ -9,14 +9,3 @@
 # code is distributed WITHOUT ANY WARRANTY, without implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
 # Public License v3 for more details; see <http://www.gnu.org/licenses/>.
-
-# Explicit imports for module resolution, sigh
-import core_module
-import fiscal_module
-import vmt_module
-import public_health_module
-import water_module
-import swmm_module
-import energy_module
-import agriculture_module
-import environmental_constraint_module

@@ -21,3 +21,4 @@ from footprint.client.configuration.default.layer_style.layer_selection_layer_st
 from footprint.client.configuration.default.layer_style.ph_block_group_outcomes_feature_layer_style import PhBlockGroupOutcomesLayerStyle
 from footprint.client.configuration.default.layer_style.vmt_feature_layer_style import VmtFeatureLayerStyle
 from footprint.client.configuration.default.layer_style.water_feature_layer_style import WaterFeatureLayerStyle
+from footprint.client.configuration.default.layer_style.swmm_feature_layer_style import SwmmFeatureLayerStyle

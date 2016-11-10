@@ -43,7 +43,7 @@ Footprint.resultLibrariesController = Footprint.PresentationsController.create({
 
             if (this.get('activeAnalysisModule') && this.get('analysisModuleSectionIsVisible')) {
                 var analysisKey = this.getPath('activeAnalysisModule.firstObject.key');
-                if (['water', 'energy', 'fiscal', 'vmt', 'agriculture_analysis', 'public_health'].contains(analysisKey)) {
+                if (['water', 'energy', 'fiscal', 'vmt', 'agriculture_analysis', 'public_health', 'swmm'].contains(analysisKey)) {
                     var results = this.get('content').filter(function (library) {
                         return library.get('key') == "result_library__%@".fmt(analysisKey)
                     });

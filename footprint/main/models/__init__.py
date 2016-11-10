@@ -41,6 +41,7 @@ from footprint.main.models.analysis.core_increment_feature import CoreIncrementF
 from footprint.main.models.analysis.fiscal_feature import FiscalFeature
 from footprint.main.models.analysis.energy_feature import EnergyFeature
 from footprint.main.models.analysis.water_feature import WaterFeature
+from footprint.main.models.analysis.swmm_feature import SwmmFeature
 from footprint.main.models.analysis.public_health_features.ph_variables_feature import \
     PhVariablesFeature
 from footprint.main.models.analysis.public_health_features.ph_grid_outcomes_feature import \

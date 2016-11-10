@@ -10,13 +10,19 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
 # Public License v3 for more details; see <http://www.gnu.org/licenses/>.
 
-# Explicit imports for module resolution, sigh
-import core_module
-import fiscal_module
-import vmt_module
-import public_health_module
-import water_module
-import swmm_module
-import energy_module
-import agriculture_module
-import environmental_constraint_module
+
+from django.db import models
+from footprint.main.models.geospatial.feature import Feature
+
+
+__author__ = 'calthorpe_analytics'
+
+
+
+class SwmmFeature(Feature):
+
+    total_swmm_runoff = models.DecimalField(max_digits=15, decimal_places=4, default=0)
+
+    class Meta(object):
+        abstract = True
+        app_label = 'main'

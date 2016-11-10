@@ -229,6 +229,7 @@ class AnalysisModuleKey(Keys):
     VMT = Fab.ricate('vmt')
     ENERGY = Fab.ricate('energy')
     WATER = Fab.ricate('water')
+    SWMM = Fab.ricate('swmm')
 
     PUBLIC_HEALTH = Fab.ricate('public_health')
 
