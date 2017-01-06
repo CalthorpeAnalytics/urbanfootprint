@@ -39,15 +39,18 @@ By default the "quickstart" UF installation will be in Production Mode. This mod
 
     sudo su - calthorpe # become the calthorpe user
     fab -f footprint/installer localhost switch_to_dev
-    
-**You will then access your UF instance at the following URL:** [http://YOUR-IP-HERE/fp/](http://YOUR-IP-HERE/fp/)
-    
+        
 In development mode you will see a Sproutcore application page with a menu of available options. Select the "fp" option and 
     
-To reverse this run:
+To switch back to production mode this run:
 
     sudo su - calthorpe # become the calthorpe user
     fab -f footprint/installer localhost switch_to_prod
+
+**NOTES:**
+* in "Production Mode" access your UF instance at the following URL: [http://YOUR-IP-HERE/footprint/](http://YOUR-IP-HERE/footprint/)
+* in "Development Mode" access your UF instance at the following URL: [http://YOUR-IP-HERE/fp/](http://YOUR-IP-HERE/fp/)
+
 
 # Using UF
 
@@ -69,4 +72,4 @@ For information on how to create new users, please reference the
 
 [http://urbanfootprint-v1.readthedocs.io/en/latest/](http://urbanfootprint-v1.readthedocs.io/en/latest/)
 
-Copyright (C) 2016 [Calthorpe Analytics](http://calthorpeanalytics.com/)
+Copyright (C) 2017 [Calthorpe Analytics](http://calthorpeanalytics.com/)

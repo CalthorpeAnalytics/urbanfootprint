@@ -134,4 +134,4 @@ For information on how to create new users, please reference the
 
 [http://urbanfootprint-v1.readthedocs.io/en/latest/](http://urbanfootprint-v1.readthedocs.io/en/latest/)
 
-Copyright (C) 2016 [Calthorpe Analytics](http://calthorpeanalytics.com/)
+Copyright (C) 2017 [Calthorpe Analytics](http://calthorpeanalytics.com/)

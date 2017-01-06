@@ -1,7 +1,7 @@
 # coding=utf8
 
 # UrbanFootprint v1.5
-# Copyright (C) 2016 Calthorpe Analytics
+# Copyright (C) 2017 Calthorpe Analytics
 #
 # This file is part of UrbanFootprint version 1.5
 #

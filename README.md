@@ -63,4 +63,4 @@ The recommended way to manage client configurations is to [fork](https://help.gi
 [urbanfootprint-configuration](https://github.com/CalthorpeAnalytics/urbanfootprint-configuration) repo. You can
 then model a new client configuration off of the existing clients.
 
-Copyright (C) 2016 [Calthorpe Analytics](http://calthorpeanalytics.com/)
+Copyright (C) 2017 [Calthorpe Analytics](http://calthorpeanalytics.com/)

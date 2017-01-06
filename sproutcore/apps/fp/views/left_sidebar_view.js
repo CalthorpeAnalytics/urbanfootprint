@@ -1,6 +1,6 @@
 /*
  * UrbanFootprint v1.5
- * Copyright (C) 2016 Calthorpe Analytics
+ * Copyright (C) 2017 Calthorpe Analytics
  *
  * This file is part of UrbanFootprint version 1.5
  *
@@ -87,7 +87,7 @@ Footprint.LeftSidebarView = SC.View.extend({
         }),
         copyrightLabelView: SC.LabelView.create({
             classNames: "footprint-copyright-label-view",
-            value: 'UrbanFootprint 1.5 rev. yyyy.mm.dd \n © 2016 Calthorpe Analytics', // auto-update-date: yyyy.mm.dd
+            value: 'UrbanFootprint 1.5 rev. yyyy.mm.dd \n © 2017 Calthorpe Analytics', // auto-update-date: yyyy.mm.dd
             toolTip: 'Version yyyy.mm.dd-develop-c854682', // auto-update-rev: yyyy.mm.dd-develop-c854682
             layout: {top: 0.05, left: 40}
         })
