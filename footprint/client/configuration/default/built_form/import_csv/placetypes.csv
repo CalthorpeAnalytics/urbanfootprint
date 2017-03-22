@@ -1,0 +1,36 @@
+Urban Mixed Use,urban_mixed_use,#940000,200
+Urban Residential,urban_residential,#CC5500,200
+Urban Commercial,urban_commercial,#5D2682,200
+City Mixed Use,city_mixed_use,#C20000,200
+City Residential,city_residential,#E66A05,200
+City Commercial,city_commercial,#862C90,200
+Town Mixed Use,town_mixed_use,#E61414,200
+Town Residential,town_residential,#FA7E0A,220
+Town Commercial,town_commercial,#B12F9C,200
+Village Mixed Use,village_mixed_use,#FF5252,220
+Village Residential,village_residential,#FF901A,180
+Village Commercial,village_commercial,#DC41B8,230
+Neighborhood Residential,neighborhood_residential,#FFA733,180
+Neighborhood Low,neighborhood_low,#FFBA42,230
+Office Focus,office_focus,#8764A6,45
+Mixed Office and R&D,mixed_office_and_r_and_d,#A981D5,45
+Office/Industrial,office_industrial,#CF9DEC,40
+Industrial Focus,industrial_focus,#E6CCFF,35
+Low-Density Employment Park,low_density_employment_park,#EEE5FF,35
+High Intensity Activity Center,high_intensity_activity_center,#F679AB,130
+Mid Intensity Activity Center,mid_intensity_activity_center,#FF9B99,70
+Low Intensity Retail-Centered N'Hood,low_intensity_retail_centered_neighborhood,#FFB0AD,65
+Retail: Strip Mall/ Big Box,retail_strip_mall_big_box,#FFCCCC,60
+Industrial/Office/Res Mixed High,industrial_office_residential_mixed_high,#FBC781,60
+Industrial/Office/Res Mixed Low,industrial_office_residential_mixed_low,#FCDBAE,60
+Suburban Multifamily,suburban_multifamily,#FECF58,90
+Suburban Mixed Residential,suburban_mixed_residential,#FEE567,90
+Residential Subdivision,residential_subdivision,#FEF295,90
+Large Lot Residential Area,large_lot_residential,#FEF6A9,20
+Rural Residential,rural_residential,#EBE07A,15
+Rural Ranchettes,rural_ranchettes,#DCC156,10
+Rural Employment,rural_employment,#BCD397,10
+Campus/ University,campus_or_university,#365F91,150
+Institutional,institutional,#538DD5,130
+Parks & Open Space,parks_and_open_space,#7DBD4C,50
+Blank,blank,#D8EBC9,10

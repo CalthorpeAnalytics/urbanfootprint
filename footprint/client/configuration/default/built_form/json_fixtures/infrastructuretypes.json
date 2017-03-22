@@ -1,0 +1,131 @@
+[
+  {
+    "pk": 6,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_1",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBE5zcy4=",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 7,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_2",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBE5zcy4=",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 8,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_3",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBE5zcy4=",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 1,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 2,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 3,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 1,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 6,
+      "name": "Park",
+      "tags": [],
+      "description": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 7,
+      "name": "Streets",
+      "tags": [],
+      "description": null
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 8,
+      "name": "Detention/Utilities",
+      "tags": [],
+      "description": null
+    }
+  },
+  {
+    "pk": 1,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": []
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": []
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": []
+    }
+  },
+  {
+    "pk": 1,
+    "model": "main.infrastructuretype",
+    "fields": {
+      "infrastructureattributeset_ptr": 1,
+      "tags": []
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.infrastructuretype",
+    "fields": {
+      "infrastructureattributeset_ptr": 2,
+      "tags": []
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.infrastructuretype",
+    "fields": {
+      "infrastructureattributeset_ptr": 3,
+      "tags": []
+    }
+  }
+]

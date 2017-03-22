@@ -1,0 +1,48 @@
+meta_class,btid,color_hex,building_type
+Office/Industrial,1,#948A54,Agricultural Processing/Retail Employment
+Agricultural,2,#948A54,Agriculture (SACOG)
+Civic,3,#262626,Airport (SACOG)
+Blank,4,,Blank Place Type
+Office/Industrial,5,#FF3399,CBD Office
+Civic,6,#BFBFBF,Civic/Institution (SACOG)
+Institutional,7,#595959,College/University (SACOG)
+Commercial/Retail,8,#FF0000,Community/Neighborhood Commercial
+Commercial/Retail,9,#FF0000,Community/Neighborhood Commercial/Office
+Commercial/Retail,10,#FB3300,Community/Neighborhood Retail
+Residential,11,#99FF99,Farm Home
+Agricultural,12,#948A54,Forest (SACOG)
+Office/Industrial,13,#9900CC,Heavy Industrial
+Residential,14,#CC6600,High Density Attached Residential
+Office/Industrial,15,#FF66CC,High-Intensity Office
+Commercial/Retail,16,#963634,Hotel (SACOG)
+Civic,17,#808080,K-12 School (SACOG)
+Residential,18,#FFFFCC,Large Lot Detached (Not Farm Home)
+Office/Industrial,19,#9933FF,Light Industrial
+Office/Industrial,20,#CC99FF,Light Industrial/Office
+Residential,21,#FFFF00,Low Density Detached Residential
+Office/Industrial,22,#FF99CC,Low Intensity Office (SACOG)
+Office/Industrial,23,#404040,Medical Facility
+Residential,24,#FF9900,Medium Density Attached Residential
+Residential,25,#FABF8F,Medium Density Detached Residential
+Residential,26,#F27900,Medium-High Density Attached Residential
+Residential,27,#FFCC66,Medium-High Density Detached Residential
+Institutional,28,,Military (SACOG)
+Residential,29,#FF6600,Mobile Home Park
+Office/Industrial,30,#FF99CC,Moderate-Intensity Office
+Park,31,#92D050,Park and/or Open Space (SACOG)
+Commercial/Retail,32,#C4BD97,Parking Lot (SACOG)
+Commercial/Retail,33,#948A54,Parking Structure  (SACOG)
+Commercial/Retail,34,#494529,Parking Structure w/Ground Floor Retail (SACOG)
+Civic,35,#D9D9D9,Public/Quasi-Public
+Office/Industrial,36,#800000,Regional Comercial/Office
+Commercial/Retail,37,#CC0000,Regional Retail
+Mixed Use,38,#3399FF,Residential/Retail Mixed Use High
+Mixed Use,39,#66CCFF,Residential/Retail Mixed Use Low
+Street,40,,Roads (SACOG)
+Residential,41,#FFFFCC,Rural Residential (SACOG)
+Institutional,42,#595959,UC Davis
+Residential,43,#7A2900,Urban Attached Residential
+Park,44,,Urban Reserve
+Residential,45,#993300,Very High Density Attached Residential
+Residential,46,#FFFFCC,Very Low Density Detached Residential
+Park,47,,Water (SACOG)

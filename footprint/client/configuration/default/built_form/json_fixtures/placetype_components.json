@@ -1,0 +1,7993 @@
+[
+  {
+    "pk": 1,
+    "model": "main.tag",
+    "fields": {
+      "tag": "Mixed Use"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.tag",
+    "fields": {
+      "tag": "Civic"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.tag",
+    "fields": {
+      "tag": "Institutional"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "main.tag",
+    "fields": {
+      "tag": "Office/Industrial"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "main.tag",
+    "fields": {
+      "tag": "Residential"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "main.tag",
+    "fields": {
+      "tag": "Commercial/Retail"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "main.tag",
+    "fields": {
+      "tag": "Unsorted"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Office Services",
+      "description": null
+    }
+  },
+  {
+    "pk": 17,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Accommodation",
+      "description": null
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Retail",
+      "description": null
+    }
+  },
+  {
+    "pk": 8,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Education Services",
+      "description": null
+    }
+  },
+  {
+    "pk": 14,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Multifamily 5 Plus",
+      "description": null
+    }
+  },
+  {
+    "pk": 13,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Arts Entertainment",
+      "description": null
+    }
+  },
+  {
+    "pk": 9,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Retail Services",
+      "description": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Residential",
+      "description": null
+    }
+  },
+  {
+    "pk": 7,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Restaurant",
+      "description": null
+    }
+  },
+  {
+    "pk": 5,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Office",
+      "description": null
+    }
+  },
+  {
+    "pk": 12,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Attached Single Family",
+      "description": null
+    }
+  },
+  {
+    "pk": 16,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Medical Services",
+      "description": null
+    }
+  },
+  {
+    "pk": 10,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Other Services",
+      "description": null
+    }
+  },
+  {
+    "pk": 21,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Multifamily 2 To 4",
+      "description": null
+    }
+  },
+  {
+    "pk": 26,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Single Family Small Lot",
+      "description": null
+    }
+  },
+  {
+    "pk": 18,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Manufacturing",
+      "description": null
+    }
+  },
+  {
+    "pk": 20,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Transport Warehouse",
+      "description": null
+    }
+  },
+  {
+    "pk": 19,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Wholesale",
+      "description": null
+    }
+  },
+  {
+    "pk": 4,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Industrial",
+      "description": null
+    }
+  },
+  {
+    "pk": 22,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Agriculture",
+      "description": null
+    }
+  },
+  {
+    "pk": 6,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Agricultural",
+      "description": null
+    }
+  },
+  {
+    "pk": 11,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Single Family Large Lot",
+      "description": null
+    }
+  },
+  {
+    "pk": 23,
+    "model": "main.buildingusedefinition",
+    "fields": {
+      "category": null,
+      "name": "Extraction",
+      "description": null
+    }
+  },
+  {
+    "pk": 6,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_1",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBE5zcy4=",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 7,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_2",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBE5zcy4=",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 8,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_3",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBE5zcy4=",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 246,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_343",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGNTI1MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 247,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_344",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzY2RkZGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 248,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_345",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 249,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_346",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzM2NUY5MXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 250,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_347",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2Q0NGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 251,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_348",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 252,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_349",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzAwOTk5OXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 253,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_350",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 254,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_351",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzVEMjY4MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 255,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_352",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGRkZDQ3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 256,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_353",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZDRkU2RnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 257,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_354",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZDRkU2RnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 258,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_355",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0NDNTUwMHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 259,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_356",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 260,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_357",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzAwRkZGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 261,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_358",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzVEMjY4MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 262,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_359",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGNjY5OXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 263,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_360",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2MTQxNHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 264,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_361",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzg3NjRBNnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 265,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_362",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzVEMjY4MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 266,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_363",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzg2MkM5MHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 267,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_364",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2Q0NGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 268,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_366",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGOTAxQXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 271,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_369",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0RDQzE1NnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 272,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_370",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzk0OEE1NHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 273,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_371",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGOTAxQXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 275,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_373",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZFQ0Y1OHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 278,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_376",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZDRkU2RnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 279,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_377",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0VFRTVGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 280,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_378",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzg3NjRBNnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 361,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_342",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGQjBBRHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 422,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_365",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGOUI5OXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 423,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_379",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGQTczM3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 424,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_380",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0NDNTUwMHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 425,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_381",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGOTAxQXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 426,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_382",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGRkZDQ3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 427,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_383",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 428,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_384",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzk0MDAwMHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 429,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_385",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2Q0NGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 431,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_387",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 432,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_388",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGQTczM3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 433,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_389",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0JDRDM5N3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 434,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_390",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0E5ODFENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 435,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_391",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0Y2NzlBQnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 436,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_392",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGNTI1MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 439,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_395",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzM2NUY5MXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 440,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_396",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0RDNDFCOHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 441,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_397",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0YxQzNDM3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 442,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_398",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2Q0NGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 443,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_399",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGRkZDQ3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 444,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_400",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 362,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_414",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGQkE0MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 363,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_415",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzg3NjRBNnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 364,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_416",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0E5ODFENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 365,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_417",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0NGOURFQ3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 366,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_418",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2Q0NGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 367,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_419",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0VFRTVGRnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 368,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_420",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0Y2NzlBQnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 369,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_421",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGOUI5OXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 370,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_422",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGQjBBRHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 371,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_423",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGQ0NDQ3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 372,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_424",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZCQzc4MXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 373,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_425",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZDREJBRXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 374,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_426",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZFQ0Y1OHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 375,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_427",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZFRTU2N3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 376,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_428",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZFRjI5NXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 377,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_429",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZFRjZBOXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 378,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_430",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGRkZDQ3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 379,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_431",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0RDQzE1NnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 380,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_432",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0JDRDM5N3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 381,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_433",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzM2NUY5MXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 382,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_434",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzUzOERENXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 404,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_435",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzdEQkQ0Q3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 445,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_401",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzk0MDAwMHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 446,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_402",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0NDNTUwMHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 447,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_403",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzVEMjY4MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 448,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_404",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0MyMDAwMHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 449,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_405",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2NkEwNXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 450,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_406",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHIzg2MkM5MHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 451,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_407",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0U2MTQxNHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 452,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_408",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZBN0UwQXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 453,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_409",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0IxMkY5Q3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 454,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_410",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGNTI1MnEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 455,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_411",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGOTAxQXEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 456,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_412",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0RDNDFCOHEFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 457,
+    "model": "main.medium",
+    "fields": {
+      "key": "built_form_413",
+      "name": "",
+      "url": null,
+      "content": "gAJ9cQFVBGZpbGxxAn1xA1UFY29sb3JxBFUHI0ZGQTczM3EFc3Mu",
+      "content_type": "color",
+      "description": null
+    }
+  },
+  {
+    "pk": 399,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 153.520,
+      "combined_pop_emp_density": 2.7369,
+      "residential_irrigated_square_feet": 18.41,
+      "pervious_hardscape_percent": 0.003,
+      "hardscape_percent": 0.343,
+      "impervious_roof_percent": 0.328,
+      "softscape_and_landscape_percent": 0.007,
+      "impervious_hardscape_percent": 0.015,
+      "parking_structure_square_feet": 49649.79,
+      "gross_net_ratio": 0.5536478,
+      "irrigated_percent": 0.136,
+      "household_density": 0.474,
+      "total_far": 4.4704578,
+      "floors": 11.895,
+      "residential_average_lot_size": 1316.63,
+      "commercial_irrigated_square_feet": 3.10,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.137
+    }
+  },
+  {
+    "pk": 402,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 47.460,
+      "combined_pop_emp_density": 1.4930,
+      "residential_irrigated_square_feet": 19.92,
+      "pervious_hardscape_percent": 0.004,
+      "hardscape_percent": 0.280,
+      "impervious_roof_percent": 0.265,
+      "softscape_and_landscape_percent": 0.007,
+      "impervious_hardscape_percent": 0.015,
+      "parking_structure_square_feet": 15296.89,
+      "gross_net_ratio": 0.5600000,
+      "irrigated_percent": 0.138,
+      "household_density": 0.469,
+      "total_far": 1.4487550,
+      "floors": 3.073,
+      "residential_average_lot_size": 596.35,
+      "commercial_irrigated_square_feet": 3.85,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.118
+    }
+  },
+  {
+    "pk": 404,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 51.981,
+      "combined_pop_emp_density": 5.0012,
+      "residential_irrigated_square_feet": 21.44,
+      "pervious_hardscape_percent": 0.005,
+      "hardscape_percent": 0.349,
+      "impervious_roof_percent": 0.331,
+      "softscape_and_landscape_percent": 0.009,
+      "impervious_hardscape_percent": 0.018,
+      "parking_structure_square_feet": 15607.60,
+      "gross_net_ratio": 0.5600000,
+      "irrigated_percent": 0.214,
+      "household_density": 0.244,
+      "total_far": 0.9682880,
+      "floors": 1.827,
+      "residential_average_lot_size": 1622.12,
+      "commercial_irrigated_square_feet": 27.85,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.442
+    }
+  },
+  {
+    "pk": 407,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 19.229,
+      "combined_pop_emp_density": 3.0751,
+      "residential_irrigated_square_feet": 41.18,
+      "pervious_hardscape_percent": 0.007,
+      "hardscape_percent": 0.320,
+      "impervious_roof_percent": 0.287,
+      "softscape_and_landscape_percent": 0.014,
+      "impervious_hardscape_percent": 0.033,
+      "parking_structure_square_feet": 2732.24,
+      "gross_net_ratio": 0.5701998,
+      "irrigated_percent": 0.277,
+      "household_density": 0.245,
+      "total_far": 0.6036295,
+      "floors": 1.296,
+      "residential_average_lot_size": 28921.60,
+      "commercial_irrigated_square_feet": 54.47,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.531
+    }
+  },
+  {
+    "pk": 409,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 21.153,
+      "combined_pop_emp_density": 3.1545,
+      "residential_irrigated_square_feet": 3.80,
+      "pervious_hardscape_percent": 0.011,
+      "hardscape_percent": 0.337,
+      "impervious_roof_percent": 0.261,
+      "softscape_and_landscape_percent": 0.023,
+      "impervious_hardscape_percent": 0.076,
+      "parking_structure_square_feet": 1365.59,
+      "gross_net_ratio": 0.4301998,
+      "irrigated_percent": 0.192,
+      "household_density": 0.020,
+      "total_far": 0.3838528,
+      "floors": 0.831,
+      "residential_average_lot_size": 1188.79,
+      "commercial_irrigated_square_feet": 78.81,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.014
+    }
+  },
+  {
+    "pk": 412,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 69.254,
+      "combined_pop_emp_density": 26.0294,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.007,
+      "hardscape_percent": 0.180,
+      "impervious_roof_percent": 0.149,
+      "softscape_and_landscape_percent": 0.012,
+      "impervious_hardscape_percent": 0.032,
+      "parking_structure_square_feet": 8594.37,
+      "gross_net_ratio": 0.6988970,
+      "irrigated_percent": 0.320,
+      "household_density": 0.000,
+      "total_far": 0.6921730,
+      "floors": 2.832,
+      "residential_average_lot_size": 0.00,
+      "commercial_irrigated_square_feet": 116.64,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 414,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 21.318,
+      "combined_pop_emp_density": 4.2630,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.026,
+      "hardscape_percent": 0.665,
+      "impervious_roof_percent": 0.489,
+      "softscape_and_landscape_percent": 0.027,
+      "impervious_hardscape_percent": 0.177,
+      "parking_structure_square_feet": 527.56,
+      "gross_net_ratio": 0.7564463,
+      "irrigated_percent": 0.247,
+      "household_density": 0.000,
+      "total_far": 0.4051072,
+      "floors": 1.051,
+      "residential_average_lot_size": 0.00,
+      "commercial_irrigated_square_feet": 220.08,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 416,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 6.049,
+      "combined_pop_emp_density": 0.5997,
+      "residential_irrigated_square_feet": 0.01,
+      "pervious_hardscape_percent": 0.005,
+      "hardscape_percent": 0.412,
+      "impervious_roof_percent": 0.320,
+      "softscape_and_landscape_percent": 0.002,
+      "impervious_hardscape_percent": 0.093,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.5600000,
+      "irrigated_percent": 0.177,
+      "household_density": 0.001,
+      "total_far": 0.1402338,
+      "floors": 0.722,
+      "residential_average_lot_size": 905.24,
+      "commercial_irrigated_square_feet": 7.69,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 419,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 23.706,
+      "combined_pop_emp_density": 2.4584,
+      "residential_irrigated_square_feet": 329.60,
+      "pervious_hardscape_percent": 0.019,
+      "hardscape_percent": 0.391,
+      "impervious_roof_percent": 0.250,
+      "softscape_and_landscape_percent": 0.047,
+      "impervious_hardscape_percent": 0.141,
+      "parking_structure_square_feet": 898.12,
+      "gross_net_ratio": 0.7419603,
+      "irrigated_percent": 0.449,
+      "household_density": 0.361,
+      "total_far": 0.2830702,
+      "floors": 1.263,
+      "residential_average_lot_size": 190582.42,
+      "commercial_irrigated_square_feet": 348.32,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.902
+    }
+  },
+  {
+    "pk": 421,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 54.964,
+      "combined_pop_emp_density": 3.5389,
+      "residential_irrigated_square_feet": 28.63,
+      "pervious_hardscape_percent": 0.005,
+      "hardscape_percent": 0.426,
+      "impervious_roof_percent": 0.383,
+      "softscape_and_landscape_percent": 0.008,
+      "impervious_hardscape_percent": 0.043,
+      "parking_structure_square_feet": 13933.91,
+      "gross_net_ratio": 0.7641394,
+      "irrigated_percent": 0.166,
+      "household_density": 0.482,
+      "total_far": 0.9525226,
+      "floors": 2.395,
+      "residential_average_lot_size": 101.45,
+      "commercial_irrigated_square_feet": 16.80,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.135
+    }
+  },
+  {
+    "pk": 424,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 27.182,
+      "combined_pop_emp_density": 1.6401,
+      "residential_irrigated_square_feet": 122.65,
+      "pervious_hardscape_percent": 0.003,
+      "hardscape_percent": 0.186,
+      "impervious_roof_percent": 0.159,
+      "softscape_and_landscape_percent": 0.014,
+      "impervious_hardscape_percent": 0.026,
+      "parking_structure_square_feet": 5825.69,
+      "gross_net_ratio": 0.7094675,
+      "irrigated_percent": 0.312,
+      "household_density": 0.649,
+      "total_far": 0.4738560,
+      "floors": 1.662,
+      "residential_average_lot_size": 93917.39,
+      "commercial_irrigated_square_feet": 11.33,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.624
+    }
+  },
+  {
+    "pk": 426,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 5.243,
+      "combined_pop_emp_density": 1.8415,
+      "residential_irrigated_square_feet": 34.53,
+      "pervious_hardscape_percent": 0.002,
+      "hardscape_percent": 0.073,
+      "impervious_roof_percent": 0.059,
+      "softscape_and_landscape_percent": 0.004,
+      "impervious_hardscape_percent": 0.014,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.7756289,
+      "irrigated_percent": 0.269,
+      "household_density": 0.736,
+      "total_far": 0.1437078,
+      "floors": 1.555,
+      "residential_average_lot_size": 816411.02,
+      "commercial_irrigated_square_feet": 1.88,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.839
+    }
+  },
+  {
+    "pk": 429,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 2.705,
+      "combined_pop_emp_density": 0.2156,
+      "residential_irrigated_square_feet": 0.38,
+      "pervious_hardscape_percent": 0.002,
+      "hardscape_percent": 0.039,
+      "impervious_roof_percent": 0.022,
+      "softscape_and_landscape_percent": 0.005,
+      "impervious_hardscape_percent": 0.017,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.9374819,
+      "irrigated_percent": 0.024,
+      "household_density": 0.079,
+      "total_far": 0.0094390,
+      "floors": 1.015,
+      "residential_average_lot_size": 5482910.56,
+      "commercial_irrigated_square_feet": 0.22,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.188
+    }
+  },
+  {
+    "pk": 432,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 0.001,
+      "combined_pop_emp_density": 0.0000,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.000,
+      "hardscape_percent": 0.001,
+      "impervious_roof_percent": 0.000,
+      "softscape_and_landscape_percent": 0.000,
+      "impervious_hardscape_percent": 0.000,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.0915250,
+      "irrigated_percent": 0.000,
+      "household_density": 0.001,
+      "total_far": 0.0001089,
+      "floors": 0.092,
+      "residential_average_lot_size": 603.65,
+      "commercial_irrigated_square_feet": 0.00,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 398,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 260.102,
+      "combined_pop_emp_density": 26.8589,
+      "residential_irrigated_square_feet": 14.05,
+      "pervious_hardscape_percent": 0.003,
+      "hardscape_percent": 0.361,
+      "impervious_roof_percent": 0.351,
+      "softscape_and_landscape_percent": 0.005,
+      "impervious_hardscape_percent": 0.010,
+      "parking_structure_square_feet": 84684.20,
+      "gross_net_ratio": 0.5536478,
+      "irrigated_percent": 0.169,
+      "household_density": 0.379,
+      "total_far": 8.1344960,
+      "floors": 23.085,
+      "residential_average_lot_size": 2390.15,
+      "commercial_irrigated_square_feet": 6.45,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.837
+    }
+  },
+  {
+    "pk": 400,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 125.406,
+      "combined_pop_emp_density": 65.1471,
+      "residential_irrigated_square_feet": 1.90,
+      "pervious_hardscape_percent": 0.002,
+      "hardscape_percent": 0.265,
+      "impervious_roof_percent": 0.255,
+      "softscape_and_landscape_percent": 0.004,
+      "impervious_hardscape_percent": 0.010,
+      "parking_structure_square_feet": 39446.12,
+      "gross_net_ratio": 0.5536477,
+      "irrigated_percent": 0.199,
+      "household_density": 0.059,
+      "total_far": 3.5493744,
+      "floors": 8.337,
+      "residential_average_lot_size": 1078.71,
+      "commercial_irrigated_square_feet": 15.92,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.069
+    }
+  },
+  {
+    "pk": 401,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 79.275,
+      "combined_pop_emp_density": 11.7098,
+      "residential_irrigated_square_feet": 14.12,
+      "pervious_hardscape_percent": 0.003,
+      "hardscape_percent": 0.321,
+      "impervious_roof_percent": 0.308,
+      "softscape_and_landscape_percent": 0.007,
+      "impervious_hardscape_percent": 0.013,
+      "parking_structure_square_feet": 25741.74,
+      "gross_net_ratio": 0.5600000,
+      "irrigated_percent": 0.186,
+      "household_density": 0.267,
+      "total_far": 1.9258753,
+      "floors": 3.848,
+      "residential_average_lot_size": 640.61,
+      "commercial_irrigated_square_feet": 15.52,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.526
+    }
+  },
+  {
+    "pk": 403,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 91.812,
+      "combined_pop_emp_density": 18.6219,
+      "residential_irrigated_square_feet": 0.67,
+      "pervious_hardscape_percent": 0.001,
+      "hardscape_percent": 0.318,
+      "impervious_roof_percent": 0.312,
+      "softscape_and_landscape_percent": 0.003,
+      "impervious_hardscape_percent": 0.006,
+      "parking_structure_square_feet": 25825.37,
+      "gross_net_ratio": 0.5600000,
+      "irrigated_percent": 0.212,
+      "household_density": 0.028,
+      "total_far": 1.4699825,
+      "floors": 2.677,
+      "residential_average_lot_size": 1994.29,
+      "commercial_irrigated_square_feet": 13.04,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.012
+    }
+  },
+  {
+    "pk": 405,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 35.520,
+      "combined_pop_emp_density": 1.5969,
+      "residential_irrigated_square_feet": 109.87,
+      "pervious_hardscape_percent": 0.004,
+      "hardscape_percent": 0.259,
+      "impervious_roof_percent": 0.239,
+      "softscape_and_landscape_percent": 0.017,
+      "impervious_hardscape_percent": 0.020,
+      "parking_structure_square_feet": 9894.67,
+      "gross_net_ratio": 0.6443096,
+      "irrigated_percent": 0.282,
+      "household_density": 0.521,
+      "total_far": 0.7931751,
+      "floors": 1.776,
+      "residential_average_lot_size": 53059.50,
+      "commercial_irrigated_square_feet": 25.88,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.180
+    }
+  },
+  {
+    "pk": 406,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 55.551,
+      "combined_pop_emp_density": 11.2191,
+      "residential_irrigated_square_feet": 0.93,
+      "pervious_hardscape_percent": 0.002,
+      "hardscape_percent": 0.376,
+      "impervious_roof_percent": 0.367,
+      "softscape_and_landscape_percent": 0.004,
+      "impervious_hardscape_percent": 0.010,
+      "parking_structure_square_feet": 11610.83,
+      "gross_net_ratio": 0.5600000,
+      "irrigated_percent": 0.194,
+      "household_density": 0.029,
+      "total_far": 0.9246575,
+      "floors": 1.353,
+      "residential_average_lot_size": 2840.89,
+      "commercial_irrigated_square_feet": 16.78,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.028
+    }
+  },
+  {
+    "pk": 408,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 20.519,
+      "combined_pop_emp_density": 1.5350,
+      "residential_irrigated_square_feet": 64.14,
+      "pervious_hardscape_percent": 0.004,
+      "hardscape_percent": 0.117,
+      "impervious_roof_percent": 0.103,
+      "softscape_and_landscape_percent": 0.008,
+      "impervious_hardscape_percent": 0.014,
+      "parking_structure_square_feet": 3774.60,
+      "gross_net_ratio": 0.6220770,
+      "irrigated_percent": 0.341,
+      "household_density": 0.540,
+      "total_far": 0.5040917,
+      "floors": 1.468,
+      "residential_average_lot_size": 30397.64,
+      "commercial_irrigated_square_feet": 9.81,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.344
+    }
+  },
+  {
+    "pk": 410,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 14.256,
+      "combined_pop_emp_density": 1.5133,
+      "residential_irrigated_square_feet": 254.63,
+      "pervious_hardscape_percent": 0.003,
+      "hardscape_percent": 0.084,
+      "impervious_roof_percent": 0.060,
+      "softscape_and_landscape_percent": 0.025,
+      "impervious_hardscape_percent": 0.025,
+      "parking_structure_square_feet": 601.75,
+      "gross_net_ratio": 0.6379912,
+      "irrigated_percent": 0.411,
+      "household_density": 0.575,
+      "total_far": 0.3765974,
+      "floors": 1.356,
+      "residential_average_lot_size": 57312.39,
+      "commercial_irrigated_square_feet": 27.74,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.433
+    }
+  },
+  {
+    "pk": 411,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 7.683,
+      "combined_pop_emp_density": 1.4774,
+      "residential_irrigated_square_feet": 68.71,
+      "pervious_hardscape_percent": 0.003,
+      "hardscape_percent": 0.083,
+      "impervious_roof_percent": 0.068,
+      "softscape_and_landscape_percent": 0.010,
+      "impervious_hardscape_percent": 0.015,
+      "parking_structure_square_feet": 601.75,
+      "gross_net_ratio": 0.6379912,
+      "irrigated_percent": 0.281,
+      "household_density": 0.575,
+      "total_far": 0.2087304,
+      "floors": 1.379,
+      "residential_average_lot_size": 777212.02,
+      "commercial_irrigated_square_feet": 7.49,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.433
+    }
+  },
+  {
+    "pk": 413,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 35.245,
+      "combined_pop_emp_density": 8.1690,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.027,
+      "hardscape_percent": 0.535,
+      "impervious_roof_percent": 0.370,
+      "softscape_and_landscape_percent": 0.046,
+      "impervious_hardscape_percent": 0.165,
+      "parking_structure_square_feet": 1757.57,
+      "gross_net_ratio": 0.6988970,
+      "irrigated_percent": 0.285,
+      "household_density": 0.000,
+      "total_far": 0.4994245,
+      "floors": 1.596,
+      "residential_average_lot_size": 0.00,
+      "commercial_irrigated_square_feet": 396.72,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 415,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 17.734,
+      "combined_pop_emp_density": 3.2713,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.019,
+      "hardscape_percent": 0.705,
+      "impervious_roof_percent": 0.531,
+      "softscape_and_landscape_percent": 0.021,
+      "impervious_hardscape_percent": 0.173,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.7453567,
+      "irrigated_percent": 0.289,
+      "household_density": 0.000,
+      "total_far": 0.3186176,
+      "floors": 0.968,
+      "residential_average_lot_size": 0.00,
+      "commercial_irrigated_square_feet": 201.21,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 417,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 83.382,
+      "combined_pop_emp_density": 6.8083,
+      "residential_irrigated_square_feet": 9.10,
+      "pervious_hardscape_percent": 0.002,
+      "hardscape_percent": 0.352,
+      "impervious_roof_percent": 0.341,
+      "softscape_and_landscape_percent": 0.003,
+      "impervious_hardscape_percent": 0.011,
+      "parking_structure_square_feet": 25999.89,
+      "gross_net_ratio": 0.6925699,
+      "irrigated_percent": 0.154,
+      "household_density": 0.392,
+      "total_far": 1.5684979,
+      "floors": 3.432,
+      "residential_average_lot_size": 1467.85,
+      "commercial_irrigated_square_feet": 6.97,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.850
+    }
+  },
+  {
+    "pk": 418,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 38.269,
+      "combined_pop_emp_density": 9.4124,
+      "residential_irrigated_square_feet": 50.75,
+      "pervious_hardscape_percent": 0.023,
+      "hardscape_percent": 0.530,
+      "impervious_roof_percent": 0.371,
+      "softscape_and_landscape_percent": 0.045,
+      "impervious_hardscape_percent": 0.159,
+      "parking_structure_square_feet": 2607.96,
+      "gross_net_ratio": 0.6925699,
+      "irrigated_percent": 0.295,
+      "household_density": 0.088,
+      "total_far": 0.4501705,
+      "floors": 1.212,
+      "residential_average_lot_size": 1070.02,
+      "commercial_irrigated_square_feet": 349.52,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.187
+    }
+  },
+  {
+    "pk": 420,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 60.013,
+      "combined_pop_emp_density": 7.7329,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.027,
+      "hardscape_percent": 0.455,
+      "impervious_roof_percent": 0.266,
+      "softscape_and_landscape_percent": 0.053,
+      "impervious_hardscape_percent": 0.189,
+      "parking_structure_square_feet": 4413.14,
+      "gross_net_ratio": 0.7641394,
+      "irrigated_percent": 0.373,
+      "household_density": 0.000,
+      "total_far": 0.3830248,
+      "floors": 1.754,
+      "residential_average_lot_size": 0.00,
+      "commercial_irrigated_square_feet": 663.93,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 422,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 43.031,
+      "combined_pop_emp_density": 3.7744,
+      "residential_irrigated_square_feet": 14.78,
+      "pervious_hardscape_percent": 0.004,
+      "hardscape_percent": 0.411,
+      "impervious_roof_percent": 0.371,
+      "softscape_and_landscape_percent": 0.005,
+      "impervious_hardscape_percent": 0.040,
+      "parking_structure_square_feet": 8117.82,
+      "gross_net_ratio": 0.7641394,
+      "irrigated_percent": 0.207,
+      "household_density": 0.344,
+      "total_far": 0.6289631,
+      "floors": 1.960,
+      "residential_average_lot_size": 235.95,
+      "commercial_irrigated_square_feet": 18.06,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.860
+    }
+  },
+  {
+    "pk": 423,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 58.122,
+      "combined_pop_emp_density": 1.7024,
+      "residential_irrigated_square_feet": 8.63,
+      "pervious_hardscape_percent": 0.002,
+      "hardscape_percent": 0.378,
+      "impervious_roof_percent": 0.367,
+      "softscape_and_landscape_percent": 0.003,
+      "impervious_hardscape_percent": 0.010,
+      "parking_structure_square_feet": 15595.54,
+      "gross_net_ratio": 0.7094675,
+      "irrigated_percent": 0.097,
+      "household_density": 0.679,
+      "total_far": 0.6588908,
+      "floors": 2.063,
+      "residential_average_lot_size": 86.86,
+      "commercial_irrigated_square_feet": 0.39,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.697
+    }
+  },
+  {
+    "pk": 425,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 11.289,
+      "combined_pop_emp_density": 1.6350,
+      "residential_irrigated_square_feet": 283.56,
+      "pervious_hardscape_percent": 0.003,
+      "hardscape_percent": 0.154,
+      "impervious_roof_percent": 0.122,
+      "softscape_and_landscape_percent": 0.022,
+      "impervious_hardscape_percent": 0.032,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.7094675,
+      "irrigated_percent": 0.460,
+      "household_density": 0.649,
+      "total_far": 0.3250911,
+      "floors": 1.450,
+      "residential_average_lot_size": 204227.71,
+      "commercial_irrigated_square_feet": 26.20,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.624
+    }
+  },
+  {
+    "pk": 427,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 1.276,
+      "combined_pop_emp_density": 2.1241,
+      "residential_irrigated_square_feet": 0.29,
+      "pervious_hardscape_percent": 0.000,
+      "hardscape_percent": 0.001,
+      "impervious_roof_percent": 0.001,
+      "softscape_and_landscape_percent": 0.000,
+      "impervious_hardscape_percent": 0.000,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.8508578,
+      "irrigated_percent": 0.065,
+      "household_density": 0.850,
+      "total_far": 0.0299787,
+      "floors": 1.701,
+      "residential_average_lot_size": 8190890.13,
+      "commercial_irrigated_square_feet": 0.00,
+      "intersection_density": 0.0000,
+      "gross_population_density": 2.124
+    }
+  },
+  {
+    "pk": 428,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 0.372,
+      "combined_pop_emp_density": 1.8536,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.000,
+      "hardscape_percent": 0.000,
+      "impervious_roof_percent": 0.000,
+      "softscape_and_landscape_percent": 0.000,
+      "impervious_hardscape_percent": 0.000,
+      "parking_structure_square_feet": 0.00,
+      "gross_net_ratio": 0.9260494,
+      "irrigated_percent": 0.017,
+      "household_density": 0.742,
+      "total_far": 0.0077248,
+      "floors": 1.667,
+      "residential_average_lot_size": 8897860.18,
+      "commercial_irrigated_square_feet": 0.00,
+      "intersection_density": 0.0000,
+      "gross_population_density": 1.852
+    }
+  },
+  {
+    "pk": 430,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 74.134,
+      "combined_pop_emp_density": 13.5995,
+      "residential_irrigated_square_feet": 0.00,
+      "pervious_hardscape_percent": 0.031,
+      "hardscape_percent": 0.555,
+      "impervious_roof_percent": 0.418,
+      "softscape_and_landscape_percent": 0.062,
+      "impervious_hardscape_percent": 0.137,
+      "parking_structure_square_feet": 16631.01,
+      "gross_net_ratio": 0.6889867,
+      "irrigated_percent": 0.593,
+      "household_density": 0.000,
+      "total_far": 0.6170000,
+      "floors": 2.002,
+      "residential_average_lot_size": 533.02,
+      "commercial_irrigated_square_feet": 1105.05,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.000
+    }
+  },
+  {
+    "pk": 431,
+    "model": "main.buildingattributeset",
+    "fields": {
+      "parking_spaces": 100.958,
+      "combined_pop_emp_density": 39.1683,
+      "residential_irrigated_square_feet": 31.79,
+      "pervious_hardscape_percent": 0.022,
+      "hardscape_percent": 0.443,
+      "impervious_roof_percent": 0.388,
+      "softscape_and_landscape_percent": 0.043,
+      "impervious_hardscape_percent": 0.055,
+      "parking_structure_square_feet": 30745.20,
+      "gross_net_ratio": 0.6247052,
+      "irrigated_percent": 0.437,
+      "household_density": 0.039,
+      "total_far": 1.5578942,
+      "floors": 4.269,
+      "residential_average_lot_size": 21412.07,
+      "commercial_irrigated_square_feet": 446.56,
+      "intersection_density": 0.0000,
+      "gross_population_density": 0.085
+    }
+  },
+  {
+    "pk": 401,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 402,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 403,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 404,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 405,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 406,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 407,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 408,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 409,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 410,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 411,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 412,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 413,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 414,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 415,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 416,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 417,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 418,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 419,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 420,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 421,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 422,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 423,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 424,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 425,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 426,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 427,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 428,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 429,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 430,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 431,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 432,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 433,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 434,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 435,
+    "model": "main.infrastructureattributeset",
+    "fields": {}
+  },
+  {
+    "pk": 1,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 6,
+      "name": "Park",
+      "tags": [],
+      "description": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 7,
+      "name": "Streets",
+      "tags": [],
+      "description": null
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 8,
+      "name": "Detention/Utilities",
+      "tags": [],
+      "description": null
+    }
+  },
+  {
+    "pk": 344,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 247,
+      "name": "High-Rise Mixed Use",
+      "tags": [
+        1
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 345,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 248,
+      "name": "Non-Urban Middle School",
+      "tags": [
+        2
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 346,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 249,
+      "name": "Campus/College Low",
+      "tags": [
+        3
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 347,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 250,
+      "name": "Industrial Low",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 348,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 251,
+      "name": "Non-Urban High School",
+      "tags": [
+        2
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 349,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 252,
+      "name": "Urban Mid-Rise Residential",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 350,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 253,
+      "name": "Urban Middle School",
+      "tags": [
+        2
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 351,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 254,
+      "name": "High-Rise Office",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 352,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 255,
+      "name": "Estate Lot",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 353,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 256,
+      "name": "Medium Lot 5500",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 354,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 257,
+      "name": "Small Lot 4000",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 355,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 258,
+      "name": "Skyscraper Residential",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 356,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 259,
+      "name": "Urban High School",
+      "tags": [
+        2
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 357,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 260,
+      "name": "Mid-Rise Mixed Use",
+      "tags": [
+        1
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 358,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 261,
+      "name": "Hotel High",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 359,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 262,
+      "name": "Parking Structure/Mixed Use",
+      "tags": [
+        1
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 360,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 263,
+      "name": "Low-Rise Mixed Use",
+      "tags": [
+        1
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 361,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 264,
+      "name": "Low-Rise Office",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 362,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 265,
+      "name": "Skyscraper Office",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 363,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 266,
+      "name": "Mid-Rise Office",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 364,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 267,
+      "name": "Warehouse High",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 369,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 271,
+      "name": "Rural Ranchette",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 370,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 272,
+      "name": "Parking Structure",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 371,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 273,
+      "name": "Urban Podium Multi-Family",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 373,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 275,
+      "name": "Garden Apartment",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 376,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 278,
+      "name": "Very Small Lot 3000",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 377,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 279,
+      "name": "Office Park Low",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 378,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 280,
+      "name": "Hotel Low",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 343,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 246,
+      "name": "Main Street Commercial/MU Low (1-2 Floors)",
+      "tags": [
+        1
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 342,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 361,
+      "name": "Low Intensity Strip Commercial (weighted avg)",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 379,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 423,
+      "name": "Urban Townhome/Live-Work",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 380,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 424,
+      "name": "High-Rise Residential",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 381,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 425,
+      "name": "Suburban Multifamily Apt/Condo",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 382,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 426,
+      "name": "Rural Residential",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 383,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 427,
+      "name": "Urban Elementary School",
+      "tags": [
+        2
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 384,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 428,
+      "name": "Skyscraper Mixed Use",
+      "tags": [
+        1
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 385,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 429,
+      "name": "Industrial High",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 387,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 431,
+      "name": "Non-Urban Elementary School",
+      "tags": [
+        2
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 388,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 432,
+      "name": "Standard Townhome",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 389,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 433,
+      "name": "Rural Employment",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 390,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 434,
+      "name": "Office Park High",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 391,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 435,
+      "name": "Regional Mall",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 392,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 436,
+      "name": "Main Street Commercial/MU High (3-5 Floors)",
+      "tags": [
+        1
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 395,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 439,
+      "name": "Campus/College High",
+      "tags": [
+        3
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 397,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 441,
+      "name": "Parking Structure+Ground-Floor Retail",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 398,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 442,
+      "name": "Warehouse Low",
+      "tags": [
+        4
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 399,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 443,
+      "name": "Large Lot 7500",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 400,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 444,
+      "name": "Hospital/Civic/Other Institutional",
+      "tags": [
+        3
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 366,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 268,
+      "name": "Standard Podium Multi-Family",
+      "tags": [
+        5
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 365,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 422,
+      "name": "Medium Intensity Strip Commercial (weighted avg)",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 396,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 440,
+      "name": "Main Street Commercial (Retail + Office/Medical)",
+      "tags": [
+        6
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 415,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 363,
+      "name": "Office Focus",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 416,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 364,
+      "name": "Mixed Office and R&D",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 417,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 365,
+      "name": "Office/Industrial",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 419,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 367,
+      "name": "Low-Density Employment Park",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 420,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 368,
+      "name": "High Intensity Activity Center",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 421,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 369,
+      "name": "Mid Intensity Activity Center",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 422,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 370,
+      "name": "Low Intensity Retail-Centered N'Hood",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 423,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 371,
+      "name": "Retail: Strip Mall/ Big Box",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 424,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 372,
+      "name": "Industrial/Office/Res Mixed High",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 425,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 373,
+      "name": "Industrial/Office/Res Mixed Low",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 426,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 374,
+      "name": "Suburban Multifamily",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 427,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 375,
+      "name": "Suburban Mixed Residential",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 428,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 376,
+      "name": "Residential Subdivision",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 429,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 377,
+      "name": "Large Lot Residential Area",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 430,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 378,
+      "name": "Rural Residential",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 432,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 380,
+      "name": "Rural Employment",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 433,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 381,
+      "name": "Campus/ University",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 434,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 382,
+      "name": "Institutional",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 401,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 445,
+      "name": "Urban Mixed Use",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 402,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 446,
+      "name": "Urban Residential",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 403,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 447,
+      "name": "Urban Commercial",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 404,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 448,
+      "name": "City Mixed Use",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 405,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 449,
+      "name": "City Residential",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 406,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 450,
+      "name": "City Commercial",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 407,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 451,
+      "name": "Town Mixed Use",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 408,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 452,
+      "name": "Town Residential",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 409,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 453,
+      "name": "Town Commercial",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 410,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 454,
+      "name": "Village Mixed Use",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 411,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 455,
+      "name": "Village Residential",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 412,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 456,
+      "name": "Village Commercial",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 413,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 457,
+      "name": "Neighborhood Residential",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 414,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 362,
+      "name": "Neighborhood Low",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 435,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 404,
+      "name": "Parks & Open Space",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 418,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 366,
+      "name": "Industrial Focus",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 431,
+    "model": "main.builtform",
+    "fields": {
+      "origin_built_form": null,
+      "medium": 379,
+      "name": "Rural Ranchettes",
+      "tags": [
+        8
+      ],
+      "description": null
+    }
+  },
+  {
+    "pk": 1,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": []
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": []
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": []
+    }
+  },
+  {
+    "pk": 344,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "pk": 345,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "pk": 346,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        3
+      ]
+    }
+  },
+  {
+    "pk": 347,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 348,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "pk": 349,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 350,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "pk": 351,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 352,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 353,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 354,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 355,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 356,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "pk": 357,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "pk": 358,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 359,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "pk": 360,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "pk": 361,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 362,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 363,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 364,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 369,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 370,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 371,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 373,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 376,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 377,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 378,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 343,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "pk": 342,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 379,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 380,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 381,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 382,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 383,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "pk": 384,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "pk": 385,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 387,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "pk": 388,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 389,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 390,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 391,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 392,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "pk": 395,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        3
+      ]
+    }
+  },
+  {
+    "pk": 397,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 398,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 399,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 400,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        3
+      ]
+    }
+  },
+  {
+    "pk": 366,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 365,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 396,
+    "model": "main.placetypecomponent",
+    "fields": {
+      "tags": [
+        6
+      ]
+    }
+  },
+  {
+    "pk": 401,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 401,
+      "building_attributes": 398
+    }
+  },
+  {
+    "pk": 402,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 402,
+      "building_attributes": 399
+    }
+  },
+  {
+    "pk": 403,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 403,
+      "building_attributes": 400
+    }
+  },
+  {
+    "pk": 404,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 404,
+      "building_attributes": 401
+    }
+  },
+  {
+    "pk": 405,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 405,
+      "building_attributes": 402
+    }
+  },
+  {
+    "pk": 406,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 406,
+      "building_attributes": 403
+    }
+  },
+  {
+    "pk": 407,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 407,
+      "building_attributes": 404
+    }
+  },
+  {
+    "pk": 408,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 408,
+      "building_attributes": 405
+    }
+  },
+  {
+    "pk": 409,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 409,
+      "building_attributes": 406
+    }
+  },
+  {
+    "pk": 410,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 410,
+      "building_attributes": 407
+    }
+  },
+  {
+    "pk": 411,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 411,
+      "building_attributes": 408
+    }
+  },
+  {
+    "pk": 412,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 412,
+      "building_attributes": 409
+    }
+  },
+  {
+    "pk": 413,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 413,
+      "building_attributes": 410
+    }
+  },
+  {
+    "pk": 414,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 414,
+      "building_attributes": 411
+    }
+  },
+  {
+    "pk": 415,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 415,
+      "building_attributes": 412
+    }
+  },
+  {
+    "pk": 416,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 416,
+      "building_attributes": 413
+    }
+  },
+  {
+    "pk": 417,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 417,
+      "building_attributes": 414
+    }
+  },
+  {
+    "pk": 418,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 418,
+      "building_attributes": 415
+    }
+  },
+  {
+    "pk": 419,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 419,
+      "building_attributes": 416
+    }
+  },
+  {
+    "pk": 420,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 420,
+      "building_attributes": 417
+    }
+  },
+  {
+    "pk": 421,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 421,
+      "building_attributes": 418
+    }
+  },
+  {
+    "pk": 422,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 422,
+      "building_attributes": 419
+    }
+  },
+  {
+    "pk": 423,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 423,
+      "building_attributes": 420
+    }
+  },
+  {
+    "pk": 424,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 424,
+      "building_attributes": 421
+    }
+  },
+  {
+    "pk": 425,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 425,
+      "building_attributes": 422
+    }
+  },
+  {
+    "pk": 426,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 426,
+      "building_attributes": 423
+    }
+  },
+  {
+    "pk": 427,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 427,
+      "building_attributes": 424
+    }
+  },
+  {
+    "pk": 428,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 428,
+      "building_attributes": 425
+    }
+  },
+  {
+    "pk": 429,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 429,
+      "building_attributes": 426
+    }
+  },
+  {
+    "pk": 430,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 430,
+      "building_attributes": 427
+    }
+  },
+  {
+    "pk": 431,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 431,
+      "building_attributes": 428
+    }
+  },
+  {
+    "pk": 432,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 432,
+      "building_attributes": 429
+    }
+  },
+  {
+    "pk": 433,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 433,
+      "building_attributes": 430
+    }
+  },
+  {
+    "pk": 434,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 434,
+      "building_attributes": 431
+    }
+  },
+  {
+    "pk": 435,
+    "model": "main.placetype",
+    "fields": {
+      "tags": [
+        8
+      ],
+      "infrastructureattributeset_ptr": 435,
+      "building_attributes": 432
+    }
+  },
+  {
+    "pk": 1,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 383,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 2,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 357,
+      "percent": 0.0102730
+    }
+  },
+  {
+    "pk": 3,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 380,
+      "percent": 0.1695037
+    }
+  },
+  {
+    "pk": 4,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 344,
+      "percent": 0.0513648
+    }
+  },
+  {
+    "pk": 5,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 355,
+      "percent": 0.1181390
+    }
+  },
+  {
+    "pk": 6,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 7,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 350,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 8,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 384,
+      "percent": 0.0513648
+    }
+  },
+  {
+    "pk": 9,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 358,
+      "percent": 0.0102730
+    }
+  },
+  {
+    "pk": 10,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 392,
+      "percent": 0.0154094
+    }
+  },
+  {
+    "pk": 11,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 349,
+      "percent": 0.0102730
+    }
+  },
+  {
+    "pk": 12,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 13,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 351,
+      "percent": 0.0308189
+    }
+  },
+  {
+    "pk": 14,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 362,
+      "percent": 0.0308189
+    }
+  },
+  {
+    "pk": 15,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 363,
+      "percent": 0.0154094
+    }
+  },
+  {
+    "pk": 16,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 17,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 2,
+      "percent": 0.3663523
+    }
+  },
+  {
+    "pk": 18,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 401,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 19,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 383,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 20,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 384,
+      "percent": 0.0051365
+    }
+  },
+  {
+    "pk": 21,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 380,
+      "percent": 0.1540943
+    }
+  },
+  {
+    "pk": 22,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 371,
+      "percent": 0.0513648
+    }
+  },
+  {
+    "pk": 23,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 344,
+      "percent": 0.0051365
+    }
+  },
+  {
+    "pk": 24,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 355,
+      "percent": 0.0513648
+    }
+  },
+  {
+    "pk": 25,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 26,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 350,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 27,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 358,
+      "percent": 0.0256824
+    }
+  },
+  {
+    "pk": 28,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 392,
+      "percent": 0.0256824
+    }
+  },
+  {
+    "pk": 29,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 349,
+      "percent": 0.1438214
+    }
+  },
+  {
+    "pk": 30,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 379,
+      "percent": 0.0513648
+    }
+  },
+  {
+    "pk": 31,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 32,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 2,
+      "percent": 0.3663523
+    }
+  },
+  {
+    "pk": 33,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 402,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 34,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 360,
+      "percent": 0.0054365
+    }
+  },
+  {
+    "pk": 35,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 370,
+      "percent": 0.0163094
+    }
+  },
+  {
+    "pk": 36,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 344,
+      "percent": 0.0108730
+    }
+  },
+  {
+    "pk": 37,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 357,
+      "percent": 0.0054365
+    }
+  },
+  {
+    "pk": 38,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 384,
+      "percent": 0.0163094
+    }
+  },
+  {
+    "pk": 39,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 358,
+      "percent": 0.0271824
+    }
+  },
+  {
+    "pk": 40,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 392,
+      "percent": 0.0271824
+    }
+  },
+  {
+    "pk": 41,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 42,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 351,
+      "percent": 0.0543648
+    }
+  },
+  {
+    "pk": 43,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 361,
+      "percent": 0.1630943
+    }
+  },
+  {
+    "pk": 44,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 362,
+      "percent": 0.0271824
+    }
+  },
+  {
+    "pk": 45,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 396,
+      "percent": 0.0543648
+    }
+  },
+  {
+    "pk": 46,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 397,
+      "percent": 0.0271824
+    }
+  },
+  {
+    "pk": 47,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 363,
+      "percent": 0.1087295
+    }
+  },
+  {
+    "pk": 48,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 49,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 2,
+      "percent": 0.3663523
+    }
+  },
+  {
+    "pk": 50,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 403,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 51,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 383,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 52,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 357,
+      "percent": 0.0510000
+    }
+  },
+  {
+    "pk": 53,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 359,
+      "percent": 0.0153000
+    }
+  },
+  {
+    "pk": 54,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 343,
+      "percent": 0.0051000
+    }
+  },
+  {
+    "pk": 55,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 56,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 350,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 57,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 358,
+      "percent": 0.0153000
+    }
+  },
+  {
+    "pk": 58,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 371,
+      "percent": 0.0255000
+    }
+  },
+  {
+    "pk": 59,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 392,
+      "percent": 0.0510000
+    }
+  },
+  {
+    "pk": 60,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 349,
+      "percent": 0.0204000
+    }
+  },
+  {
+    "pk": 61,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 62,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 360,
+      "percent": 0.0561000
+    }
+  },
+  {
+    "pk": 63,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 361,
+      "percent": 0.0765000
+    }
+  },
+  {
+    "pk": 64,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 379,
+      "percent": 0.0510000
+    }
+  },
+  {
+    "pk": 65,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 396,
+      "percent": 0.0255000
+    }
+  },
+  {
+    "pk": 66,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 397,
+      "percent": 0.0153000
+    }
+  },
+  {
+    "pk": 67,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 366,
+      "percent": 0.0255000
+    }
+  },
+  {
+    "pk": 68,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 363,
+      "percent": 0.0765000
+    }
+  },
+  {
+    "pk": 69,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 70,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 2,
+      "percent": 0.3600000
+    }
+  },
+  {
+    "pk": 71,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 404,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 72,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 383,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 73,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 343,
+      "percent": 0.0255000
+    }
+  },
+  {
+    "pk": 74,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 75,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 350,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 76,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 358,
+      "percent": 0.0204000
+    }
+  },
+  {
+    "pk": 77,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 349,
+      "percent": 0.0663000
+    }
+  },
+  {
+    "pk": 78,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 79,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 371,
+      "percent": 0.0765000
+    }
+  },
+  {
+    "pk": 80,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 379,
+      "percent": 0.1836000
+    }
+  },
+  {
+    "pk": 81,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 366,
+      "percent": 0.1326000
+    }
+  },
+  {
+    "pk": 82,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 359,
+      "percent": 0.0051000
+    }
+  },
+  {
+    "pk": 83,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 84,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 2,
+      "percent": 0.3600000
+    }
+  },
+  {
+    "pk": 85,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 405,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 86,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 343,
+      "percent": 0.0275000
+    }
+  },
+  {
+    "pk": 87,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 358,
+      "percent": 0.0165000
+    }
+  },
+  {
+    "pk": 88,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 89,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 370,
+      "percent": 0.0275000
+    }
+  },
+  {
+    "pk": 90,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 361,
+      "percent": 0.1595000
+    }
+  },
+  {
+    "pk": 91,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 396,
+      "percent": 0.2145000
+    }
+  },
+  {
+    "pk": 92,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 397,
+      "percent": 0.0605000
+    }
+  },
+  {
+    "pk": 93,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 363,
+      "percent": 0.0440000
+    }
+  },
+  {
+    "pk": 94,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 95,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 2,
+      "percent": 0.3600000
+    }
+  },
+  {
+    "pk": 96,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 406,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 97,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 383,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 98,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 359,
+      "percent": 0.0240000
+    }
+  },
+  {
+    "pk": 99,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 343,
+      "percent": 0.0720000
+    }
+  },
+  {
+    "pk": 100,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 101,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 350,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 102,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 371,
+      "percent": 0.0240000
+    }
+  },
+  {
+    "pk": 103,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 392,
+      "percent": 0.0624000
+    }
+  },
+  {
+    "pk": 104,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 378,
+      "percent": 0.0144000
+    }
+  },
+  {
+    "pk": 105,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 360,
+      "percent": 0.0240000
+    }
+  },
+  {
+    "pk": 106,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 361,
+      "percent": 0.0672000
+    }
+  },
+  {
+    "pk": 107,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 379,
+      "percent": 0.0960000
+    }
+  },
+  {
+    "pk": 108,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 396,
+      "percent": 0.0960000
+    }
+  },
+  {
+    "pk": 109,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 110,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 111,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 2,
+      "percent": 0.3600000
+    }
+  },
+  {
+    "pk": 112,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 407,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 113,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 383,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 114,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 353,
+      "percent": 0.1128619
+    }
+  },
+  {
+    "pk": 115,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 343,
+      "percent": 0.0282155
+    }
+  },
+  {
+    "pk": 116,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 376,
+      "percent": 0.0282155
+    }
+  },
+  {
+    "pk": 117,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 354,
+      "percent": 0.1072188
+    }
+  },
+  {
+    "pk": 118,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 119,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 350,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 120,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 392,
+      "percent": 0.1185050
+    }
+  },
+  {
+    "pk": 121,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 122,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 371,
+      "percent": 0.0282155
+    }
+  },
+  {
+    "pk": 123,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 379,
+      "percent": 0.1410774
+    }
+  },
+  {
+    "pk": 124,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 125,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 2,
+      "percent": 0.2756904
+    }
+  },
+  {
+    "pk": 126,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 408,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 127,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 343,
+      "percent": 0.0275000
+    }
+  },
+  {
+    "pk": 128,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 392,
+      "percent": 0.0165000
+    }
+  },
+  {
+    "pk": 129,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 378,
+      "percent": 0.0165000
+    }
+  },
+  {
+    "pk": 130,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 370,
+      "percent": 0.0275000
+    }
+  },
+  {
+    "pk": 131,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 361,
+      "percent": 0.0275000
+    }
+  },
+  {
+    "pk": 132,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 396,
+      "percent": 0.3960000
+    }
+  },
+  {
+    "pk": 133,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 397,
+      "percent": 0.0275000
+    }
+  },
+  {
+    "pk": 134,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 365,
+      "percent": 0.0110000
+    }
+  },
+  {
+    "pk": 135,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 136,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 137,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 2,
+      "percent": 0.3600000
+    }
+  },
+  {
+    "pk": 138,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 409,
+      "placetype_component": 1,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 139,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 383,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 140,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 343,
+      "percent": 0.0784320
+    }
+  },
+  {
+    "pk": 141,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 376,
+      "percent": 0.0490200
+    }
+  },
+  {
+    "pk": 142,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 354,
+      "percent": 0.0490200
+    }
+  },
+  {
+    "pk": 143,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 144,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 350,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 145,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 392,
+      "percent": 0.0098040
+    }
+  },
+  {
+    "pk": 146,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 378,
+      "percent": 0.0245100
+    }
+  },
+  {
+    "pk": 147,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 379,
+      "percent": 0.0980400
+    }
+  },
+  {
+    "pk": 148,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 396,
+      "percent": 0.1470599
+    }
+  },
+  {
+    "pk": 149,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 365,
+      "percent": 0.0343140
+    }
+  },
+  {
+    "pk": 150,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 151,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 152,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 2,
+      "percent": 0.3198002
+    }
+  },
+  {
+    "pk": 153,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 410,
+      "placetype_component": 1,
+      "percent": 0.1000000
+    }
+  },
+  {
+    "pk": 154,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 383,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 155,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 343,
+      "percent": 0.0054208
+    }
+  },
+  {
+    "pk": 156,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 354,
+      "percent": 0.1409400
+    }
+  },
+  {
+    "pk": 157,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 158,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 376,
+      "percent": 0.1897269
+    }
+  },
+  {
+    "pk": 159,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 350,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 160,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 379,
+      "percent": 0.2059893
+    }
+  },
+  {
+    "pk": 161,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 162,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 163,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 2,
+      "percent": 0.2679230
+    }
+  },
+  {
+    "pk": 164,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 411,
+      "placetype_component": 1,
+      "percent": 0.1000000
+    }
+  },
+  {
+    "pk": 165,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 342,
+      "percent": 0.1476719
+    }
+  },
+  {
+    "pk": 166,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 343,
+      "percent": 0.0369180
+    }
+  },
+  {
+    "pk": 167,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 378,
+      "percent": 0.0205100
+    }
+  },
+  {
+    "pk": 168,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 396,
+      "percent": 0.1640799
+    }
+  },
+  {
+    "pk": 169,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 365,
+      "percent": 0.0410200
+    }
+  },
+  {
+    "pk": 170,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 400,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 171,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 3,
+      "percent": 0.0500000
+    }
+  },
+  {
+    "pk": 172,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 2,
+      "percent": 0.3198002
+    }
+  },
+  {
+    "pk": 173,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 412,
+      "placetype_component": 1,
+      "percent": 0.2000000
+    }
+  },
+  {
+    "pk": 174,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 383,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 175,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 353,
+      "percent": 0.2311965
+    }
+  },
+  {
+    "pk": 176,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 343,
+      "percent": 0.0057799
+    }
+  },
+  {
+    "pk": 177,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 376,
+      "percent": 0.1387179
+    }
+  },
+  {
+    "pk": 178,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 354,
+      "percent": 0.2022969
+    }
+  },
+  {
+    "pk": 179,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 180,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 350,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 181,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 182,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 183,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 2,
+      "percent": 0.2520088
+    }
+  },
+  {
+    "pk": 184,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 413,
+      "placetype_component": 1,
+      "percent": 0.1000000
+    }
+  },
+  {
+    "pk": 185,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 383,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 186,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 353,
+      "percent": 0.0462393
+    }
+  },
+  {
+    "pk": 187,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 343,
+      "percent": 0.0057799
+    }
+  },
+  {
+    "pk": 188,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 376,
+      "percent": 0.0288996
+    }
+  },
+  {
+    "pk": 189,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 354,
+      "percent": 0.0346795
+    }
+  },
+  {
+    "pk": 190,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 356,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 191,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 350,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 192,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 400,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 193,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 352,
+      "percent": 0.1444978
+    }
+  },
+  {
+    "pk": 194,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 399,
+      "percent": 0.0577991
+    }
+  },
+  {
+    "pk": 195,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 382,
+      "percent": 0.2600961
+    }
+  },
+  {
+    "pk": 196,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 3,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 197,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 2,
+      "percent": 0.2520088
+    }
+  },
+  {
+    "pk": 198,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 414,
+      "placetype_component": 1,
+      "percent": 0.1000000
+    }
+  },
+  {
+    "pk": 199,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 398,
+      "percent": 0.0194669
+    }
+  },
+  {
+    "pk": 200,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 390,
+      "percent": 0.4996507
+    }
+  },
+  {
+    "pk": 201,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 377,
+      "percent": 0.0324449
+    }
+  },
+  {
+    "pk": 202,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 400,
+      "percent": 0.0500000
+    }
+  },
+  {
+    "pk": 203,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 364,
+      "percent": 0.0648897
+    }
+  },
+  {
+    "pk": 204,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 365,
+      "percent": 0.0324449
+    }
+  },
+  {
+    "pk": 205,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 3,
+      "percent": 0.0500000
+    }
+  },
+  {
+    "pk": 206,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 2,
+      "percent": 0.2111030
+    }
+  },
+  {
+    "pk": 207,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 415,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 208,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 342,
+      "percent": 0.0069890
+    }
+  },
+  {
+    "pk": 209,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 398,
+      "percent": 0.0978456
+    }
+  },
+  {
+    "pk": 210,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 390,
+      "percent": 0.0908566
+    }
+  },
+  {
+    "pk": 211,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 358,
+      "percent": 0.0139779
+    }
+  },
+  {
+    "pk": 212,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 377,
+      "percent": 0.3634265
+    }
+  },
+  {
+    "pk": 213,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 378,
+      "percent": 0.0209669
+    }
+  },
+  {
+    "pk": 214,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 364,
+      "percent": 0.0768787
+    }
+  },
+  {
+    "pk": 215,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 365,
+      "percent": 0.0279559
+    }
+  },
+  {
+    "pk": 216,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 3,
+      "percent": 0.0500000
+    }
+  },
+  {
+    "pk": 217,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 2,
+      "percent": 0.2111030
+    }
+  },
+  {
+    "pk": 218,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 416,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 219,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 342,
+      "percent": 0.0529512
+    }
+  },
+  {
+    "pk": 220,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 385,
+      "percent": 0.0453868
+    }
+  },
+  {
+    "pk": 221,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 347,
+      "percent": 0.1059025
+    }
+  },
+  {
+    "pk": 222,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 398,
+      "percent": 0.2950141
+    }
+  },
+  {
+    "pk": 223,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 390,
+      "percent": 0.0378223
+    }
+  },
+  {
+    "pk": 224,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 377,
+      "percent": 0.1210314
+    }
+  },
+  {
+    "pk": 225,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 364,
+      "percent": 0.0756446
+    }
+  },
+  {
+    "pk": 226,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 365,
+      "percent": 0.0226934
+    }
+  },
+  {
+    "pk": 227,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 3,
+      "percent": 0.0300000
+    }
+  },
+  {
+    "pk": 228,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 2,
+      "percent": 0.1735537
+    }
+  },
+  {
+    "pk": 229,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 417,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 230,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 342,
+      "percent": 0.1490713
+    }
+  },
+  {
+    "pk": 231,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 385,
+      "percent": 0.1341642
+    }
+  },
+  {
+    "pk": 232,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 377,
+      "percent": 0.0149071
+    }
+  },
+  {
+    "pk": 233,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 398,
+      "percent": 0.2012463
+    }
+  },
+  {
+    "pk": 234,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 347,
+      "percent": 0.2086999
+    }
+  },
+  {
+    "pk": 235,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 364,
+      "percent": 0.0372678
+    }
+  },
+  {
+    "pk": 236,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 3,
+      "percent": 0.0500000
+    }
+  },
+  {
+    "pk": 237,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 2,
+      "percent": 0.1646433
+    }
+  },
+  {
+    "pk": 238,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 418,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 239,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 419,
+      "placetype_component": 347,
+      "percent": 0.3248000
+    }
+  },
+  {
+    "pk": 240,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 419,
+      "placetype_component": 389,
+      "percent": 0.1400000
+    }
+  },
+  {
+    "pk": 241,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 419,
+      "placetype_component": 398,
+      "percent": 0.0952000
+    }
+  },
+  {
+    "pk": 242,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 419,
+      "placetype_component": 3,
+      "percent": 0.0500000
+    }
+  },
+  {
+    "pk": 243,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 419,
+      "placetype_component": 2,
+      "percent": 0.3500000
+    }
+  },
+  {
+    "pk": 244,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 419,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 245,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 381,
+      "percent": 0.0692570
+    }
+  },
+  {
+    "pk": 246,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 388,
+      "percent": 0.1731425
+    }
+  },
+  {
+    "pk": 247,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 358,
+      "percent": 0.0346285
+    }
+  },
+  {
+    "pk": 248,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 392,
+      "percent": 0.1038855
+    }
+  },
+  {
+    "pk": 249,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 360,
+      "percent": 0.0346285
+    }
+  },
+  {
+    "pk": 250,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 361,
+      "percent": 0.1108112
+    }
+  },
+  {
+    "pk": 251,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 396,
+      "percent": 0.0969598
+    }
+  },
+  {
+    "pk": 252,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 397,
+      "percent": 0.0346285
+    }
+  },
+  {
+    "pk": 253,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 366,
+      "percent": 0.0346285
+    }
+  },
+  {
+    "pk": 254,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 255,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 2,
+      "percent": 0.2474301
+    }
+  },
+  {
+    "pk": 256,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 420,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 257,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 342,
+      "percent": 0.2077710
+    }
+  },
+  {
+    "pk": 258,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 381,
+      "percent": 0.0346285
+    }
+  },
+  {
+    "pk": 259,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 343,
+      "percent": 0.0346285
+    }
+  },
+  {
+    "pk": 260,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 373,
+      "percent": 0.0207771
+    }
+  },
+  {
+    "pk": 261,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 391,
+      "percent": 0.1038855
+    }
+  },
+  {
+    "pk": 262,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 378,
+      "percent": 0.0346285
+    }
+  },
+  {
+    "pk": 263,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 388,
+      "percent": 0.0138514
+    }
+  },
+  {
+    "pk": 264,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 396,
+      "percent": 0.1385140
+    }
+  },
+  {
+    "pk": 265,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 365,
+      "percent": 0.1038855
+    }
+  },
+  {
+    "pk": 266,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 267,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 2,
+      "percent": 0.2474301
+    }
+  },
+  {
+    "pk": 268,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 421,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 269,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 342,
+      "percent": 0.1990273
+    }
+  },
+  {
+    "pk": 270,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 381,
+      "percent": 0.0124392
+    }
+  },
+  {
+    "pk": 271,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 353,
+      "percent": 0.1057333
+    }
+  },
+  {
+    "pk": 272,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 387,
+      "percent": 0.0600000
+    }
+  },
+  {
+    "pk": 273,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 373,
+      "percent": 0.0186588
+    }
+  },
+  {
+    "pk": 274,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 354,
+      "percent": 0.0684156
+    }
+  },
+  {
+    "pk": 275,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 345,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 276,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 399,
+      "percent": 0.1243921
+    }
+  },
+  {
+    "pk": 277,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 348,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 278,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 378,
+      "percent": 0.0124392
+    }
+  },
+  {
+    "pk": 279,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 365,
+      "percent": 0.0497568
+    }
+  },
+  {
+    "pk": 280,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 352,
+      "percent": 0.0310980
+    }
+  },
+  {
+    "pk": 281,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 282,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 2,
+      "percent": 0.1980397
+    }
+  },
+  {
+    "pk": 283,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 422,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 284,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 423,
+      "placetype_component": 342,
+      "percent": 0.1910348
+    }
+  },
+  {
+    "pk": 285,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 423,
+      "placetype_component": 390,
+      "percent": 0.2292418
+    }
+  },
+  {
+    "pk": 286,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 423,
+      "placetype_component": 365,
+      "percent": 0.2292418
+    }
+  },
+  {
+    "pk": 287,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 423,
+      "placetype_component": 391,
+      "percent": 0.1146209
+    }
+  },
+  {
+    "pk": 288,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 423,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 289,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 423,
+      "placetype_component": 2,
+      "percent": 0.1758606
+    }
+  },
+  {
+    "pk": 290,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 423,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 291,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 381,
+      "percent": 0.0764139
+    }
+  },
+  {
+    "pk": 292,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 385,
+      "percent": 0.0305656
+    }
+  },
+  {
+    "pk": 293,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 347,
+      "percent": 0.0458484
+    }
+  },
+  {
+    "pk": 294,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 373,
+      "percent": 0.0382070
+    }
+  },
+  {
+    "pk": 295,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 398,
+      "percent": 0.0229242
+    }
+  },
+  {
+    "pk": 296,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 390,
+      "percent": 0.0764139
+    }
+  },
+  {
+    "pk": 297,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 377,
+      "percent": 0.0764139
+    }
+  },
+  {
+    "pk": 298,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 388,
+      "percent": 0.0382070
+    }
+  },
+  {
+    "pk": 299,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 364,
+      "percent": 0.0152828
+    }
+  },
+  {
+    "pk": 300,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 366,
+      "percent": 0.3438627
+    }
+  },
+  {
+    "pk": 301,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 302,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 2,
+      "percent": 0.1758606
+    }
+  },
+  {
+    "pk": 303,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 424,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 304,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 342,
+      "percent": 0.0382070
+    }
+  },
+  {
+    "pk": 305,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 381,
+      "percent": 0.1757521
+    }
+  },
+  {
+    "pk": 306,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 385,
+      "percent": 0.1528279
+    }
+  },
+  {
+    "pk": 307,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 373,
+      "percent": 0.0764139
+    }
+  },
+  {
+    "pk": 308,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 398,
+      "percent": 0.0382070
+    }
+  },
+  {
+    "pk": 309,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 390,
+      "percent": 0.1146209
+    }
+  },
+  {
+    "pk": 310,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 388,
+      "percent": 0.0916967
+    }
+  },
+  {
+    "pk": 311,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 364,
+      "percent": 0.0764139
+    }
+  },
+  {
+    "pk": 312,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 313,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 2,
+      "percent": 0.1758606
+    }
+  },
+  {
+    "pk": 314,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 425,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 315,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 381,
+      "percent": 0.6115208
+    }
+  },
+  {
+    "pk": 316,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 387,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 317,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 373,
+      "percent": 0.0271787
+    }
+  },
+  {
+    "pk": 318,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 345,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 319,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 348,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 320,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 388,
+      "percent": 0.0339734
+    }
+  },
+  {
+    "pk": 321,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 366,
+      "percent": 0.0067947
+    }
+  },
+  {
+    "pk": 322,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 323,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 2,
+      "percent": 0.2305325
+    }
+  },
+  {
+    "pk": 324,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 426,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 325,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 381,
+      "percent": 0.1298935
+    }
+  },
+  {
+    "pk": 326,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 353,
+      "percent": 0.0974201
+    }
+  },
+  {
+    "pk": 327,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 387,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 328,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 373,
+      "percent": 0.0974201
+    }
+  },
+  {
+    "pk": 329,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 354,
+      "percent": 0.1428829
+    }
+  },
+  {
+    "pk": 330,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 345,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 331,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 376,
+      "percent": 0.0324734
+    }
+  },
+  {
+    "pk": 332,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 348,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 333,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 388,
+      "percent": 0.0649468
+    }
+  },
+  {
+    "pk": 334,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 399,
+      "percent": 0.0844308
+    }
+  },
+  {
+    "pk": 335,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 336,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 2,
+      "percent": 0.2305325
+    }
+  },
+  {
+    "pk": 337,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 427,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 338,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 353,
+      "percent": 0.1948403
+    }
+  },
+  {
+    "pk": 339,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 387,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 340,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 354,
+      "percent": 0.1298935
+    }
+  },
+  {
+    "pk": 341,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 345,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 342,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 348,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 343,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 399,
+      "percent": 0.2273136
+    }
+  },
+  {
+    "pk": 344,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 352,
+      "percent": 0.0974201
+    }
+  },
+  {
+    "pk": 345,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 346,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 2,
+      "percent": 0.2305325
+    }
+  },
+  {
+    "pk": 347,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 428,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 348,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 387,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 349,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 345,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 350,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 348,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 351,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 352,
+      "percent": 0.1839072
+    }
+  },
+  {
+    "pk": 352,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 399,
+      "percent": 0.1103443
+    }
+  },
+  {
+    "pk": 353,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 382,
+      "percent": 0.4413774
+    }
+  },
+  {
+    "pk": 354,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 355,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 2,
+      "percent": 0.1643711
+    }
+  },
+  {
+    "pk": 356,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 429,
+      "placetype_component": 1,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 357,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 369,
+      "percent": 0.4673118
+    }
+  },
+  {
+    "pk": 358,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 387,
+      "percent": 0.0002000
+    }
+  },
+  {
+    "pk": 359,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 345,
+      "percent": 0.0005000
+    }
+  },
+  {
+    "pk": 360,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 348,
+      "percent": 0.0005000
+    }
+  },
+  {
+    "pk": 361,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 352,
+      "percent": 0.0424829
+    }
+  },
+  {
+    "pk": 362,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 382,
+      "percent": 0.3398631
+    }
+  },
+  {
+    "pk": 363,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 3,
+      "percent": 0.0400000
+    }
+  },
+  {
+    "pk": 364,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 2,
+      "percent": 0.0991422
+    }
+  },
+  {
+    "pk": 365,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 430,
+      "placetype_component": 1,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 366,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 431,
+      "placetype_component": 389,
+      "percent": 0.1849321
+    }
+  },
+  {
+    "pk": 367,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 431,
+      "placetype_component": 369,
+      "percent": 0.6482346
+    }
+  },
+  {
+    "pk": 368,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 431,
+      "placetype_component": 398,
+      "percent": 0.0002778
+    }
+  },
+  {
+    "pk": 369,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 431,
+      "placetype_component": 382,
+      "percent": 0.0926049
+    }
+  },
+  {
+    "pk": 370,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 431,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 371,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 431,
+      "placetype_component": 2,
+      "percent": 0.0439506
+    }
+  },
+  {
+    "pk": 372,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 431,
+      "placetype_component": 1,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 373,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 432,
+      "placetype_component": 342,
+      "percent": 0.0459366
+    }
+  },
+  {
+    "pk": 374,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 432,
+      "placetype_component": 389,
+      "percent": 0.8165467
+    }
+  },
+  {
+    "pk": 375,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 432,
+      "placetype_component": 369,
+      "percent": 0.0749985
+    }
+  },
+  {
+    "pk": 376,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 432,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 377,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 432,
+      "placetype_component": 2,
+      "percent": 0.0325181
+    }
+  },
+  {
+    "pk": 378,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 432,
+      "placetype_component": 1,
+      "percent": 0.0100000
+    }
+  },
+  {
+    "pk": 379,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 433,
+      "placetype_component": 395,
+      "percent": 0.3000000
+    }
+  },
+  {
+    "pk": 380,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 433,
+      "placetype_component": 346,
+      "percent": 0.3000000
+    }
+  },
+  {
+    "pk": 381,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 433,
+      "placetype_component": 370,
+      "percent": 0.0700000
+    }
+  },
+  {
+    "pk": 382,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 433,
+      "placetype_component": 400,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 383,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 433,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 384,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 433,
+      "placetype_component": 2,
+      "percent": 0.1914707
+    }
+  },
+  {
+    "pk": 385,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 433,
+      "placetype_component": 1,
+      "percent": 0.1000000
+    }
+  },
+  {
+    "pk": 386,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 342,
+      "percent": 0.0112353
+    }
+  },
+  {
+    "pk": 387,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 371,
+      "percent": 0.0112353
+    }
+  },
+  {
+    "pk": 388,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 385,
+      "percent": 0.0112353
+    }
+  },
+  {
+    "pk": 389,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 398,
+      "percent": 0.0112353
+    }
+  },
+  {
+    "pk": 390,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 389,
+      "percent": 0.0337058
+    }
+  },
+  {
+    "pk": 391,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 347,
+      "percent": 0.0112353
+    }
+  },
+  {
+    "pk": 392,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 400,
+      "percent": 0.4000000
+    }
+  },
+  {
+    "pk": 393,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 370,
+      "percent": 0.0224705
+    }
+  },
+  {
+    "pk": 394,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 361,
+      "percent": 0.0674115
+    }
+  },
+  {
+    "pk": 395,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 354,
+      "percent": 0.0224705
+    }
+  },
+  {
+    "pk": 396,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 364,
+      "percent": 0.0112353
+    }
+  },
+  {
+    "pk": 397,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 365,
+      "percent": 0.0112353
+    }
+  },
+  {
+    "pk": 398,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 399,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 2,
+      "percent": 0.2552949
+    }
+  },
+  {
+    "pk": 400,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 434,
+      "placetype_component": 1,
+      "percent": 0.1000000
+    }
+  },
+  {
+    "pk": 401,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 435,
+      "placetype_component": 389,
+      "percent": 0.0915250
+    }
+  },
+  {
+    "pk": 402,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 435,
+      "placetype_component": 3,
+      "percent": 0.0200000
+    }
+  },
+  {
+    "pk": 403,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 435,
+      "placetype_component": 2,
+      "percent": 0.1084750
+    }
+  },
+  {
+    "pk": 404,
+    "model": "main.placetypecomponentpercent",
+    "fields": {
+      "placetype": 435,
+      "placetype_component": 1,
+      "percent": 0.7800000
+    }
+  }
+]
