@@ -55,12 +55,11 @@ and MS Windows in **[README-developers.md](README-developers.md)**
 # UrbanFootprint Client Configuration
 
 Each UrbanFootprint installation needs a client configuration which is specific to the geographic
-region being studied. UrbanFootprint client configurations reside in their own standalone git repository
-that is referenced in UrbanFootprint as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+region being studied. UrbanFootprint client configurations reside in this repository in the directory
+`footprint/client/configuration`.
 
-We provide sample client configurations in the [urbanfootprint-configuration repository](https://github.com/CalthorpeAnalytics/urbanfootprint-configuration).
-The recommended way to manage client configurations is to [fork](https://help.github.com/articles/fork-a-repo/) the
-[urbanfootprint-configuration](https://github.com/CalthorpeAnalytics/urbanfootprint-configuration) repo. You can
-then model a new client configuration off of the existing clients.
+We provide several sample client configurations in this repository. The recommended way to manage your own client
+configurations is to [fork](https://help.github.com/articles/fork-a-repo/) this repo. You can then model a new
+client configuration off of the existing clients.
 
 Copyright (C) 2017 [Calthorpe Analytics](http://calthorpeanalytics.com/)
