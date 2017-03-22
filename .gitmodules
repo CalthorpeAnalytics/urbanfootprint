@@ -2,6 +2,3 @@
 	path = sproutcore/frameworks/sproutcore
 	url = https://github.com/UrbanFootprint/sproutcore.git
 	branch = master
-[submodule "footprint/client/configuration"]
-	path = footprint/client/configuration
-	url = ../urbanfootprint-configuration
