@@ -1,0 +1,1190 @@
+[
+    {
+        "fields": {
+            "land_use_description": "1000: Urban or Built-Up",
+            "land_use_type": "Urban or Built-Up",
+            "land_use": 1000
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1000
+    },
+    {
+        "fields": {
+            "land_use_description": "1100: Residential",
+            "land_use_type": "Mixed Residential",
+            "land_use": 1100
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1100
+    },
+    {
+        "fields": {
+            "land_use_description": "1110: Single Family Residential",
+            "land_use_type": "Single Family Residential",
+            "land_use": 1110
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1110
+    },
+    {
+        "fields": {
+            "land_use_description": "1111: High-Density Single Family Residential",
+            "land_use_type": "Single Family Residential",
+            "land_use": 1111
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1111
+    },
+    {
+        "fields": {
+            "land_use_description": "1112: Low-Density Single Family Residential",
+            "land_use_type": "Single Family Residential",
+            "land_use": 1112
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1112
+    },
+    {
+        "fields": {
+            "land_use_description": "1113: Rural Residential",
+            "land_use_type": "Single Family Residential",
+            "land_use": 1113
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1113
+    },
+    {
+        "fields": {
+            "land_use_description": "1120: Multi-Family Residential (Medium-High Density Residential) ",
+            "land_use_type": "Multi-Family Residential",
+            "land_use": 1120
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1120
+    },
+    {
+        "fields": {
+            "land_use_description": "1121: Mixed Multi-Family Residential",
+            "land_use_type": "Multi-Family Residential",
+            "land_use": 1121
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1121
+    },
+    {
+        "fields": {
+            "land_use_description": "1122: Duplexes, Triplexes and 2- or 3-Unit Condominiums and Townhouses ",
+            "land_use_type": "Multi-Family Residential",
+            "land_use": 1122
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1122
+    },
+    {
+        "fields": {
+            "land_use_description": "1123: Low-Rise Apartments, Condominiums, and Townhouses",
+            "land_use_type": "Multi-Family Residential",
+            "land_use": 1123
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1123
+    },
+    {
+        "fields": {
+            "land_use_description": "1124: Medium-Rise Apartments and Condominiums ",
+            "land_use_type": "Multi-Family Residential",
+            "land_use": 1124
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1124
+    },
+    {
+        "fields": {
+            "land_use_description": "1125: High-Rise Apartments and Condominiums ",
+            "land_use_type": "Multi-Family Residential",
+            "land_use": 1125
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1125
+    },
+    {
+        "fields": {
+            "land_use_description": "1130: Mobile Homes and Trailer Parks",
+            "land_use_type": "Mobile Homes and Trailer Parks",
+            "land_use": 1130
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1130
+    },
+    {
+        "fields": {
+            "land_use_description": "1131: Trailer Parks and Mobile Home Courts, High-Density",
+            "land_use_type": "Mobile Homes and Trailer Parks",
+            "land_use": 1131
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1131
+    },
+    {
+        "fields": {
+            "land_use_description": "1132: Mobile Home Courts and Subdivisions, Low-Density",
+            "land_use_type": "Mobile Homes and Trailer Parks",
+            "land_use": 1132
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1132
+    },
+    {
+        "fields": {
+            "land_use_description": "1140: Mixed Residential (single and multiple residential)",
+            "land_use_type": "Mixed Residential",
+            "land_use": 1140
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1140
+    },
+    {
+        "fields": {
+            "land_use_description": "1200: Commercial and Services",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1200
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1200
+    },
+    {
+        "fields": {
+            "land_use_description": "1210: General Office Use",
+            "land_use_type": "General Office",
+            "land_use": 1210
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1210
+    },
+    {
+        "fields": {
+            "land_use_description": "1211: Low- and Medium-Rise Major Office Use",
+            "land_use_type": "General Office",
+            "land_use": 1211
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1211
+    },
+    {
+        "fields": {
+            "land_use_description": "1212: High-Rise Major Office Use",
+            "land_use_type": "General Office",
+            "land_use": 1212
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1212
+    },
+    {
+        "fields": {
+            "land_use_description": "1213: Skyscrapers",
+            "land_use_type": "General Office",
+            "land_use": 1213
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1213
+    },
+    {
+        "fields": {
+            "land_use_description": "1220: Retail Stores and Commercial Services",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1220
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1220
+    },
+    {
+        "fields": {
+            "land_use_description": "1221: Regional Shopping Center",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1221
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1221
+    },
+    {
+        "fields": {
+            "land_use_description": "1222: Retail Centers (Non-Strip With Contiguous Interconnected Off-Street Parking)",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1222
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1222
+    },
+    {
+        "fields": {
+            "land_use_description": "1223: Retail Strip Development",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1223
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1223
+    },
+    {
+        "fields": {
+            "land_use_description": "1230: Other Commercial",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1230
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1230
+    },
+    {
+        "fields": {
+            "land_use_description": "1231: Commercial Storage",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1231
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1231
+    },
+    {
+        "fields": {
+            "land_use_description": "1232: Commercial Recreation",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1232
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1232
+    },
+    {
+        "fields": {
+            "land_use_description": "1233: Hotels and Motels",
+            "land_use_type": "Commercial and Services",
+            "land_use": 1233
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1233
+    },
+    {
+        "fields": {
+            "land_use_description": "1240: Public Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1240
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1240
+    },
+    {
+        "fields": {
+            "land_use_description": "1241: Government Offices",
+            "land_use_type": "Facilities",
+            "land_use": 1241
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1241
+    },
+    {
+        "fields": {
+            "land_use_description": "1242: Police and Sheriff Stations",
+            "land_use_type": "Facilities",
+            "land_use": 1242
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1242
+    },
+    {
+        "fields": {
+            "land_use_description": "1243: Fire Stations",
+            "land_use_type": "Facilities",
+            "land_use": 1243
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1243
+    },
+    {
+        "fields": {
+            "land_use_description": "1244: Major Medical Health Care Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1244
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1244
+    },
+    {
+        "fields": {
+            "land_use_description": "1245: Religious Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1245
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1245
+    },
+    {
+        "fields": {
+            "land_use_description": "1246: Other Public Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1246
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1246
+    },
+    {
+        "fields": {
+            "land_use_description": "1247: Public Parking Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1247
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1247
+    },
+    {
+        "fields": {
+            "land_use_description": "1250: Special Use Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1250
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1250
+    },
+    {
+        "fields": {
+            "land_use_description": "1251: Correctional Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1251
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1251
+    },
+    {
+        "fields": {
+            "land_use_description": "1252: Special Care Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1252
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1252
+    },
+    {
+        "fields": {
+            "land_use_description": "1253: Other Special Use Facilities",
+            "land_use_type": "Facilities",
+            "land_use": 1253
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1253
+    },
+    {
+        "fields": {
+            "land_use_description": "1260: Educational Institutions",
+            "land_use_type": "Education",
+            "land_use": 1260
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1260
+    },
+    {
+        "fields": {
+            "land_use_description": "1261: Pre-Schools/Day Care Centers",
+            "land_use_type": "Education",
+            "land_use": 1261
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1261
+    },
+    {
+        "fields": {
+            "land_use_description": "1262: Elementary Schools",
+            "land_use_type": "Education",
+            "land_use": 1262
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1262
+    },
+    {
+        "fields": {
+            "land_use_description": "1263: Junior or Intermediate High Schools",
+            "land_use_type": "Education",
+            "land_use": 1263
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1263
+    },
+    {
+        "fields": {
+            "land_use_description": "1264: Senior High Schools",
+            "land_use_type": "Education",
+            "land_use": 1264
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1264
+    },
+    {
+        "fields": {
+            "land_use_description": "1265: Colleges and Universities",
+            "land_use_type": "Education",
+            "land_use": 1265
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1265
+    },
+    {
+        "fields": {
+            "land_use_description": "1266: Trade Schools and Professional Training Facilities",
+            "land_use_type": "Education",
+            "land_use": 1266
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1266
+    },
+    {
+        "fields": {
+            "land_use_description": "1270: Military Installations",
+            "land_use_type": "Military Installations",
+            "land_use": 1270
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1270
+    },
+    {
+        "fields": {
+            "land_use_description": "1271: Base (Built-up Area)",
+            "land_use_type": "Military Installations",
+            "land_use": 1271
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1271
+    },
+    {
+        "fields": {
+            "land_use_description": "1272: Vacant Area",
+            "land_use_type": "Military Installations",
+            "land_use": 1272
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1272
+    },
+    {
+        "fields": {
+            "land_use_description": "1273: Air Field",
+            "land_use_type": "Military Installations",
+            "land_use": 1273
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1273
+    },
+    {
+        "fields": {
+            "land_use_description": "1274: Former Base (Built-up Area)",
+            "land_use_type": "Military Installations",
+            "land_use": 1274
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1274
+    },
+    {
+        "fields": {
+            "land_use_description": "1275: Former Base Vacant Area",
+            "land_use_type": "Military Installations",
+            "land_use": 1275
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1275
+    },
+    {
+        "fields": {
+            "land_use_description": "1276: Former Base Air Field",
+            "land_use_type": "Military Installations",
+            "land_use": 1276
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1276
+    },
+    {
+        "fields": {
+            "land_use_description": "1300: Industrial",
+            "land_use_type": "Industrial",
+            "land_use": 1300
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1300
+    },
+    {
+        "fields": {
+            "land_use_description": "1310: Light Industrial",
+            "land_use_type": "Industrial",
+            "land_use": 1310
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1310
+    },
+    {
+        "fields": {
+            "land_use_description": "1311: Manufacturing, Assembly, and Industrial Services",
+            "land_use_type": "Industrial",
+            "land_use": 1311
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1311
+    },
+    {
+        "fields": {
+            "land_use_description": "1312: Picture and Television Production Lots",
+            "land_use_type": "Industrial",
+            "land_use": 1312
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1312
+    },
+    {
+        "fields": {
+            "land_use_description": "1313: Packing Houses and Grain Elevators",
+            "land_use_type": "Industrial",
+            "land_use": 1313
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1313
+    },
+    {
+        "fields": {
+            "land_use_description": "1314: Research and Development",
+            "land_use_type": "Industrial",
+            "land_use": 1314
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1314
+    },
+    {
+        "fields": {
+            "land_use_description": "1320: Heavy Industrial",
+            "land_use_type": "Industrial",
+            "land_use": 1320
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1320
+    },
+    {
+        "fields": {
+            "land_use_description": "1321: Manufacturing",
+            "land_use_type": "Industrial",
+            "land_use": 1321
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1321
+    },
+    {
+        "fields": {
+            "land_use_description": "1322: Petroleum Refining and Processing",
+            "land_use_type": "Industrial",
+            "land_use": 1322
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1322
+    },
+    {
+        "fields": {
+            "land_use_description": "1323: Open Storage",
+            "land_use_type": "Industrial",
+            "land_use": 1323
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1323
+    },
+    {
+        "fields": {
+            "land_use_description": "1324: Major Metal Processing",
+            "land_use_type": "Industrial",
+            "land_use": 1324
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1324
+    },
+    {
+        "fields": {
+            "land_use_description": "1325: Chemical Processing",
+            "land_use_type": "Industrial",
+            "land_use": 1325
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1325
+    },
+    {
+        "fields": {
+            "land_use_description": "1330: Extraction",
+            "land_use_type": "Industrial",
+            "land_use": 1330
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1330
+    },
+    {
+        "fields": {
+            "land_use_description": "1331: Mineral Extraction - Other Than Oil and Gas",
+            "land_use_type": "Industrial",
+            "land_use": 1331
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1331
+    },
+    {
+        "fields": {
+            "land_use_description": "1332: Mineral Extraction - Oil and Gas",
+            "land_use_type": "Industrial",
+            "land_use": 1332
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1332
+    },
+    {
+        "fields": {
+            "land_use_description": "1340: Wholesaling and Warehousing",
+            "land_use_type": "Industrial",
+            "land_use": 1340
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1340
+    },
+    {
+        "fields": {
+            "land_use_description": "1400: Transportation, Communications, and Utilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1400
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1400
+    },
+    {
+        "fields": {
+            "land_use_description": "1410: Transportation",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1410
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1410
+    },
+    {
+        "fields": {
+            "land_use_description": "1411: Airports",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1411
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1411
+    },
+    {
+        "fields": {
+            "land_use_description": "1412: Railroads",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1412
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1412
+    },
+    {
+        "fields": {
+            "land_use_description": "1413: Freeways and Major Roads",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1413
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1413
+    },
+    {
+        "fields": {
+            "land_use_description": "1414: Carpool and Rideshare Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1414
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1414
+    },
+    {
+        "fields": {
+            "land_use_description": "1415: Bus Terminals and Transit Centers",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1415
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1415
+    },
+    {
+        "fields": {
+            "land_use_description": "1416: Truck Terminals",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1416
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1416
+    },
+    {
+        "fields": {
+            "land_use_description": "1417: Harbor Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1417
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1417
+    },
+    {
+        "fields": {
+            "land_use_description": "1418: Navigation Aids",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1418
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1418
+    },
+    {
+        "fields": {
+            "land_use_description": "1420: Communication Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1420
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1420
+    },
+    {
+        "fields": {
+            "land_use_description": "1430: Utility Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1430
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1430
+    },
+    {
+        "fields": {
+            "land_use_description": "1431: Electrical Power Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1431
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1431
+    },
+    {
+        "fields": {
+            "land_use_description": "1432: Solid Waste Disposal Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1432
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1432
+    },
+    {
+        "fields": {
+            "land_use_description": "1433: Liquid Waste Disposal Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1433
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1433
+    },
+    {
+        "fields": {
+            "land_use_description": "1434: Water Storage Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1434
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1434
+    },
+    {
+        "fields": {
+            "land_use_description": "1435: Natural Gas and Petroleum Facilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1435
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1435
+    },
+    {
+        "fields": {
+            "land_use_description": "1436: Water Transfer Facilities ",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1436
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1436
+    },
+    {
+        "fields": {
+            "land_use_description": "1437: Improved Flood Waterways and Structures",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1437
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1437
+    },
+    {
+        "fields": {
+            "land_use_description": "1438: Mixed Utilities",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1438
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1438
+    },
+    {
+        "fields": {
+            "land_use_description": "1440: Maintenance Yards ",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1440
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1440
+    },
+    {
+        "fields": {
+            "land_use_description": "1441: Bus Yards",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1441
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1441
+    },
+    {
+        "fields": {
+            "land_use_description": "1442: Rail Yards",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1442
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1442
+    },
+    {
+        "fields": {
+            "land_use_description": "1450: Mixed Transportation",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1450
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1450
+    },
+    {
+        "fields": {
+            "land_use_description": "1460: Mixed Transportation and Utility",
+            "land_use_type": "Transportation, Communications, and Utilities",
+            "land_use": 1460
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1460
+    },
+    {
+        "fields": {
+            "land_use_description": "1500: Mixed Commercial and Industrial",
+            "land_use_type": "Mixed Commercial and Industrial",
+            "land_use": 1500
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1500
+    },
+    {
+        "fields": {
+            "land_use_description": "1600: Mixed Residential and Commercial Services",
+            "land_use_type": "Mixed Residential and Commercial",
+            "land_use": 1600
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1600
+    },
+    {
+        "fields": {
+            "land_use_description": "1700: Under Construction",
+            "land_use_type": "Under Construction",
+            "land_use": 1700
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1700
+    },
+    {
+        "fields": {
+            "land_use_description": "1800: Open Space and Recreation",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1800
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1800
+    },
+    {
+        "fields": {
+            "land_use_description": "1810: Golf Courses ",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1810
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1810
+    },
+    {
+        "fields": {
+            "land_use_description": "1820: Local Parks and Recreation",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1820
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1820
+    },
+    {
+        "fields": {
+            "land_use_description": "1830: State and National Parks and Recreation",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1830
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1830
+    },
+    {
+        "fields": {
+            "land_use_description": "1840: Cemeteries",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1840
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1840
+    },
+    {
+        "fields": {
+            "land_use_description": "1850: Wildlife Preserves and Sanctuaries",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1850
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1850
+    },
+    {
+        "fields": {
+            "land_use_description": "1860: Specimen Gardens and Arboreta",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1860
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1860
+    },
+    {
+        "fields": {
+            "land_use_description": "1870: Beach Parks ",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1870
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1870
+    },
+    {
+        "fields": {
+            "land_use_description": "1880: Other Open Space and Recreation ",
+            "land_use_type": "Open Space and Recreation",
+            "land_use": 1880
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1880
+    },
+    {
+        "fields": {
+            "land_use_description": "1900: Urban Vacant (developable)",
+            "land_use_type": "Vacant",
+            "land_use": 1900
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 1900
+    },
+    {
+        "fields": {
+            "land_use_description": "2000: Agriculture",
+            "land_use_type": "Agriculture",
+            "land_use": 2000
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2000
+    },
+    {
+        "fields": {
+            "land_use_description": "2100: Cropland and Improved Pasture Land",
+            "land_use_type": "Agriculture",
+            "land_use": 2100
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2100
+    },
+    {
+        "fields": {
+            "land_use_description": "2110: Irrigated Cropland and Improved Pasture Land",
+            "land_use_type": "Agriculture",
+            "land_use": 2110
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2110
+    },
+    {
+        "fields": {
+            "land_use_description": "2120: Non-Irrigated Cropland and Improved Pasture Land",
+            "land_use_type": "Agriculture",
+            "land_use": 2120
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2120
+    },
+    {
+        "fields": {
+            "land_use_description": "2200: Orchards and Vineyards",
+            "land_use_type": "Agriculture",
+            "land_use": 2200
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2200
+    },
+    {
+        "fields": {
+            "land_use_description": "2300: Nurseries",
+            "land_use_type": "Agriculture",
+            "land_use": 2300
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2300
+    },
+    {
+        "fields": {
+            "land_use_description": "2400: Dairy, Intensive Livestock, and Associated Facilities",
+            "land_use_type": "Agriculture",
+            "land_use": 2400
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2400
+    },
+    {
+        "fields": {
+            "land_use_description": "2500: Poultry Operations",
+            "land_use_type": "Agriculture",
+            "land_use": 2500
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2500
+    },
+    {
+        "fields": {
+            "land_use_description": "2600: Other Agriculture",
+            "land_use_type": "Agriculture",
+            "land_use": 2600
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2600
+    },
+    {
+        "fields": {
+            "land_use_description": "2700: Horse Ranches",
+            "land_use_type": "Agriculture",
+            "land_use": 2700
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 2700
+    },
+    {
+        "fields": {
+            "land_use_description": "3000: Vacant (developable)",
+            "land_use_type": "Vacant",
+            "land_use": 3000
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 3000
+    },
+    {
+        "fields": {
+            "land_use_description": "3100: Vacant Undifferentiated",
+            "land_use_type": "Vacant",
+            "land_use": 3100
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 3100
+    },
+    {
+        "fields": {
+            "land_use_description": "3200: Abandoned Orchards and Vineyards",
+            "land_use_type": "Vacant",
+            "land_use": 3200
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 3200
+    },
+    {
+        "fields": {
+            "land_use_description": "3300: Vacant With Limited Improvements",
+            "land_use_type": "Vacant",
+            "land_use": 3300
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 3300
+    },
+    {
+        "fields": {
+            "land_use_description": "3400: Beaches (vacant)",
+            "land_use_type": "Vacant",
+            "land_use": 3400
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 3400
+    },
+    {
+        "fields": {
+            "land_use_description": "4000: Water",
+            "land_use_type": "Water",
+            "land_use": 4000
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 4000
+    },
+    {
+        "fields": {
+            "land_use_description": "4100: Water, Undifferentiated",
+            "land_use_type": "Water",
+            "land_use": 4100
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 4100
+    },
+    {
+        "fields": {
+            "land_use_description": "4200: Harbor Water Facilities",
+            "land_use_type": "Water",
+            "land_use": 4200
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 4200
+    },
+    {
+        "fields": {
+            "land_use_description": "4300: Marina Water Facilities",
+            "land_use_type": "Water",
+            "land_use": 4300
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 4300
+    },
+    {
+        "fields": {
+            "land_use_description": "4400: Water Within a Military Installation",
+            "land_use_type": "Water",
+            "land_use": 4400
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 4400
+    },
+    {
+        "fields": {
+            "land_use_description": "4500: Area of Inundation (High Water) (1990 Database only)",
+            "land_use_type": "Water",
+            "land_use": 4500
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 4500
+    },
+    {
+        "fields": {
+            "land_use_description": "8888: Undevelopable or protected Land ",
+            "land_use_type": "Undevelopable or Protected Land",
+            "land_use": 8888
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 8888
+    },
+    {
+        "fields": {
+            "land_use_description": "9999: No Photo Coverage/Not in Update Study Area",
+            "land_use_type": "Unknown",
+            "land_use": 9999
+        },
+        "model": "main.scagdmlandusedefinition",
+        "pk": 9999
+    }
+]

@@ -20,7 +20,6 @@ mkdir -p /srv/calthorpe/
 # clone urbanfootprint repos
 cd /srv/calthorpe/
 git clone https://github.com/CalthorpeAnalytics/urbanfootprint.git urbanfootprint
-git clone https://github.com/CalthorpeAnalytics/urbanfootprint-configuration.git urbanfootprint-configuration
 cd /srv/calthorpe/urbanfootprint/
 git submodule init
 git submodule update

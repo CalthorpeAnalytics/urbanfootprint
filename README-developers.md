@@ -28,7 +28,6 @@ For reference, the "host" computer is the machine running VirtualBox (your Mac o
 Run the following commands on the **host** computer:
 
     git clone https://github.com/CalthorpeAnalytics/urbanfootprint.git urbanfootprint
-    git clone https://github.com/CalthorpeAnalytics/urbanfootprint-configuration.git urbanfootprint-configuration
     cd urbanfootprint
     git submodule init
     git submodule update
@@ -55,8 +54,8 @@ You will now be ssh'd into the guest VM and should have a Linux command prompt i
 All developer services are managed by supervisor. The easiest way to make sure everything is up and running is this:
 
     fab -f footprint/installer localhost restart_dev
-    
-NOTE: After every VM reboot (via a vagrant reload or otherwise) *YOU MUST* run `fab -f footprint/installer localhost restart_dev`    
+
+NOTE: After every VM reboot (via a vagrant reload or otherwise) *YOU MUST* run `fab -f footprint/installer localhost restart_dev`
 
 If you want to see what commands are being run by supervisor, look in `conf/etc/supervisor/conf.d/calthorpe.supervisor.dev`
 
