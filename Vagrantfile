@@ -19,8 +19,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.synced_folder ".", "/srv/calthorpe/urbanfootprint", owner: CALTHORPE_UID, group: CALTHORPE_GID
 
-  config.vm.network "forwarded_port", guest: 80, host: 3333
-  config.vm.network "forwarded_port", guest: 5432, host: 5555
+  config.vm.network "forwarded_port", guest: 80, host: 3333, host_ip: "localhost"
+  config.vm.network "forwarded_port", guest: 5432, host: 5555, host_ip: "localhost"
 
   if VAGRANT_COMMAND == "ssh"
     config.ssh.username = "calthorpe"
