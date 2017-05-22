@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # TODO:
 #  - we could do some sanity checks here to make sure Vagrant and
 #    Virtualbox are installed
