@@ -571,7 +571,7 @@ class SacogResultConfigurationFixtures(ResultConfigurationFixture):
                     labels=['Emissions'],
                     stackable=False,
                     is_stacked=False,
-                    create_query=lambda result_config: 'SELECT SUM(vmt_annual_w_trucks) as vehicle_emissions__sum from %({0})s'.format(DbEntityKey.VMT),
+                    create_query=lambda result_config: 'SELECT SUM(vmt_annual_w_trucks) *  0.9061 as vehicle_emissions__sum from %({0})s'.format(DbEntityKey.VMT),
                     sort_priority=ResultSort.BASE
                 ),
                 ResultConfiguration(
