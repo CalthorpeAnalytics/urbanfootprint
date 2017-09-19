@@ -838,8 +838,7 @@ Footprint.DataSource.mixin({
     _serverTypeLookup: {},
 
     // models using v2 of the api
-    //V2_API_MODELS: ['project', 'scenario'],
-    V2_API_MODELS: ['project'],
+    V2_API_MODELS: ['project', 'scenario'],
 
     /***
      * Data export currently uses Django views directly without Tastypie
