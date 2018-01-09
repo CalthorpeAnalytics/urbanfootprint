@@ -62,10 +62,6 @@ footprint/main/static/query_ui
 footprint/main/static/sc-table
 footprint/main/static/sproutcore*
 
-# node.js modules
-node_modules
-websockets/node_modules
-
 # celery process id files generated while running
 celerybeat-schedule
 celerybeat.pid
