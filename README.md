@@ -9,8 +9,6 @@ California-based Calthorpe Analytics.
 
 A user guide for version 1.5 is at [http://urbanfootprint-v1.readthedocs.io/](http://urbanfootprint-v1.readthedocs.io/)
 
-A demo video for version 1.5 is at [https://www.youtube.com/watch?v=zQ48bcHs5TY](https://www.youtube.com/watch?v=zQ48bcHs5TY)
-
 UrbanFootprint is developed by [Calthorpe Analytics](http://calthorpeanalytics.com/).
 
 # UrbanFootprint Installation
