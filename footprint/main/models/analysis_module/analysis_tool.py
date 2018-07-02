@@ -139,6 +139,7 @@ class AnalysisToolKey(Keys):
     ENVIRONMENTAL_CONSTRAINT_UPDATER_TOOL = 'environmental_constraint_updater_tool'
     ENERGY_UPDATER_TOOL = 'energy_updater_tool'
     WATER_UPDATER_TOOL = 'water_updater_tool'
+    SWMM_UPDATER_TOOL = 'swmm_updater_tool'
     VMT_UPDATER_TOOL = 'vmt_updater_tool'
     FISCAL_UPDATER_TOOL = 'fiscal_updater_tool'
     AGRICULTURE_UPDATER_TOOL = 'agriculture_updater_tool'

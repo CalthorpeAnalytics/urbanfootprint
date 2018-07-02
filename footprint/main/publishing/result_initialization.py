@@ -46,6 +46,7 @@ class ResultLibraryKey(Keys):
     APPLICATION = Fab.ricate('application')
     # The following show when the corresponding analysis module is selected
     WATER = Fab.ricate('water')
+    SWMM = Fab.ricate('swmm')
     ENERGY = Fab.ricate('energy')
     VMT = Fab.ricate('vmt')
     FISCAL = Fab.ricate('fiscal')
@@ -78,6 +79,9 @@ class ResultKey(Keys):
     WATER_TOTAL = Fab.ricate('water_total')
     WATER_INDOOR_OUTDOOR = Fab.ricate('water_indoor_outdoor')
     WATER_COSTS_TOTAL = Fab.ricate('water_costs_total')
+
+    SWMM = Fab.ricate('swmm')
+    SWMM_TOTAL = Fab.ricate('swmm_total')
 
     AGRICULTURE = Fab.ricate('agriculture')
     AGRICULTURE_ROI = Fab.ricate('agriculture_roi')
@@ -129,6 +133,7 @@ class ResultMediumKey(ResultKey):
     WATER_TOTAL = Fab.ricate('water_total')
     WATER_INDOOR_OUTDOOR = Fab.ricate('water_indoor_outdoor')
     WATER_COSTS_TOTAL = Fab.ricate('water')
+    SWMM_TOTAL = Fab.ricate('swmm_total')
     ENERGY_TOTAL = Fab.ricate('energy_total')
     ENERGY_RES_USE = Fab.ricate('energy_res_use')
     ENERGY_COM_USE = Fab.ricate('energy_com_use')

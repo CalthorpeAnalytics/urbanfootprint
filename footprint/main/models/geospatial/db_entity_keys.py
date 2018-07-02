@@ -69,3 +69,4 @@ class DbEntityKey(Keys):
 
     ENERGY = 'energy'
     WATER = 'water'
+    SWMM = 'swmm'
